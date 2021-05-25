@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vivado HLS Report for 'mul_Matrix'
+================================================================
+* Date:           Thu May 26 03:57:28 2022
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        HW2_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.380|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 1.1.1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      1|       -|      -|
+|Expression       |        -|      -|       0|    209|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|      -|     144|    232|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|    176|
+|Register         |        -|      -|     463|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|      1|     607|    617|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|   ~0  |   ~0   |      1|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |           Instance          |           Module          | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |mul_Matrix_AXILiteS_s_axi_U  |mul_Matrix_AXILiteS_s_axi  |        0|      0|  144|  232|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |Total                        |                           |        0|      0|  144|  232|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    +-------------------------+----------------------+--------------+
+    |         Instance        |        Module        |  Expression  |
+    +-------------------------+----------------------+--------------+
+    |mul_Matrix_mac_mubkb_U1  |mul_Matrix_mac_mubkb  | i0 * i1 + i2 |
+    +-------------------------+----------------------+--------------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name      | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |c_1_fu_140_p2            |     +    |      0|  0|  39|          32|           1|
+    |k_1_fu_155_p2            |     +    |      0|  0|  38|          31|           1|
+    |r_1_fu_129_p2            |     +    |      0|  0|  38|          31|           1|
+    |ap_block_state5_io       |    and   |      0|  0|   2|           1|           1|
+    |arrayA_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |arrayA_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |arrayB_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |arrayB_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |arrayR_1_load_A          |    and   |      0|  0|   2|           1|           1|
+    |arrayR_1_load_B          |    and   |      0|  0|   2|           1|           1|
+    |arrayA_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |arrayB_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |arrayR_1_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |exitcond_fu_135_p2       |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_4_fu_150_p2          |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_fu_124_p2            |   icmp   |      0|  0|  18|          32|          32|
+    |ap_block_state6          |    or    |      0|  0|   2|           1|           1|
+    +-------------------------+----------+-------+---+----+------------+------------+
+    |Total                    |          |      0|  0| 209|         204|         110|
+    +-------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------+----+-----------+-----+-----------+
+    |        Name        | LUT| Input Size| Bits| Total Bits|
+    +--------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm           |  41|          8|    1|          8|
+    |arrayA_0_data_out   |   9|          2|    8|         16|
+    |arrayA_0_state      |  15|          3|    2|          6|
+    |arrayA_TDATA_blk_n  |   9|          2|    1|          2|
+    |arrayB_0_data_out   |   9|          2|    8|         16|
+    |arrayB_0_state      |  15|          3|    2|          6|
+    |arrayB_TDATA_blk_n  |   9|          2|    1|          2|
+    |arrayR_1_data_out   |   9|          2|   32|         64|
+    |arrayR_1_state      |  15|          3|    2|          6|
+    |arrayR_TDATA_blk_n  |   9|          2|    1|          2|
+    |c_reg_84            |   9|          2|   32|         64|
+    |k_reg_109           |   9|          2|   31|         62|
+    |r_reg_73            |   9|          2|   31|         62|
+    |sum_reg_95          |   9|          2|   32|         64|
+    +--------------------+----+-----------+-----+-----------+
+    |Total               | 176|         37|  184|        380|
+    +--------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |ap_CS_fsm           |   7|   0|    7|          0|
+    |arrayA_0_payload_A  |   8|   0|    8|          0|
+    |arrayA_0_payload_B  |   8|   0|    8|          0|
+    |arrayA_0_sel_rd     |   1|   0|    1|          0|
+    |arrayA_0_sel_wr     |   1|   0|    1|          0|
+    |arrayA_0_state      |   2|   0|    2|          0|
+    |arrayB_0_payload_A  |   8|   0|    8|          0|
+    |arrayB_0_payload_B  |   8|   0|    8|          0|
+    |arrayB_0_sel_rd     |   1|   0|    1|          0|
+    |arrayB_0_sel_wr     |   1|   0|    1|          0|
+    |arrayB_0_state      |   2|   0|    2|          0|
+    |arrayR_1_payload_A  |  32|   0|   32|          0|
+    |arrayR_1_payload_B  |  32|   0|   32|          0|
+    |arrayR_1_sel_rd     |   1|   0|    1|          0|
+    |arrayR_1_sel_wr     |   1|   0|    1|          0|
+    |arrayR_1_state      |   2|   0|    2|          0|
+    |c_1_reg_199         |  32|   0|   32|          0|
+    |c_reg_84            |  32|   0|   32|          0|
+    |k_1_reg_207         |  31|   0|   31|          0|
+    |k_reg_109           |  31|   0|   31|          0|
+    |r_1_reg_191         |  31|   0|   31|          0|
+    |r_reg_73            |  31|   0|   31|          0|
+    |sum_reg_95          |  32|   0|   32|          0|
+    |useLM_0_data_reg    |  32|   0|   32|          0|
+    |useLM_0_vld_reg     |   0|   0|    1|          1|
+    |useLM_read_reg_183  |  32|   0|   32|          0|
+    |useLN_0_data_reg    |  32|   0|   32|          0|
+    |useLN_0_vld_reg     |   0|   0|    1|          1|
+    |useLN_read_reg_177  |  32|   0|   32|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               | 463|   0|  465|          2|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    6|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    6|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |  mul_Matrix  | return value |
+|arrayA_TDATA            |  in |    8|    axis    |    arrayA    |    pointer   |
+|arrayA_TVALID           |  in |    1|    axis    |    arrayA    |    pointer   |
+|arrayA_TREADY           | out |    1|    axis    |    arrayA    |    pointer   |
+|arrayB_TDATA            |  in |    8|    axis    |    arrayB    |    pointer   |
+|arrayB_TVALID           |  in |    1|    axis    |    arrayB    |    pointer   |
+|arrayB_TREADY           | out |    1|    axis    |    arrayB    |    pointer   |
+|arrayR_TDATA            | out |   32|    axis    |    arrayR    |    pointer   |
+|arrayR_TVALID           | out |    1|    axis    |    arrayR    |    pointer   |
+|arrayR_TREADY           |  in |    1|    axis    |    arrayR    |    pointer   |
++------------------------+-----+-----+------------+--------------+--------------+
+

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="mul_Matrix" xd:componentRef="mul_Matrix" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="useLM" xd:originalName="useLM" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="useLN" xd:originalName="useLN" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x18" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="useLP" xd:originalName="useLP" xd:direction="in" xd:interfaceRef="s_axi_AXILiteS" xd:busTypeRef="axilite" xd:offset="0x20" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="arrayA[][]" xd:originalName="arrayA" xd:direction="in" xd:interfaceRef="arrayA" xd:busTypeRef="axis" xd:arraySize="16384" xd:dataWidth="8"/>
+  <xd:arg xd:name="arrayB[][]" xd:originalName="arrayB" xd:direction="in" xd:interfaceRef="arrayB" xd:busTypeRef="axis" xd:arraySize="16384" xd:dataWidth="8"/>
+  <xd:arg xd:name="arrayR[][]" xd:originalName="arrayR" xd:direction="out" xd:interfaceRef="arrayR" xd:busTypeRef="axis" xd:arraySize="16384" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="617" xd:FF="607" xd:BRAM="0" xd:DSP="1"/>
+</xd:acceleratorMap>

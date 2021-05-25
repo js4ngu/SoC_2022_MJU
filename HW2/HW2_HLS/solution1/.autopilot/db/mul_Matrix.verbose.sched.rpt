@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vivado HLS Report for 'mul_Matrix'
+================================================================
+* Date:           Thu May 26 03:57:27 2022
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        HW2_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.380|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 1.1.1  |    ?|    ?|         2|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / true
+3 --> 
+	4  / (tmp)
+4 --> 
+	5  / (!exitcond)
+	3  / (exitcond)
+5 --> 
+	6  / (tmp_4)
+	7  / (!tmp_4)
+6 --> 
+	5  / true
+7 --> 
+	4  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 8 [2/2] (1.00ns)   --->   "%useLN_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %useLN) nounwind"   --->   Operation 8 'read' 'useLN_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 9 [2/2] (1.00ns)   --->   "%useLM_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %useLM) nounwind"   --->   Operation 9 'read' 'useLM_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %useLM) nounwind, !map !7"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %useLN) nounwind, !map !13"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %useLP) nounwind, !map !17"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %arrayA) nounwind, !map !21"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %arrayB) nounwind, !map !27"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %arrayR) nounwind, !map !31"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([11 x i8]* @mul_Matrix_str) nounwind"   --->   Operation 16 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/2] (1.00ns)   --->   "%useLN_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %useLN) nounwind"   --->   Operation 17 'read' 'useLN_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 18 [1/2] (1.00ns)   --->   "%useLM_read = call i32 @_ssdm_op_Read.s_axilite.i32(i32 %useLM) nounwind"   --->   Operation 18 'read' 'useLM_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %arrayB, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %arrayA, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %arrayR, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 21 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %useLN, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %useLP, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [HW2_HLS/Matrix_MUL.cpp:14]   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 %useLM, [10 x i8]* @p_str3, i32 1, i32 1, [1 x i8]* @p_str2, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [HW2_HLS/Matrix_MUL.cpp:15]   --->   Operation 24 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (1.76ns)   --->   "br label %.loopexit" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 25 'br' <Predicate = true> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 2.52>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%r = phi i31 [ 0, %0 ], [ %r_1, %.loopexit.loopexit ]"   --->   Operation 26 'phi' 'r' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%r_cast = zext i31 %r to i32" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 27 'zext' 'r_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (2.47ns)   --->   "%tmp = icmp slt i32 %r_cast, %useLN_read" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 28 'icmp' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 29 [1/1] (2.52ns)   --->   "%r_1 = add i31 %r, 1" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 29 'add' 'r_1' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %tmp, label %.preheader1.preheader, label %3" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 30 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (1.76ns)   --->   "br label %.preheader1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 31 'br' <Predicate = (tmp)> <Delay = 1.76>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "ret void" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 32 'ret' <Predicate = (!tmp)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.55>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%c = phi i32 [ %c_1, %2 ], [ 0, %.preheader1.preheader ]"   --->   Operation 33 'phi' 'c' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (2.47ns)   --->   "%exitcond = icmp eq i32 %c, %useLN_read" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 34 'icmp' 'exitcond' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (2.55ns)   --->   "%c_1 = add nsw i32 %c, 1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 35 'add' 'c_1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %.loopexit.loopexit, label %.preheader.preheader" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 36 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (1.76ns)   --->   "br label %.preheader" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 37 'br' <Predicate = (!exitcond)> <Delay = 1.76>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 38 'br' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 5 <SV = 4> <Delay = 2.52>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%sum = phi i32 [ %sum_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 39 'phi' 'sum' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 40 [1/1] (0.00ns)   --->   "%k = phi i31 [ %k_1, %1 ], [ 0, %.preheader.preheader ]"   --->   Operation 40 'phi' 'k' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%k_cast = zext i31 %k to i32" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 41 'zext' 'k_cast' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (2.47ns)   --->   "%tmp_4 = icmp slt i32 %k_cast, %useLM_read" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 42 'icmp' 'tmp_4' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (2.52ns)   --->   "%k_1 = add i31 %k, 1" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 43 'add' 'k_1' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.52> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 44 [1/1] (0.00ns)   --->   "br i1 %tmp_4, label %1, label %2" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 44 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 45 [2/2] (0.00ns)   --->   "%arrayA_read = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %arrayA) nounwind" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 45 'read' 'arrayA_read' <Predicate = (tmp_4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 46 [2/2] (0.00ns)   --->   "%arrayB_read = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %arrayB) nounwind" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 46 'read' 'arrayB_read' <Predicate = (tmp_4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_5 : Operation 47 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %arrayR, i32 %sum) nounwind" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 47 'write' <Predicate = (!tmp_4)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 6 <SV = 5> <Delay = 6.38>
+ST_6 : Operation 48 [1/2] (0.00ns)   --->   "%arrayA_read = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %arrayA) nounwind" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 48 'read' 'arrayA_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 49 [1/1] (0.00ns)   --->   "%tmp_6_cast = zext i8 %arrayA_read to i16" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 49 'zext' 'tmp_6_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 50 [1/2] (0.00ns)   --->   "%arrayB_read = call i8 @_ssdm_op_Read.axis.volatile.i8P(i8* %arrayB) nounwind" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 50 'read' 'arrayB_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_6 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_7_cast = zext i8 %arrayB_read to i16" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 51 'zext' 'tmp_7_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 52 [1/1] (3.36ns)   --->   "%tmp_8 = mul i16 %tmp_6_cast, %tmp_7_cast" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 52 'mul' 'tmp_8' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 53 [1/1] (0.00ns)   --->   "%tmp_8_cast = zext i16 %tmp_8 to i32" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 53 'zext' 'tmp_8_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (3.02ns)   --->   "%sum_1 = add nsw i32 %tmp_8_cast, %sum" [HW2_HLS/Matrix_MUL.cpp:21]   --->   Operation 54 'add' 'sum_1' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "br label %.preheader" [HW2_HLS/Matrix_MUL.cpp:20]   --->   Operation 55 'br' <Predicate = true> <Delay = 0.00>
+
+State 7 <SV = 5> <Delay = 0.00>
+ST_7 : Operation 56 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %arrayR, i32 %sum) nounwind" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 56 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_7 : Operation 57 [1/1] (0.00ns)   --->   "br label %.preheader1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 57 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1ns
+The critical path consists of the following:
+	s_axi read on port 'useLN' [14]  (1 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('r') with incoming values : ('r', HW2_HLS/Matrix_MUL.cpp:17) [24]  (1.77 ns)
+
+ <State 3>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('r') with incoming values : ('r', HW2_HLS/Matrix_MUL.cpp:17) [24]  (0 ns)
+	'add' operation ('r', HW2_HLS/Matrix_MUL.cpp:17) [27]  (2.52 ns)
+
+ <State 4>: 2.55ns
+The critical path consists of the following:
+	'phi' operation ('c') with incoming values : ('c', HW2_HLS/Matrix_MUL.cpp:18) [32]  (0 ns)
+	'add' operation ('c', HW2_HLS/Matrix_MUL.cpp:18) [34]  (2.55 ns)
+
+ <State 5>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('k') with incoming values : ('k', HW2_HLS/Matrix_MUL.cpp:20) [40]  (0 ns)
+	'add' operation ('k', HW2_HLS/Matrix_MUL.cpp:20) [43]  (2.52 ns)
+
+ <State 6>: 6.38ns
+The critical path consists of the following:
+	axis read on port 'arrayA' (HW2_HLS/Matrix_MUL.cpp:21) [46]  (0 ns)
+	'mul' operation ('tmp_8', HW2_HLS/Matrix_MUL.cpp:21) [50]  (3.36 ns)
+	'add' operation ('sum', HW2_HLS/Matrix_MUL.cpp:21) [52]  (3.02 ns)
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
