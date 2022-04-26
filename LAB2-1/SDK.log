@@ -1,0 +1,129 @@
+09:49:07 INFO  : Registering command handlers for SDK TCF services
+09:49:08 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\LAB2-1\temp_xsdb_launch_script.tcl
+09:49:09 INFO  : XSCT server has started successfully.
+09:49:09 INFO  : Successfully done setting XSCT server connection channel  
+09:49:09 INFO  : Successfully done setting SDK workspace  
+09:51:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:44 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251AC2AF0' is selected.
+09:51:44 INFO  : 'jtag frequency' command is executed.
+09:51:44 INFO  : Context for 'APU' is selected.
+09:51:44 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf'.
+09:51:44 INFO  : 'configparams force-mem-access 1' command is executed.
+09:51:44 INFO  : 'configparams force-mem-access 0' command is executed.
+09:51:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+09:51:44 INFO  : Disconnected from the channel tcfchan#1.
+09:52:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:53:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+09:53:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:05:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:05:18 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251AC2AF0' is selected.
+10:05:18 INFO  : 'jtag frequency' command is executed.
+10:05:18 INFO  : Sourcing of 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/ps7_init.tcl' is done.
+10:05:18 INFO  : Context for 'APU' is selected.
+10:05:18 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf'.
+10:05:18 INFO  : 'configparams force-mem-access 1' command is executed.
+10:05:18 INFO  : Context for 'APU' is selected.
+10:05:18 INFO  : 'stop' command is executed.
+10:05:19 INFO  : 'ps7_init' command is executed.
+10:05:19 INFO  : 'ps7_post_config' command is executed.
+10:05:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:19 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:05:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:19 INFO  : The application 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World/Debug/hello_World.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:05:19 INFO  : 'configparams force-mem-access 0' command is executed.
+10:05:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+dow C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World/Debug/hello_World.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:05:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:05:19 INFO  : 'con' command is executed.
+10:05:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+con
+----------------End of Script----------------
+
+10:05:19 INFO  : Disconnected from the channel tcfchan#2.
+10:08:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:08:16 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251AC2AF0' is selected.
+10:08:16 INFO  : 'jtag frequency' command is executed.
+10:08:16 INFO  : Context for 'APU' is selected.
+10:08:16 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf'.
+10:08:16 INFO  : 'configparams force-mem-access 1' command is executed.
+10:08:16 INFO  : 'configparams force-mem-access 0' command is executed.
+10:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:08:16 INFO  : Disconnected from the channel tcfchan#3.
+10:10:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:10:05 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251AC2AF0' is selected.
+10:10:05 INFO  : 'jtag frequency' command is executed.
+10:10:05 INFO  : Sourcing of 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/ps7_init.tcl' is done.
+10:10:05 INFO  : Context for 'APU' is selected.
+10:10:05 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf'.
+10:10:05 INFO  : 'configparams force-mem-access 1' command is executed.
+10:10:05 INFO  : Context for 'APU' is selected.
+10:10:05 INFO  : 'stop' command is executed.
+10:10:06 INFO  : 'ps7_init' command is executed.
+10:10:06 INFO  : 'ps7_post_config' command is executed.
+10:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+10:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:07 INFO  : The application 'C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World/Debug/hello_World.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:10:07 INFO  : 'configparams force-mem-access 0' command is executed.
+10:10:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+dow C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World/Debug/hello_World.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:10:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:10:07 INFO  : 'con' command is executed.
+10:10:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251AC2AF0"} -index 0
+con
+----------------End of Script----------------
+
+10:10:07 INFO  : Disconnected from the channel tcfchan#4.

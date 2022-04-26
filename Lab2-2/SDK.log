@@ -1,0 +1,264 @@
+10:22:48 INFO  : Registering command handlers for SDK TCF services
+10:22:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:22:50 INFO  : XSCT server has started successfully.
+10:22:50 INFO  : Successfully done setting XSCT server connection channel  
+10:22:50 INFO  : Successfully done setting SDK workspace  
+10:22:50 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:22:51 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_0 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:22:51 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:23:15 INFO  : Registering command handlers for SDK TCF services
+10:23:15 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:23:17 INFO  : XSCT server has started successfully.
+10:23:17 INFO  : Successfully done setting XSCT server connection channel  
+10:23:17 INFO  : Successfully done setting SDK workspace  
+10:23:17 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:23:18 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_1 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:23:18 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:24:00 INFO  : Registering command handlers for SDK TCF services
+10:24:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:24:02 INFO  : XSCT server has started successfully.
+10:24:02 INFO  : Successfully done setting XSCT server connection channel  
+10:24:02 INFO  : Successfully done setting SDK workspace  
+10:24:02 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:24:02 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_2 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:24:02 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:26:34 INFO  : Registering command handlers for SDK TCF services
+10:26:35 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:26:37 INFO  : XSCT server has started successfully.
+10:26:37 INFO  : Successfully done setting XSCT server connection channel  
+10:26:37 INFO  : Successfully done setting SDK workspace  
+10:26:37 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:26:37 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_3 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:26:37 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:30:37 INFO  : Registering command handlers for SDK TCF services
+10:30:37 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:30:39 INFO  : XSCT server has started successfully.
+10:30:39 INFO  : Successfully done setting XSCT server connection channel  
+10:30:39 INFO  : Successfully done setting SDK workspace  
+10:30:39 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:30:40 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_4 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:30:40 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:32:03 INFO  : Registering command handlers for SDK TCF services
+10:32:04 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:32:06 INFO  : XSCT server has started successfully.
+10:32:06 INFO  : Successfully done setting XSCT server connection channel  
+10:32:06 INFO  : Successfully done setting SDK workspace  
+10:32:06 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:32:06 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_5 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:32:06 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:33:16 INFO  : Registering command handlers for SDK TCF services
+10:33:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:33:18 INFO  : XSCT server has started successfully.
+10:33:18 INFO  : Successfully done setting XSCT server connection channel  
+10:33:19 INFO  : Successfully done setting SDK workspace  
+10:33:19 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:33:19 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_6 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:33:19 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:33:49 INFO  : Registering command handlers for SDK TCF services
+10:33:49 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:33:51 INFO  : XSCT server has started successfully.
+10:33:51 INFO  : Successfully done setting XSCT server connection channel  
+10:33:51 INFO  : Successfully done setting SDK workspace  
+10:33:51 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:33:51 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_7 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:33:51 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:34:57 INFO  : Registering command handlers for SDK TCF services
+10:34:57 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:34:59 INFO  : XSCT server has started successfully.
+10:34:59 INFO  : Successfully done setting XSCT server connection channel  
+10:34:59 INFO  : Successfully done setting SDK workspace  
+10:34:59 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:34:59 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_8 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:34:59 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:36:39 INFO  : Registering command handlers for SDK TCF services
+10:36:40 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:36:42 INFO  : XSCT server has started successfully.
+10:36:42 INFO  : Successfully done setting XSCT server connection channel  
+10:36:42 INFO  : Successfully done setting SDK workspace  
+10:36:42 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:36:42 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_9 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:36:42 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:38:00 INFO  : Registering command handlers for SDK TCF services
+10:38:01 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:38:03 INFO  : XSCT server has started successfully.
+10:38:03 INFO  : Successfully done setting XSCT server connection channel  
+10:38:03 INFO  : Successfully done setting SDK workspace  
+10:38:03 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:38:03 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_10 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:38:03 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
+10:41:16 INFO  : Registering command handlers for SDK TCF services
+10:41:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\Lab2-2\temp_xsdb_launch_script.tcl
+10:41:18 INFO  : XSCT server has started successfully.
+10:41:18 INFO  : Successfully done setting XSCT server connection channel  
+10:41:19 INFO  : Successfully done setting SDK workspace  
+10:41:19 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/Lab2-2.
+10:41:19 ERROR : Error occurred while creating hardware platform Lab2-2_hw_platform_11 from sysdef
+java.io.FileNotFoundException: C:\Users\SEP16\SoC_2022_MJU\Lab2-2 (액세스가 거부되었습니다)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at com.xilinx.sdk.hw.internal.HwProjectCreator.createHwProjectFromZip(HwProjectCreator.java:100)
+	at com.xilinx.sdk.hw.HwProjectUtil.internalCreate(HwProjectUtil.java:266)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:210)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:197)
+	at com.xilinx.sdk.hw.HwProjectUtil.makeNewHardwareProject(HwProjectUtil.java:171)
+	at com.xilinx.sdk.startup.InitSDK.processHwSpecArgumentTask(InitSDK.java:515)
+	at com.xilinx.sdk.startup.InitSDK.access$8(InitSDK.java:497)
+	at com.xilinx.sdk.startup.InitSDK$12.run(InitSDK.java:448)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+10:41:19 ERROR : Unable to create Hardware Specification Project with specification file: C:/Users/SEP16/SoC_2022_MJU/Lab2-2
