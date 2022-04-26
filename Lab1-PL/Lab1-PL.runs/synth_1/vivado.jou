@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 26 09:32:00 2022
+# Process ID: 384
+# Current directory: C:/Users/SEP16/SoC_2022_MJU/Lab1-PL/Lab1-PL.runs/synth_1
+# Command line: vivado.exe -log nand_gate.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nand_gate.tcl
+# Log file: C:/Users/SEP16/SoC_2022_MJU/Lab1-PL/Lab1-PL.runs/synth_1/nand_gate.vds
+# Journal file: C:/Users/SEP16/SoC_2022_MJU/Lab1-PL/Lab1-PL.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source nand_gate.tcl -notrace

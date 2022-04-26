@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1650933119">
+  <File Type="BITSTR-BMM" Name="nand_gate_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="nand_gate_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="nand_gate_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="nand_gate_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="nand_gate.tcl"/>
+  <File Type="OPT-TIMING" Name="nand_gate_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="nand_gate_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="nand_gate_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="nand_gate_reports.tcl"/>
+  <File Type="OPT-DRC" Name="nand_gate_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="nand_gate.hwdef"/>
+  <File Type="PWROPT-DCP" Name="nand_gate_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="nand_gate_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="nand_gate_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="nand_gate_placed.dcp"/>
+  <File Type="PLACE-IO" Name="nand_gate_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="nand_gate_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="nand_gate_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="nand_gate_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="nand_gate_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="nand_gate_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="nand_gate_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="nand_gate.bgn"/>
+  <File Type="PLACE-TIMING" Name="nand_gate_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="nand_gate_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="nand_gate.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="nand_gate_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="nand_gate_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="nand_gate_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="nand_gate.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="nand_gate_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="nand_gate_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="nand_gate_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="nand_gate_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="nand_gate_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="nand_gate_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="nand_gate.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="nand_gate_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="nand_gate.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="nand_gate_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="nand_gate_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="nand_gate.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="nand_gate_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="nand_gate_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="nand_gate_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="nand_gate_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="nand_gate_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="nand_gate_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="nand_gate_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="nand_gate_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="nand_gate_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="nand_gate_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="nand_gate_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="nand_gate_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="nand_gate_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="nand_gate_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="nand_gate_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="nand_gate_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="nand_gate_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="nand_gate_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="nand_gate_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="nand_gate.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="nand_gate_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="nand_gate.rbt"/>
+  <File Type="BITSTR-NKY" Name="nand_gate.nky"/>
+  <File Type="BG-DRC" Name="nand_gate.drc"/>
+  <File Type="RDI-RDI" Name="nand_gate.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/nand_gate.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="nand_gate"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/nand_const.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
