@@ -290,5 +290,63 @@
 * Interleave
   * 같은 Busrst 내의 순서는 안바뀌었음
   * 하지만 전부 섞여버림...어떻게 구분함...?
-    * ![](2022-05-09-02-21-17.png)
+    * ![](2022-05-09-02-21-49.png)
     * 각 채널의 ID를 발생시키기에 어느 주소의 신호인지 구분이 가능함.
+    * 그림상에는 색으로 표시되었지만, 실제로는 WID Wire에서 ID를 보여줌
+
+## Control Signals in AMBA AXI Burst Size
+* ![](2022-05-08-14-54-20.png)
+* Burst 전송의 Size에 대한 Signal
+  * ![](2022-05-09-02-23-55.png)
+* Transfer(=Beat) 크기에 대한 Signal
+  * ![](2022-05-09-02-25-12.png)
+
+## Three AXI Interfaces in AMBA4 AXI
+* ![](2022-05-09-02-26-26.png)
+* |Interface      |Features                                            |Usage|
+  |---------------|----------------------------------------------------|-----|
+  |Full (AXI4)    | 5개 채널을 지원, Burst 전송 지원                     | High performance / Burst|
+  |Lite(AXI4 Lite)| 5개 채널을 지원, Burst 전송 미지원(ADDR하나 Data하나) | 주변장치 Config 할때 / No burst|
+  |Streaming (AXI4 Stream)|채널 1개만 있음, Write data channel          | Burst 특화 / ADDR이 없기에 Point 2 Point bus|
+
+## Full AXI4 Interface (=Memory Mapped AXI)
+* ![](2022-05-09-02-33-11.png)
+* 5개 채널을 지원
+* Burst 전송 지원
+  * ADDR 하나당 Data 줄줄이
+  
+## AXI4 Lite Interface
+* ![](2022-05-09-02-33-54.png)
+* 5개 채널을 지원
+* Burst 전송 미지원
+  * ADDR 하나당 Data 하나
+
+## AXI4 Stream Interface
+* ![](2022-05-09-02-34-34.png)
+* AXI-FULL같은 경우 Busrt 길이 제한 있음
+* But, AXI4 Stream는 Burst **길이 제한 없음**
+
+## Nine AXI Ports in ZYNQ
+* ![](2022-05-09-02-35-45.png)
+* 화살표의 촉 부분이 Slave
+* 대부분 FPGA(PL/진한 그레이)가 Master
+* PS가 master인 경우는 FPGA(PL)의 모듈을 설정해야할때...
+* 
+* GP / HP/ ACP 모두 Full AXI
+  * AXI-Lite와 연결될 경우 AXI interconnect core가 변환해 줌
+
+### AXI_GP (Genral perofomance)
+* 32bit 2EA : Slave interface (PS 기준)
+  * FPAG(PL)에서 PS의 주변장치와 통신을 할 때 사용 
+* 32bit 2EA : Master interface (PS 기준)
+  * Ethernet data같이 좀 빠른 데이터가 PL로 흘러감.
+  * PL의 레지스터를 설정하는데 사용됨
+
+### AXI_HP (High perofomance)
+* 64bit 4EA : Slave interface (PS 기준)
+  * 광대역 (고성능) : 한번에 여러개의 데이터 보낼 수 있음
+  * PL에서 DRAM con을 거쳐 외부 mem(DRAM : 대용량 데이터)으로 접근
+
+### AXI_ACP
+* 64bit 1EA : Slave interface (PS 기준)
+  * PL에서 캐쉬로 들어감.
