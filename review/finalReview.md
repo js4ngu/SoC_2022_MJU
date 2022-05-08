@@ -58,7 +58,7 @@
   1. Bus에서 마스터에서 스레이브로 한번에 하나의 Burst 만 보낼 수 있음.
   2. 한 burst 보냈으면 해당 통신(master-slave 간)의 권한을 반납해야함
   3. 그래서 burst와 burst사이에 시간이 있음
-  4. 즉, 한 Burst보내는데 걸리는 시간은 $N_{Beat} \times N_{cycle} \times T_{cycle}$
+  4. 즉, 한 Burst보내는데 걸리는 시간은 N_{Beat} \times N_{cycle} \times T_{cycle}
 * 이러한 Burst의 모임이 trabsaction
   1. 즉, 한 trabsaction보내는데 걸리는 시간은 $T_{trans} = N_{Burst} \times N_{Beat} \times N_{cycle} \times T_{cycle}$
 
