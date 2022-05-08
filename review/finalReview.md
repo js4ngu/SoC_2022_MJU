@@ -265,3 +265,30 @@
   * ![](2022-05-09-01-07-00.png)
     Valid && READY가 1일때, 정보가 전달된다.
 * 즉, 각 채널의 (xVALID && xRAEDY) = 1 일때, INFO가 전달이 된다.
+
+## Burst Transfer in AMBA AXI
+* AHB : 매번 주소를 생성해야한다
+  * ![](2022-05-09-01-55-50.png)
+  * ![](2022-05-09-01-58-25.png)
+* AXI : Start address만 master가 생성하고 나머지는 Salve가 생성
+  * ![](2022-05-09-01-59-02.png)
+  * **Read**
+    * ![](2022-05-09-02-06-08.png)
+  * **Overlapped**
+    * ![](2022-05-09-02-12-33.png)
+  * **Write**
+    * ![](2022-05-09-02-15-02.png)
+
+## Out of Order Transaction in AMBA AXI
+* ![](2022-05-09-02-17-11.png)
+* In-Order
+  * 앞전 전송이 끝나기전에 뒤의 Burst전송의 ADDR 보낼 수 있음 -> Overlapped
+  * 순서대로 Burst 전송이 됨
+* Out-of-order
+  * 순서가 지 마음대로 : AXI에서는 이게 가능함
+  * Burst의 순서는 바뀌어도 Burst 내의 순서는 안바뀜
+* Interleave
+  * 같은 Busrst 내의 순서는 안바뀌었음
+  * 하지만 전부 섞여버림...어떻게 구분함...?
+    * ![](2022-05-09-02-21-17.png)
+    * 각 채널의 ID를 발생시키기에 어느 주소의 신호인지 구분이 가능함.
