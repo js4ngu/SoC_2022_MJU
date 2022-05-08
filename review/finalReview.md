@@ -253,6 +253,9 @@
     * xRESP
   * Valid : xVALID
     * source 에서 data 와 control 신호들이 유효함 을 알려줌
+    * master가 보내는 신호임 : 신호가 유효한지를 master가 말해주는거임.
+    * 예를들어, data를 보내는 중에는 Valid를 0으로 둠으로써 아직 데이터가 유효하지 않다라는 것을 말하는 것임.
+    * 다 보내면 valid를 1로 둠으로써 slave에게 data가 유효함을 말해줌
   * READY : xREADY
     * source 에서 data 와 control 신호들이 유효함 을 알려줌
 
@@ -260,4 +263,5 @@
 * AR채널의 목적은 Master가 Slave에게 주소(ARADDR)를 잘 전달하는게 목적이다.
 * 항상 잘 전달해야하냐? -> 아니다, 특정한 시점에 잘 전달해야한다.
   * ![](2022-05-09-01-07-00.png)
-    Valid && READY가 1일때.
+    Valid && READY가 1일때, 정보가 전달된다.
+* 즉, 각 채널의 (xVALID && xRAEDY) = 1 일때, INFO가 전달이 된다.
