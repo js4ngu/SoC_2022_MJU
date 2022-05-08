@@ -58,7 +58,7 @@
   1. Bus에서 마스터에서 스레이브로 한번에 하나의 Burst 만 보낼 수 있음.
   2. 한 burst 보냈으면 해당 통신(master-slave 간)의 권한을 반납해야함
   3. 그래서 burst와 burst사이에 시간이 있음
-  4. 즉, 한 Burst보내는데 걸리는 시간은 N_{Beat} \times N_{cycle} \times T_{cycle}
+  4. 즉, 한 Burst보내는데 걸리는 시간은 $N_{Beat} \times N_{cycle} \times T_{cycle}$
 * 이러한 Burst의 모임이 trabsaction
   1. 즉, 한 trabsaction보내는데 걸리는 시간은 $T_{trans} = N_{Burst} \times N_{Beat} \times N_{cycle} \times T_{cycle}$
 
@@ -94,6 +94,7 @@
 * ![](2022-05-08-15-15-12.png)
 * 버스의 갯수에 따라서 어떻게 Topolgy를 구성할지 달라짐.
 * 그냥 Bus를 묶을때 빠른애는 빠른애들끼리, 느린애들은 느린애들끼리 묶어야한다~
+* AXI는 Crossbar bus, AHB는 Hierachical bus
 
 ### Bus Parameter: Protocol
 #### Arbiter
@@ -179,13 +180,18 @@
 * Data(A)를 써야하는데 Slave 가 준비되어 있지않아서 (HREADY=‘0')못씀 Data Phase가 연장됨 .
 * HREADY=‘1’이 되면서 Data(A)가 써 짐
   
-# AMBA AXI
+## AMBA AXI
 * ![](2022-05-09-00-13-22.png)
 * 통신, 동영상 스트리밍, AI -> 대용량 데이터가 리얼타임으로 처리되어야함
 * 기존의 AHB로는 무리가 있었다 -> AXI의 개발 배경
 * 이런 스트리밍 데이터는 Burst전송이 유리 -> Burst에 효율적인 구조 : 시작 주소만 보내면됨
   * ![](2022-05-09-00-20-34.png)
-    AHB는 Beat들의 주소를 다 적어주면서 Burst를 날림
+    * AHB는 Beat들의 주소를 다 적어주면서 Burst를 날림
+    1. A라는 주소를 주고 다음 클럭에서 A 데이터 작성
+    2. B라는 주소를 주고 다음 클럭에서 B 데이터 읽음
+    3. 만약 HREADY=0이 길어지면 Data B를 못읽음 -> Data C 작성도 딜레이됨
+    4. 즉, 슬레이브가 느리면 다음 Task를 수행 못하고 버스가 정체됨.
+    5. 왜냐면, 전송이 완료되지 않으면 Bus 사용권한을 반납하지 않고 독점하기 때문에 -> 시스템이 느려짐
   * 근데 AXI는 시작 주소만 적어주고 데이터 날리게 개선함
   * 인터페이스는 간단해졌으나, 이거를 내부적으로 돌아야기 떄문에 컨트롤 신호와 회로가 커짐 
 * |AXI4|AXI4-Lite|AXI4-stream|
@@ -193,3 +199,65 @@
   |고성능|저성능| 스트리밍 : 고성능이긴한데 복잡한거 다 뺌|
 * ![](2022-05-08-15-15-12.png)
   AMBA AXI는 Crossbar bus
+
+## AHB VS AXI
+* 채널 도입 : 5개 채널
+* Out of order transaction 도입
+* Burst 기반 Data 전송
+  * AHB
+    * Burst 전송시 master가 address 전부 생성
+    * ![](2022-05-09-00-39-44.png)
+    * Single (or Hierachial) Bus : 1 MUX당 Bus 1개
+    * Shared Bus -> Bus를 사용하는 Master와 Slave는 각 1개
+  * AXI
+    * Burst 전송시 master는 start address만 생성 후속 주소는 Slave가
+    * ![](2022-05-09-00-41-39.png)
+    * Crossbar bus : 1 Mux 당 Slave 1개
+    * 여러개의 master와 slave가 bus를 동시에 사용하는 것이 가능함
+  * 주소채널의 data량 현격히 줄어듦
+
+## 5 Channels in AMBA AXI
+* ![](2022-05-09-00-44-38.png)
+* ![](2022-05-09-00-58-17.png)
+* Global : ACLK, ARESTn
+* (AR) Read address channel : Master (Source) -> Slave (Destination)
+  * ARID, ARLEN, ARSIZE, ARBURST , ARLOCK , ARCACHE, ARPROT, ARVALID, 
+  * ARADDR : 읽을 주소
+  * ARREADY : Master한테 수신할 준비가 되었다는 신호
+    * 얘 뺴고 모든 신호를 Source에서 보냄
+    * ARREADY SIG는 Slave (Destinaton)에서 Master(Source)를 넘김 : 방향 반대
+
+* (R) Read data channel : Slave (Source) -> Master (Destination)
+  * RID, RLAST, RSTRB, RVALID, RREADY
+  * RDATA : 실제로 읽을 데이터가 여기를 통해 넘어옴
+  
+* (AW) Write address channel : Master (Source) -> Slave (Destination)
+  * AWID, AWLEN, AWSIZE, AWBURST, AWLOCK, AWCACHE, AWPROT, AWVALID, AWREADY
+  * AWADDR : 쓸 주소
+  
+* (W) Write data channel : Master (Source) -> Slave (Destination)
+  * WID , WLAST, WSTRB, WVALID, WREADY
+  * WDATA : 실제로 쓸 데이터
+  
+* (B) Write response channel : Slave (Source) -> Master (Destination)
+  * Salve가 master에게 잘 받아적었다고 응답해주는 신호
+  * BID, BRESP, BVALID, BREADY
+
+## Handshack Mechanism in AXI
+* ![](2022-05-09-01-04-38.png)
+* 모든 채널에는 아래의 신호가 있다
+  * ID : xID
+  * INFO
+    * xADDR
+    * XDATA
+    * xRESP
+  * Valid : xVALID
+    * source 에서 data 와 control 신호들이 유효함 을 알려줌
+  * READY : xREADY
+    * source 에서 data 와 control 신호들이 유효함 을 알려줌
+
+* 예를 들어 AR채널을 살펴보자
+* AR채널의 목적은 Master가 Slave에게 주소(ARADDR)를 잘 전달하는게 목적이다.
+* 항상 잘 전달해야하냐? -> 아니다, 특정한 시점에 잘 전달해야한다.
+  * ![](2022-05-09-01-07-00.png)
+    Valid && READY가 1일때.
