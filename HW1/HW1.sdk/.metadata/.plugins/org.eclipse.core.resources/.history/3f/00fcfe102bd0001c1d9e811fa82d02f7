@@ -35,8 +35,8 @@ int main() {
 
     while(1) {
         DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch에서 입력
-        BTN_data = XGpio_DiscreteRead(&input, 2);     //BTN에서 입력
-        printf("%d %d\n", DIP_SW_data, BTN_data);
+        //BTN_data = XGpio_DiscreteRead(&input, 2);     //BTN에서 입력
+        printf("%d\n", DIP_SW_data);
         XGpio_DiscreteWrite(&output, 1 , Result);       //LED OUT
         usleep(1000);
     }

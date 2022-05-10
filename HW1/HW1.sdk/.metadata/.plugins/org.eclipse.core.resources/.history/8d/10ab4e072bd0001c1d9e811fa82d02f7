@@ -18,7 +18,7 @@ int main() {
     //GPIO 0 초기화 : input 부분
     //AXI GPIO_SW Initialization
     //AXI GPIO_Button Initialization
-    xStatus = XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
+    xStatus = XGpio_Initialize(&input, XPAR_AXI_GPIO_0_IS_DUAL);
     if(XST_SUCCESS != xStatus)
         print("GPIO_SW INIT FAILDED \n\r");
 
@@ -30,14 +30,14 @@ int main() {
 
     //AXI GPIO 입출력 설정
     XGpio_SetDataDirection(&input,1,1);  // 1 : 1st channel, 1 : 입력 -> DIP SW
-    XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : 입력 -> BTN
+    //XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : 입력 -> BTN
     XGpio_SetDataDirection(&output,1,0); // 1 : single channel 0 : 출력
 
     while(1) {
         DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch에서 입력
-        BTN_data = XGpio_DiscreteRead(&input, 2);     //BTN에서 입력
-        printf("%d %d\n", DIP_SW_data, BTN_data);
-        XGpio_DiscreteWrite(&output, 1 , Result);       //LED OUT
+        //BTN_data = XGpio_DiscreteRead(&input, 2);     //BTN에서 입력
+        printf("%d\n", DIP_SW_data);
+        XGpio_DiscreteWrite(&output, 1 , DIP_SW_data);       //LED OUT
         usleep(1000);
     }
     cleanup_platform();
