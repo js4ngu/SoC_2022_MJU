@@ -1,0 +1,109 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xgpio.h"  //GPIO PL(LED, BTN, Dip switch) 사용하기 위한 header file
+#include "xgpiops.h"  //GPIO PS 사용하기 위한 header file (지워도 되는지 실험해보기)
+#include "sleep.h"  //usleep 사용을 위한 header file
+
+int ALU(unsigned int DIP, unsigned int BTN, unsigned int RESULT);
+
+int main() {
+    static XGpio input, output;
+    //static XGpioPs psGpioInstance_ptr;  //PS의 GPIO를 사용하기 위한 pointer
+    //static XGpioPs_Config *GpioConfigPtr;  //PS의 GPIO 설정을 위한 pointer
+    unsigned int result = 6;  // ALU 결과를 저장할 register
+    unsigned int DIP_SW_data = 0;
+    unsigned int BTN_data = 0;
+    int xStatus;
+
+    init_platform();  //UART 및 cache 초기화
+
+    //GPIO 0 초기화 : input 부분
+    //AXI GPIO_SW Initialization
+    //AXI GPIO_Button Initialization
+    xStatus = XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
+    if(XST_SUCCESS != xStatus)
+        printf("GPIO_SW INIT FAILDED \n\r");
+
+    //GPIO 1 초기화 : output 부분
+    //AXI GPIO_LED Initialization
+    xStatus = XGpio_Initialize(&output,XPAR_AXI_GPIO_1_DEVICE_ID);
+    if(XST_SUCCESS != xStatus)
+        printf("GPIO_LED INIT FAILDED \n\r");
+
+    //AXI GPIO 입출력 설정
+    XGpio_SetDataDirection(&input,1,1);  // 1 : 1st channel, 1 : 입력 -> DIP SW
+    XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : 입력 -> BTN
+    XGpio_SetDataDirection(&output,1,0); // 1 : single channel 0 : 출력
+
+    while(1) {
+        DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch에서 입력
+        BTN_data = XGpio_DiscreteRead(&input, 2); //BTN에서 입력
+        //printf("%d %d\n", DIP_SW_data, BTN_data);
+        result = ALU(DIP_SW_data, BTN_data, result);
+        printf("%d\n", result);
+        XGpio_DiscreteWrite(&output, 1 , result);   //LED OUT
+        usleep(1000);
+    }
+    cleanup_platform();
+    return 0;
+}
+
+int ALU(unsigned int DIP, unsigned int BTN, unsigned int RESULT) {
+    unsigned int output;
+    if (BTN == 1) {
+        output = 0b0110;
+    }
+    else {
+        switch(DIP){
+            case 0 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT + 1;
+            case 4 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT + 2;
+            case 8 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT + 3;
+            case 12 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT + 4;
+            case 1 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT - 1;
+            case 5 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT - 2;
+            case 9 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT - 3;
+            case 13 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT - 4;
+            case 2 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT * 2;
+            case 6 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT * 3;
+            case 10 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT * 4;
+            case 14 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT * 5;
+            case 3 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT << 1;
+            case 7 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT << 2;
+            case 11 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT << 3;
+            case 15 :
+                 printf("%d %d %d\n", DIP, BTN, RESULT);
+                 output = RESULT << 4;
+        }
+    }
+    return output;
+}

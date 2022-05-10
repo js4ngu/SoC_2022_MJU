@@ -38,9 +38,11 @@ int main() {
     while(1) {
         DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch에서 입력
         BTN_data = XGpio_DiscreteRead(&input, 2); //BTN에서 입력
+        //printf("%d %d\n", DIP_SW_data, BTN_data);
         result = ALU(DIP_SW_data, BTN_data, result);
+        printf("%d\n", result);
         XGpio_DiscreteWrite(&output, 1 , result);   //LED OUT
-        usleep(1000000);
+        usleep(1000);
     }
     cleanup_platform();
     return 0;
@@ -51,22 +53,42 @@ int ALU(unsigned int DIP, unsigned int BTN, unsigned int RESULT) {
     if (BTN == 1) {
        output = 0b0110;
     }
-    else if(DIP == 0b0000) output = RESULT + 1;
-    else if(DIP == 0b0100) output = RESULT + 2;
-    else if(DIP == 0b1000) output = RESULT + 3;
-    else if(DIP == 0b1100) output = RESULT + 4;
-    else if(DIP == 0b0001) output = RESULT - 1;
-    else if(DIP == 0b0101) output = RESULT - 2;
-    else if(DIP == 0b1001) output = RESULT - 3;
-    else if(DIP == 0b1101) output = RESULT - 4;
-    else if(DIP == 0b0010) output = RESULT * 1;
-    else if(DIP == 0b0110) output = RESULT * 2;
-    else if(DIP == 0b1010) output = RESULT * 3;
-    else if(DIP == 0b1110) output = RESULT * 4;
-    else if(DIP == 0b0011) output = RESULT << 1;
-    else if(DIP == 0b0111) output = RESULT << 2;
-    else if(DIP == 0b1011) output = RESULT << 3;
-    else if(DIP == 0b1111) output = RESULT << 4;
-    printf("%d %d\n", DIP, output%16);
-    return output % 16;
+    else {
+        switch(DIP){
+            case 0 :
+                output = RESULT + 1;
+            case 4 :
+                output = RESULT + 2;
+            case 8 :
+                output = RESULT + 3;
+            case 12 :
+                output = RESULT + 4;
+            case 1 :
+                output = RESULT - 1;
+            case 5 :
+                output = RESULT - 2;
+            case 9 :
+                output = RESULT - 3;
+            case 13 :
+                output = RESULT - 4;
+            case 2 :
+                output = RESULT * 2;
+            case 6 :
+                output = RESULT * 3;
+            case 10 :
+               output = RESULT * 4;
+            case 14 :
+                output = RESULT * 5;
+            case 3 :
+                output = RESULT << 1;
+            case 7 :
+                output = RESULT << 2;
+            case 11 :
+                output = RESULT << 3;
+            case 15 :
+                output = RESULT << 4;
+        }
+    }
+    printf("%d %d\n", DIP, output);
+    return output;
 }
