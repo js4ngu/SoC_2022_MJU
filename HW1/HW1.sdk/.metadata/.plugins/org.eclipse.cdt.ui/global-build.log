@@ -1231,3 +1231,526 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: `main-build'를 위해 할 일이 없습니다
+15:45:45 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'ALU':
+../src/helloworld.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72456	   2612	  23376	  98444	  1808c	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:46:00 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:14:18: warning: variable 'DIP_SW_data' set but not used [-Wunused-but-set-variable]
+     unsigned int DIP_SW_data = 0;
+                  ^~~~~~~~~~~
+../src/helloworld.c: In function 'ALU':
+../src/helloworld.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21396	   1176	  22616	  45188	   b084	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:46:17 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:14:18: warning: variable 'DIP_SW_data' set but not used [-Wunused-but-set-variable]
+     unsigned int DIP_SW_data = 0;
+                  ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21396	   1176	  22616	  45188	   b084	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:46:26 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:14:18: warning: variable 'DIP_SW_data' set but not used [-Wunused-but-set-variable]
+     unsigned int DIP_SW_data = 0;
+                  ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21396	   1176	  22616	  45188	   b084	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:46:49 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:42:16: error: void value not ignored as it ought to be
+         result =
+                ^
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:14:18: warning: variable 'DIP_SW_data' set but not used [-Wunused-but-set-variable]
+     unsigned int DIP_SW_data = 0;
+                  ^~~~~~~~~~~
+make: *** [src/helloworld.o] 오류 1
+15:46:57 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21412	   1176	  22616	  45204	   b094	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:47:08 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:13:18: warning: variable 'result' set but not used [-Wunused-but-set-variable]
+     unsigned int result = 0b0110;      // ALU 결과를 저장할 register
+                  ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  21412	   1176	  22616	  45204	   b094	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:47:58 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+15:50:42 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:49:5: error: conflicting types for 'ALU'
+ int ALU(unsigned int DIP, unsigned int BTN) {
+     ^~~
+../src/helloworld.c:7:5: note: previous declaration of 'ALU' was here
+ int ALU(unsigned int DIP);
+     ^~~
+../src/helloworld.c: In function 'ALU':
+../src/helloworld.c:52:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:54:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:56:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:58:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:60:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:62:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:64:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:66:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:68:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:70:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:72:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:74:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:76:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:78:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:80:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+../src/helloworld.c:82:13: error: too many arguments to function 'print'
+             print("%d %d\n", DIP, BTN);
+             ^~~~~
+In file included from ../../helloworld_bsp/ps7_cortexa9_0/include/xil_io.h:65:0,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio_l.h:87,
+                 from ../../helloworld_bsp/ps7_cortexa9_0/include/xgpio.h:136,
+                 from ../src/helloworld.c:3:
+../../helloworld_bsp/ps7_cortexa9_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/helloworld.o] 오류 1
+15:51:10 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:13: warning: implicit declaration of function 'printff'; did you mean 'printf'? [-Wimplicit-function-declaration]
+             printff("%d %d\n", DIP_SW_data, BTN_data);
+             ^~~~~~~
+             printf
+../src/helloworld.c: At top level:
+../src/helloworld.c:49:9: error: conflicting types for 'ALU'
+     int ALU(unsigned int DIP, unsigned int BTN) {
+         ^~~
+../src/helloworld.c:7:9: note: previous declaration of 'ALU' was here
+     int ALU(unsigned int DIP);
+         ^~~
+make: *** [src/helloworld.o] 오류 1
+15:52:43 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:9: warning: implicit declaration of function 'printff'; did you mean 'printf'? [-Wimplicit-function-declaration]
+         printff("%d %d\n", DIP_SW_data, BTN_data);
+         ^~~~~~~
+         printf
+../src/helloworld.c: At top level:
+../src/helloworld.c:49:5: error: conflicting types for 'ALU'
+ int ALU(unsigned int DIP, unsigned int BTN) {
+     ^~~
+../src/helloworld.c:7:5: note: previous declaration of 'ALU' was here
+ int ALU(unsigned int DIP);
+     ^~~
+make: *** [src/helloworld.o] 오류 1
+15:53:09 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:9: warning: implicit declaration of function 'printff'; did you mean 'printf'? [-Wimplicit-function-declaration]
+         printff("%d %d\n", DIP_SW_data, BTN_data);
+         ^~~~~~~
+         printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\SEP16\SoC_2022_MJU\HW1\HW1.sdk\helloworld\Debug/../src/helloworld.c:41: undefined reference to `printff'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] 오류 1
+15:53:22 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:41:9: warning: implicit declaration of function 'printff'; did you mean 'printf'? [-Wimplicit-function-declaration]
+         printff("%d %d\n", DIP_SW_data, BTN_data);
+         ^~~~~~~
+         printf
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\SEP16\SoC_2022_MJU\HW1\HW1.sdk\helloworld\Debug/../src/helloworld.c:41: undefined reference to `printff'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] 오류 1
+15:53:29 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/helloworld.o: In function `main':
+C:\Users\SEP16\SoC_2022_MJU\HW1\HW1.sdk\helloworld\Debug/../src/helloworld.c:41: undefined reference to `printff'
+collect2.exe: error: ld returned 1 exit status
+make: *** [helloworld.elf] 오류 1
+15:53:44 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72416	   2612	  23376	  98404	  18064	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:53:52 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:15:18: warning: variable 'BTN_data' set but not used [-Wunused-but-set-variable]
+     unsigned int BTN_data = 0;
+                  ^~~~~~~~
+../src/helloworld.c:14:18: warning: variable 'DIP_SW_data' set but not used [-Wunused-but-set-variable]
+     unsigned int DIP_SW_data = 0;
+                  ^~~~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72416	   2612	  23376	  98404	  18064	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:54:38 **** Auto Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../helloworld_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: helloworld.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../helloworld_bsp/ps7_cortexa9_0/lib -o "helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: helloworld.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size helloworld.elf  |tee "helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  72416	   2612	  23376	  98404	  18064	helloworld.elf
+'Finished building: helloworld.elf.size'
+' '
+15:55:03 **** Incremental Build of configuration Debug for project helloworld ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다

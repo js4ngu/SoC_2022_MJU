@@ -522,3 +522,95 @@ con
 15:34:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
 15:34:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389" && level==0} -index 1' command is executed.
 15:34:11 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:34:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389" && level==0} -index 1' command is executed.
+15:34:21 INFO  : 'fpga -state' command is executed.
+15:34:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:34:21 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988389' is selected.
+15:34:21 INFO  : 'jtag frequency' command is executed.
+15:34:21 INFO  : Sourcing of 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:34:21 INFO  : Context for 'APU' is selected.
+15:34:21 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:34:21 INFO  : 'configparams force-mem-access 1' command is executed.
+15:34:21 INFO  : Context for 'APU' is selected.
+15:34:21 INFO  : 'stop' command is executed.
+15:34:22 INFO  : 'ps7_init' command is executed.
+15:34:22 INFO  : 'ps7_post_config' command is executed.
+15:34:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:22 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:34:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:22 INFO  : The application 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:34:22 INFO  : 'configparams force-mem-access 0' command is executed.
+15:34:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+dow C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:34:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:34:22 INFO  : 'con' command is executed.
+15:34:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+con
+----------------End of Script----------------
+
+15:34:22 INFO  : Disconnected from the channel tcfchan#10.
+15:47:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389" && level==0} -index 1' command is executed.
+15:47:40 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+15:47:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389" && level==0} -index 1' command is executed.
+15:47:59 INFO  : 'fpga -state' command is executed.
+15:47:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:47:59 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988389' is selected.
+15:47:59 INFO  : 'jtag frequency' command is executed.
+15:47:59 INFO  : Sourcing of 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+15:47:59 INFO  : Context for 'APU' is selected.
+15:47:59 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+15:47:59 INFO  : 'configparams force-mem-access 1' command is executed.
+15:47:59 INFO  : Context for 'APU' is selected.
+15:47:59 INFO  : 'stop' command is executed.
+15:47:59 INFO  : 'ps7_init' command is executed.
+15:47:59 INFO  : 'ps7_post_config' command is executed.
+15:47:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:00 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+15:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:00 INFO  : The application 'C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/helloworld/Debug/helloworld.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:48:00 INFO  : 'configparams force-mem-access 0' command is executed.
+15:48:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+dow C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/helloworld/Debug/helloworld.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:48:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:48:00 INFO  : 'con' command is executed.
+15:48:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389"} -index 0
+con
+----------------End of Script----------------
+
+15:48:00 INFO  : Disconnected from the channel tcfchan#11.
+15:54:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988389" && level==0} -index 1' command is executed.
+15:54:51 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW1/HW1.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"

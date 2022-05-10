@@ -10,7 +10,7 @@ int main() {
     static XGpio input, output;
     //static XGpioPs psGpioInstance_ptr;  //PS의 GPIO를 사용하기 위한 pointer
     //static XGpioPs_Config *GpioConfigPtr;  //PS의 GPIO 설정을 위한 pointer
-    unsigned int result = 0b0110;  // ALU 결과를 저장할 register
+    unsigned int Result = 0b0110;  // ALU 결과를 저장할 register
     unsigned int DIP_SW_data = 0;
     unsigned int BTN_data = 0;
     int xStatus;
@@ -38,9 +38,8 @@ int main() {
     while(1) {
         DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch에서 입력
         BTN_data = XGpio_DiscreteRead(&input, 2); //BTN에서 입력
-        //printf("%d %d\n", DIP_SW_data, BTN_data);
-        result = ALU(DIP_SW_data, BTN_data);
-        XGpio_DiscreteWrite(&output, 1 , result);   //LED OUT
+        printff("%d %d\n", DIP_SW_data, BTN_data);
+        XGpio_DiscreteWrite(&output, 1 , Result);   //LED OUT
         usleep(1000);
     }
     cleanup_platform();
@@ -82,5 +81,5 @@ int ALU(unsigned int DIP, unsigned int BTN) {
         case 0b1111 :
             printf("%d %d\n", DIP, BTN);
     }
-    return 0b0110;
+return 0b0110;
 }
