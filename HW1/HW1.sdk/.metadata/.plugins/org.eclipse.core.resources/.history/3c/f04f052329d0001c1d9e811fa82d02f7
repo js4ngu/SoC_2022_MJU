@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xgpio.h"  //GPIO PL(LED, BTN, Dip switch) 사용하기 위한 header file
+#include "xgpiops.h"  //GPIO PS 사용하기 위한 header file (지워도 되는지 실험해보기)
+#include "sleep.h"  //usleep 사용을 위한 header file
+
+int main()
+{
+static XGpio input, output; //
+
+//static XGpioPs psGpioInstance_ptr;  //PS의 GPIO를 사용하기 위한 pointer
+//static XGpioPs_Config *GpioConfigPtr;      //PS의 GPIO 설정을 위한 pointer
+
+int switch_data = 0;
+int button_data = 0;
+int Result = 6;      // ALU 결과를 저장할 register
+
+int xStatus;
+
+int Readstatus = 0, OldReadstatus = 0;
+
+init_platform();  //UART 및 cache 초기화
+
+//GPIO 초기화
+
+      // AXI GPIO_SW Initialization //AXI GPIO_Button Initialization
+      xStatus = XGpio_Initialize(&input,XPAR_AXI_GPIO_0_DEVICE_ID);
+      if(XST_SUCCESS != xStatus)
+      print("GPIO_SW INIT FAILDED \n\r");
+
+      // AXI GPIO_LED Initialization
+      xStatus = XGpio_Initialize(&output,XPAR_AXI_GPIO_1_DEVICE_ID);
+      if(XST_SUCCESS != xStatus)
+      print("GPIO_ INIT FAILDED \n\r");
+
+//AXI GPIO 입출력 설정
+       XGpio_SetDataDirection(&input,1,1);  // 1 : 1st channel, 1 : 입력
+      // XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : 입력
+       XGpio_SetDataDirection(&output,1,0);  // 1 : single channel 0 : 출력
+
+             while(1)
+                {
+                //switch_data = XGpio_DiscreteRead(&input, 4);  //switch에서 입력을 받아
+
+               XGpio_DiscreteWrite(&output, 1 , Result);   //그 data를 LED에 쏴준다
+
+               //usleep(1000);
+                }
+
+                cleanup_platform();
+                return 0;
+            }

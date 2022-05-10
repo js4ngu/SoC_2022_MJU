@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/SoC_2022_MJU/HW/HW.srcs/constrs_1/new/design.xdc rfile:../../../HW.srcs/constrs_1/new/design.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/SEP16/SoC_2022_MJU/HW/HW.srcs/constrs_1/new/design.xdc rfile:../../../HW.srcs/constrs_1/new/design.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T22 [get_ports {LED[3]}]
 set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
