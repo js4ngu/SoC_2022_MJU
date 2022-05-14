@@ -350,3 +350,49 @@
 ### AXI_ACP
 * 64bit 1EA : Slave interface (PS 기준)
   * PL에서 캐쉬로 들어감.
+
+# Direct Memory Access (DMA)
+## CPU를 이용한 Mem to Mem 데이터 전송
+* ![](2022-05-11-23-50-27.png)
+* Mem1의 주소 0x100~0x200에 있는 데이터를 Mem2의 주소 0x200~0x300으로 옮겨야 할 때,
+* CPU가 LOAD instruction을 통해 memory1의 data를 읽어서 Register에 저장함.
+* 즉,CPU는 한줄씩 읽어서 보낸다.
+* DMA는 Burst 전송을 지원한다
+
+## DMAC을 이용한 Mem to Mem 데이터 전송
+* ![](2022-05-13-23-20-57.png)
+* Direct Memory Access (DMA): CPU의 관여 없이 직접 메모리 간의 데이
+터 이동을 수행하는 방법 (Method)
+* DMAC (DMA Controller): DMA를 수행하는 모듈 이름. -> PL로 만듬
+
+## Direct Memory Access (DMA)
+* ![](2022-05-13-23-21-41.png)
+* CPU로부터 권한을 받아 독립적으로 실행
+* Memory to memory
+* Memory to IO (stream), IO (stream) to memory
+* IO (stream) to IO (stream)
+* **Memory 영역**
+  * Baseline DMA: contiguous
+    * 소스의 메모리주소가 연속적일떄
+  * Scatter gather DMA: non contiguous
+    * 소스의 메모리주소가 비연속적일때
+* **작동모드**
+  * Burst mode: multiple transfer (multipler beats transfer per burst)
+    * Burst mode
+  * Word mode: single transfer (single beat transfer per burst)
+    * Burst 하나당 문자 하나
+  
+  ## DMAC Registers
+  * ![](2022-05-13-23-26-50.png)
+  * CPU가 DMAC을 컨트롤 하기 위한 Register들
+    * Source Register : Source의 Start Address를 저장하기 위한 Register.
+    * Destination Register: Destination의 Start Address를 저장하기 위한 Register
+    * Count Register: Length를 저장하기 위한 Register. Transfer 마다 1씩 줄어듦.
+    * Control Register: 전속 시작 명령 Bit, 동작 모드 (Operation Mode) 설정 Bits
+  * EXAMPLE
+    * ![](2022-05-13-23-30-22.png)
+  
+  ## Communication Time
+  * CPU (Laod & Store) : ~20 cycles / transfer (Ncycle ~= 20)
+  * DMA : 1~ Cycle / transfer
+    * ![](2022-05-13-23-31-56.png)
