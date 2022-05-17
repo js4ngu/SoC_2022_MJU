@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Tue May 17 01:49:34 UTC 2022
+VLNV: xilinx.com:user:my_multiplier:1.0
+SynthRuntime: 25

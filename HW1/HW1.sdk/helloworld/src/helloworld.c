@@ -8,8 +8,6 @@ int ALU(unsigned int DIP, unsigned int BTN, unsigned int RESULT);
 
 int main() {
     static XGpio input,output;
-    //static XGpioPs psGpioInstance_ptr;  //PS의 GPIO를 사용하기 위한 pointer
-    //static XGpioPs_Config *GpioConfigPtr;  //PS의 GPIO 설정을 위한 pointer
     unsigned int result = 6;  // ALU 결과를 저장할 register
     unsigned int DIP_SW_data = 0;
     unsigned int BTN_data = 0;
