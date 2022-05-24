@@ -152,6 +152,7 @@ void print_ArrayR(int x, int y) {
 }
 
 //수정 필요
+//mul_Matrix(useLM, useLN, useLN, useLP);
 void mul_Matrix(int ax, int ay, int bx, int by){
 	int sum;
 	for (int r = 0; r < ay; r++) {
