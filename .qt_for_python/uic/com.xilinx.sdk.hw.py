@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\SoC_2022_MJU\HW1\HW1.sdk\.metadata\.plugins\com.xilinx.sdk.hw.ui'
+# Form implementation generated from reading ui file 'c:\SoC_2022_MJU\lab5\lab5.sdk\.metadata\.plugins\com.xilinx.sdk.hw.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.4
 #
