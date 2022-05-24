@@ -1,0 +1,13 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../matrixmul_test.cpp in debug mode
+   Compiling ../../../../matrixmul.cpp in debug mode
+   Generating csim.exe
+{
+{870,906,942}
+{1086,1131,1176}
+{1302,1356,1410}
+}
+Test passed.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
