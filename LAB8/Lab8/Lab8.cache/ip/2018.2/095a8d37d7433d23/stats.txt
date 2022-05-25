@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Mon May 24 02:50:41 UTC 2021
+VLNV: xilinx.com:hls:adder5:1.0
+SynthRuntime: 39

@@ -1,0 +1,7 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="Lab8-DMAFlow/adder5.cpp" linenumber="7" name="exitcond" contextFuncName="adder5" moduleName="adder5" rtlName="exitcond_fu_62_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="11" fileDirectory="C:\Users\SEP16\SoC_2022_MJU\LAB8"><\/item>
+<item  id="13" filename="Lab8-DMAFlow/adder5.cpp" linenumber="7" name="i_1" contextFuncName="adder5" moduleName="adder5" rtlName="i_1_fu_68_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="15" fileDirectory="C:\Users\SEP16\SoC_2022_MJU\LAB8"><\/item>
+<item  id="17" filename="Lab8-DMAFlow/adder5.cpp" linenumber="8" name="tmp_1" contextFuncName="adder5" moduleName="adder5" rtlName="tmp_1_fu_74_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="39" fileDirectory="C:\Users\SEP16\SoC_2022_MJU\LAB8"><\/item>
+<\/annotationInfo>
+</annotationInfo>

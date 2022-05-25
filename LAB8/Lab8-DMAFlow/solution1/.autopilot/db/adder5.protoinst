@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"adder5": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,157 @@
+
+
+================================================================
+== Vivado HLS Report for 'adder5'
+================================================================
+* Date:           Mon May 24 11:40:16 2021
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        Lab8-DMAFlow
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     2.552|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  151|  151|  151|  151|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1  |  150|  150|         3|          -|          -|    50|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (!exitcond)
+3 --> 
+	4  / true
+4 --> 
+	2  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %A) nounwind, !map !7"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %B) nounwind, !map !13"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([7 x i8]* @adder5_str) nounwind"   --->   Operation 7 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %B, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 8 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %A, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2)"   --->   Operation 9 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (1.76ns)   --->   "br label %1" [Lab8-DMAFlow/adder5.cpp:7]   --->   Operation 10 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 1.82>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "%i = phi i6 [ 0, %0 ], [ %i_1, %2 ]"   --->   Operation 11 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (1.42ns)   --->   "%exitcond = icmp eq i6 %i, -14" [Lab8-DMAFlow/adder5.cpp:7]   --->   Operation 12 'icmp' 'exitcond' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 50, i64 50, i64 50) nounwind"   --->   Operation 13 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (1.82ns)   --->   "%i_1 = add i6 %i, 1" [Lab8-DMAFlow/adder5.cpp:7]   --->   Operation 14 'add' 'i_1' <Predicate = true> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "br i1 %exitcond, label %3, label %2" [Lab8-DMAFlow/adder5.cpp:7]   --->   Operation 15 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (0.00ns)   --->   "%A_read = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %A) nounwind" [Lab8-DMAFlow/adder5.cpp:8]   --->   Operation 16 'read' 'A_read' <Predicate = (!exitcond)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "ret void" [Lab8-DMAFlow/adder5.cpp:10]   --->   Operation 17 'ret' <Predicate = (exitcond)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.55>
+ST_3 : Operation 18 [1/2] (0.00ns)   --->   "%A_read = call i32 @_ssdm_op_Read.axis.volatile.i32P(i32* %A) nounwind" [Lab8-DMAFlow/adder5.cpp:8]   --->   Operation 18 'read' 'A_read' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 19 [1/1] (2.55ns)   --->   "%tmp_1 = add nsw i32 %A_read, 5" [Lab8-DMAFlow/adder5.cpp:8]   --->   Operation 19 'add' 'tmp_1' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %B, i32 %tmp_1) nounwind" [Lab8-DMAFlow/adder5.cpp:8]   --->   Operation 20 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %B, i32 %tmp_1) nounwind" [Lab8-DMAFlow/adder5.cpp:8]   --->   Operation 21 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 22 [1/1] (0.00ns)   --->   "br label %1" [Lab8-DMAFlow/adder5.cpp:7]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', Lab8-DMAFlow/adder5.cpp:7) [10]  (1.77 ns)
+
+ <State 2>: 1.83ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', Lab8-DMAFlow/adder5.cpp:7) [10]  (0 ns)
+	'add' operation ('i', Lab8-DMAFlow/adder5.cpp:7) [13]  (1.83 ns)
+
+ <State 3>: 2.55ns
+The critical path consists of the following:
+	axis read on port 'A' (Lab8-DMAFlow/adder5.cpp:8) [16]  (0 ns)
+	'add' operation ('tmp_1', Lab8-DMAFlow/adder5.cpp:8) [17]  (2.55 ns)
+	axis write on port 'B' (Lab8-DMAFlow/adder5.cpp:8) [18]  (0 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
