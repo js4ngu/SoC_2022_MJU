@@ -1,41 +1,41 @@
 #include <stdio.h>
 #include "platform.h"
-#include "xgpio.h"  //GPIO PL(LED, BTN, Dip switch) »ç¿ëÇÏ±â À§ÇÑ header file
-#include "xgpiops.h"  //GPIO PS »ç¿ëÇÏ±â À§ÇÑ header file (Áö¿öµµ µÇ´ÂÁö ½ÇÇèÇØº¸±â)
-#include "sleep.h"  //usleep »ç¿ëÀ» À§ÇÑ header file
+#include "xgpio.h"  //GPIO PL(LED, BTN, Dip switch) ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ header file
+#include "xgpiops.h"  //GPIO PS ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ header file (ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ç´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Øºï¿½ï¿½ï¿½)
+#include "sleep.h"  //usleep ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ header file
 
 int ALU(unsigned int DIP, unsigned int BTN, unsigned int RESULT);
 
 int main() {
     static XGpio input,output;
-    unsigned int result = 6;  // ALU °á°ú¸¦ ÀúÀåÇÒ register
+    unsigned int result = 6;  // ALU ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ register
     unsigned int DIP_SW_data = 0;
     unsigned int BTN_data = 0;
     int xStatus;
 
-    init_platform();  //UART ¹× cache ÃÊ±âÈ­
+    init_platform();  //UART ï¿½ï¿½ cache ï¿½Ê±ï¿½È­
 
-    //GPIO 0 ÃÊ±âÈ­ : input ºÎºÐ
+    //GPIO 0 ï¿½Ê±ï¿½È­ : input ï¿½Îºï¿½
     //AXI GPIO_SW Initialization
     //AXI GPIO_Button Initialization
     xStatus = XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);
     if(XST_SUCCESS != xStatus)
         printf("GPIO_SW INIT FAILDED \n\r");
 
-    //GPIO 1 ÃÊ±âÈ­ :output ºÎºÐ
+    //GPIO 1 ï¿½Ê±ï¿½È­ :output ï¿½Îºï¿½
     //AXI GPIO_LED Initialization
     xStatus = XGpio_Initialize(&output,XPAR_AXI_GPIO_1_DEVICE_ID);
     if(XST_SUCCESS != xStatus)
         printf("GPIO_LED INIT FAILDED \n\r");
 
-    //AXI GPIO ÀÔÃâ·Â ¼³Á¤
-    XGpio_SetDataDirection(&input,1,1);  // 1 : 1st channel, 1 : ÀÔ·Â -> DIP SW
-    XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : ÀÔ·Â -> BTN
-    XGpio_SetDataDirection(&output,1,0); // 1 : single channel 0 : Ãâ·Â
+    //AXI GPIO ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    XGpio_SetDataDirection(&input,1,1);  // 1 : 1st channel, 1 : ï¿½Ô·ï¿½ -> DIP SW
+    XGpio_SetDataDirection(&input,2,1);  // 1 : 2st channel, 1 : ï¿½Ô·ï¿½ -> BTN
+    XGpio_SetDataDirection(&output,1,0); // 1 : single channel 0 : ï¿½ï¿½ï¿½
 
     while(1) {
-        DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switch¿¡¼­ ÀÔ·Â
-        BTN_data = XGpio_DiscreteRead(&input, 2); //BTN¿¡¼­ ÀÔ·Â
+        DIP_SW_data = XGpio_DiscreteRead(&input, 1);  //switchï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
+        BTN_data = XGpio_DiscreteRead(&input, 2); //BTNï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½
         result = ALU(DIP_SW_data, BTN_data, result);
         XGpio_DiscreteWrite(&output, 1 , result);   //LED OUT
         usleep(1000000);
