@@ -29,3 +29,24 @@ C로 만 sim한 결과 계산 잘나옴
 # 6번 커밋
 * Syntesis : LM.LN.LP (AXI lite slave) In,c (AXI Stream)
 * RTL Export
+
+# 7번 커밋
+* ![](2022-05-28-03-11-36.png)
+* 블록디자인을 구성해주었다
+* ![](2022-05-28-02-26-16.png)
+* ![](2022-05-28-02-28-24.png)
+* ![](2022-05-28-02-50-43.png)
+* 일단은 Capture Trig에 Active High가 뜨면 Pause하게 코드를 짤 생각입니다.
+* ![](2022-05-28-02-58-43.png)
+* Capture mode, this bit determines whether a new capturetrigger overwrites the previous captured value or if the previous value is held.
+
+  0 = Hold counter or capture value. The TLR must be read before providing the external capture.
+  1 = Reload generate value or overwrite capture value
+* 캡처 모드, 이 비트는 새 캡처 트리거가 이전 캡처 값을 덮어쓸지 또는 이전 값이 유지되는지 여부를 결정합니다.
+
+    0 = 카운터 또는 캡처 값을 유지합니다. 외부 캡처를 제공하기 전에 TLR을 읽어야 합니다.  
+    1 = 생성 값을 다시 로드하거나 캡처 값을 덮어씁니다.
+* 대충 느낌보니깐, 일레지스터에 값 작성하는걸로 컨트롤 가능.
+* 일단 Capture 모드 쓰는걸로 해서 예제 보고 ㄲㄲ
+* 내 생각에는 DMA 시작하는 상수 신호로 트리거 걸어서 시간 카운트하고, DMA가 값 전송 끝났다고 날리는 인터럽트 호출 함수에서 카운트 정지하는 레지스터 작성하면 될듯?
+* 일단 데이터 시트 아이패드에 넣어서 분석할 필요가 있어보임 ㅇㅇ
