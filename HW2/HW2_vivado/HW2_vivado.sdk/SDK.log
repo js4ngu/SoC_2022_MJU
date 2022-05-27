@@ -1,0 +1,6 @@
+03:41:11 INFO  : Registering command handlers for SDK TCF services
+03:41:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\HW2\HW2_vivado\HW2_vivado.sdk\temp_xsdb_launch_script.tcl
+03:41:14 INFO  : XSCT server has started successfully.
+03:41:17 INFO  : Successfully done setting XSCT server connection channel  
+03:41:17 INFO  : Successfully done setting SDK workspace  
+03:41:17 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper.hdf.
