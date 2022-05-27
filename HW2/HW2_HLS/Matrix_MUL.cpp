@@ -1,26 +1,27 @@
-#include <stdio.h>
-typedef unsigned char u8;
-typedef unsigned int u32;
+void matrixMul(int lm, int ln, int lp, int in[256][128]){
+    int a[128][128]; //1st array : lm * ln
+	int b[128][128]; //2nd array : ln * lp
+	int c[128][128]; //output array : lm * lp
 
-#define LM 128
-#define LN 128
-#define LP 128
-
-void mul_Matrix(int useLM, int useLN, int useLP, u8 arrayA[LM][LN], u8 arrayB[LN][LP], u32 arrayR[LM][LP]){
-#pragma HLS INTERFACE axis register both port=arrayB
-#pragma HLS INTERFACE axis register both port=arrayA
-#pragma HLS INTERFACE axis register both port=arrayR
-#pragma HLS INTERFACE s_axilite register port=useLN
-#pragma HLS INTERFACE s_axilite register port=useLP
-#pragma HLS INTERFACE s_axilite register port=useLM
-	int sum;
-	for (int r = 0; r < useLN; r++) {
-		for (int c = 0; c < useLN; c++) {
-			sum = 0;
-			for (int k = 0; k < useLM; k++) {
-				sum += arrayA[r][k] * arrayB[k][c];
+    // Split input array
+    for (int i = 0; i < lm; i++) {
+        for (int j = 0; j < ln; j++) {
+            a[i][j] = in[i][j];
+        }
+    }
+    for (int i = 0; i < ln; i++) {
+        for (int j = 0; j < lp; j++) {
+            b[i][j] = in[i+128][j];
+        }
+    }
+    // Martix mul
+	for (int i = 0; i < lm; i++) { //a*b
+		for (int j = 0; j < lp; j++) {
+			int sum = 0;
+			for (int n = 0; n < ln; n++) {
+				sum = sum + a[i][n] * b[n][j];
 			}
-			arrayR[r][c] = sum;
+			c[i][j] = sum;
 		}
 	}
 }
