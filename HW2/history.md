@@ -25,3 +25,7 @@
 C로 만 sim한 결과 계산 잘나옴
 * ![](2022-05-28-02-00-25.png)
     cosim 돌려도 계산 잘나옴
+
+# 6번 커밋
+* Syntesis : LM.LN.LP (AXI lite slave) In,c (AXI Stream)
+* RTL Export
