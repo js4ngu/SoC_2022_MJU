@@ -1,6 +1,6 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>useLM</name>
+<name>lm</name>
 <CType>
 <TypeName>int</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -10,7 +10,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>useLN</name>
+<name>ln</name>
 <CType>
 <TypeName>int</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -20,7 +20,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>useLP</name>
+<name>lp</name>
 <CType>
 <TypeName>int</TypeName>
 <TypeWidth>32</TypeWidth>
@@ -30,7 +30,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>arrayA</name>
+<name>in_r</name>
 <CType>
 <TypeName>unsigned char</TypeName>
 <TypeWidth>8</TypeWidth>
@@ -40,17 +40,7 @@
 <InvalidType>0</InvalidType>
 </RtlPorts>
 <RtlPorts>
-<name>arrayB</name>
-<CType>
-<TypeName>unsigned char</TypeName>
-<TypeWidth>8</TypeWidth>
-<PhysicalWidth>8</PhysicalWidth>
-</CType>
-<CFractionWidth>0</CFractionWidth>
-<InvalidType>0</InvalidType>
-</RtlPorts>
-<RtlPorts>
-<name>arrayR</name>
+<name>c</name>
 <CType>
 <TypeName>unsigned int</TypeName>
 <TypeWidth>32</TypeWidth>

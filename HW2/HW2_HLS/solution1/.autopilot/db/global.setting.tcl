@@ -1,5 +1,5 @@
 
-set TopModule "mul_Matrix"
+set TopModule "matrixMul"
 set ClockPeriod "10.000000"
 set ClockList {ap_clk}
 set multiClockList {}
@@ -15,7 +15,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 1
-set ResetLevelFlag 0
+set ResetLevelFlag 1
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -44,12 +44,12 @@ set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../Matrix_MUL.cpp}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile {C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/solution1.directive}
-set TBFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
+set TBFiles {verilog ../test_matrixMul.cpp bc ../test_matrixMul.cpp vhdl ../test_matrixMul.cpp sc ../test_matrixMul.cpp cas ../test_matrixMul.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
-set TBTops {bc "" c "" sc "" cas "" vhdl "" verilog ""}
-set TBInstNames {bc "" c "" sc "" cas "" vhdl "" verilog ""}
+set TBTops {verilog {} bc {} vhdl {} sc {} cas {} c {}}
+set TBInstNames {verilog {} bc {} vhdl {} sc {} cas {} c {}}
 set XDCFiles {}
 set ExtraGlobalOptions {"area_timing" 1 "clock_gate" 1 "impl_flow" map "power_gate" 0}
 set PlatformFiles {{DefaultPlatform {xilinx/zynq/zynq xilinx/zynq/zynq_fpv6}}}

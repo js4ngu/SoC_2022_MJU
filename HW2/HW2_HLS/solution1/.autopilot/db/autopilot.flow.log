@@ -1,828 +1,4 @@
-INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Thu May 26 03:57:18 +0900 2022
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Command     import_lib done; 0.171 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.208 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.231 sec.
-Command     ap_source done; 0.236 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.65 sec.
-Execute   set_part xc7z020clg484-1 -tool vivado 
-Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute       get_default_platform 
-Execute       license_isbetapart xc7z020 
-Command       license_isbetapart done; error code: 1; 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed slow 
-Execute     add_library xilinx/zynq/zynq_fpv6 
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute   create_clock -period 10 -name default 
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute   csynth_design 
-Execute     get_config_compile -effort 
-Execute     get_config_compile -enable_clang39 
-Execute     get_config_compile -g 
-Execute     get_config_compile -lm 
-Execute     get_config_compile -ng 
-Execute     get_config_compile -opt_fp 
-Execute     get_config_compile -skip_cdt 
-Execute     get_config_compile -skip_syncheck 
-Execute     get_config_compile -skip_transform 
-Execute     get_config_compile -keep_printf 
-Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
-Execute       get_config_schedule -relax_ii_for_timing 
-Execute       get_config_schedule -suppress_dependence_error_break 
-INFO: [HLS 200-10] Analyzing design file 'HW2_HLS/Matrix_MUL.cpp' ... 
-INFO-FLOW: Compiling one TU...
-Execute       is_m_axi_addr64 
-INFO-FLOW: Handling HW2_HLS/Matrix_MUL.cpp as C++
-Execute       get_default_platform 
-Execute       is_encrypted HW2_HLS/Matrix_MUL.cpp 
-Execute       get_default_platform 
-INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "HW2_HLS/Matrix_MUL.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E HW2_HLS/Matrix_MUL.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp
-Command       clang done; 1.455 sec.
-INFO-FLOW: Syntax Checking before pre-processing...
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp"  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/useless.bc"  
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/useless.bc
-Command       clang done; 0.891 sec.
-INFO-FLOW: GCC PP time: 2 seconds per iteration
-Execute       list_core -type functional_unit 
-Execute       tidy_31 xilinx-systemc-detector C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 -directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/.systemc_flag 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.132 sec.
-INFO-FLOW: CDT Preprocessing with tidy-3.1...
-Execute       tidy_31 xilinx-directive2pragma C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 -directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/solution1.json 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/solution1.json -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Execute       get_config_dataflow -strict_mode 
-Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.diag.yml C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.out.log 2> C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.err.log 
-Command       ap_eval done; 0.119 sec.
-Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-Command       tidy_31 done; 0.243 sec.
-INFO-FLOW: tidy-3.1 time 0 seconds per iteration
-INFO-FLOW: Pragma Handling...
-Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp std=gnu++98 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
-INFO-FLOW: Source preprocessing
-Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp
-Command       clang done; 1.028 sec.
-Execute       get_default_platform 
-INFO-FLOW: Processing labels
-Execute       clang -src C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.bc" 
-INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.bc
-Command       clang done; 0.861 sec.
-INFO-FLOW: Linking Debug ...
-Execute       llvm-ld C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.g.bc -hls-opt -except-internalize mul_Matrix -LC:/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g 
-Command       llvm-ld done; 1.467 sec.
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 101.922 ; gain = 45.324
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 101.922 ; gain = 45.324
-Execute       ::config_rtl 
-Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
-Execute         cleanup_all_models 
-INFO: [HLS 200-10] Starting code transformations ...
-Execute         transform -promote-dbg-pointer C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.0.bc -f 
-Execute         llvm-ld C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.0 
-Command         llvm-ld done; 0.389 sec.
-INFO-FLOW: Running Standard Transforms...
-Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top mul_Matrix -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.0.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 103.156 ; gain = 46.559
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO-FLOW: Checking Synthesizability 1/2..
-Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -f 
-INFO-FLOW: Checking Synthesizability 2/2..
-Execute         transform -syn-check C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 103.410 ; gain = 46.812
-INFO-FLOW: Compiler optimizing ...
-INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc to C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.bc
-INFO-FLOW: Presyn 1...
-Execute         transform -hls -tmp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -f 
-WARNING: [XFORM 203-124] Array  'arrayA': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
-WARNING: [XFORM 203-124] Array  'arrayB': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
-WARNING: [XFORM 203-124] Array  'arrayR': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
-Command         transform done; 0.239 sec.
-INFO-FLOW: Presyn 2...
-Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
-Command         transform done; 0.118 sec.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 124.516 ; gain = 67.918
-INFO-FLOW: Building ssdm...
-Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.2.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-Command         transform done; 0.235 sec.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 124.516 ; gain = 67.918
-INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 1.255 sec.
-Command     elaborate done; 7.912 sec.
-Execute     autosyn -from_csynth_design=1 
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO-FLOW: Synthesizing C/C++ design ...
-INFO: [HLS 200-10] Synthesizing 'mul_Matrix' ...
-Execute       ap_set_top_model mul_Matrix 
-Execute       get_model_list mul_Matrix -filter all-wo-channel -topdown 
-Execute       preproc_iomode -model mul_Matrix 
-Execute       get_model_list mul_Matrix -filter all-wo-channel 
-INFO-FLOW: Model list for configure: mul_Matrix
-INFO-FLOW: Configuring Module : mul_Matrix ...
-Execute       set_default_model mul_Matrix 
-Execute       apply_spec_resource_limit mul_Matrix 
-INFO-FLOW: Model list for preprocess: mul_Matrix
-INFO-FLOW: Preprocessing Module: mul_Matrix ...
-Execute       set_default_model mul_Matrix 
-Execute       cdfg_preprocess -model mul_Matrix 
-Execute       rtl_gen_preprocess mul_Matrix 
-INFO-FLOW: Model list for synthesis: mul_Matrix
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'mul_Matrix' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       set_default_model mul_Matrix 
-Execute       schedule -model mul_Matrix 
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-Command       schedule done; 0.118 sec.
-INFO: [HLS 200-111]  Elapsed time: 11.104 seconds; current allocated memory: 75.631 MB.
-Execute       report -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.verbose.sched.rpt -verbose -f 
-INFO: [HLS 200-434] Only 0 loops out of a total 3 loops have been pipelined in this design.
-Execute       db_write -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.sched.adb -f 
-INFO-FLOW: Finish scheduling mul_Matrix.
-Execute       set_default_model mul_Matrix 
-Execute       bind -model mul_Matrix 
-BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
-BIND OPTION: model=mul_Matrix
-BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.114 seconds; current allocated memory: 75.804 MB.
-Execute       report -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.verbose.bind.rpt -verbose -f 
-Execute       db_write -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.bind.adb -f 
-INFO-FLOW: Finish binding mul_Matrix.
-Execute       get_model_list mul_Matrix -filter all-wo-channel 
-INFO-FLOW: Preprocessing for RTLGen ...
-Execute       rtl_gen_preprocess mul_Matrix 
-INFO-FLOW: Model list for RTL generation: mul_Matrix
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'mul_Matrix' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-Execute       get_config_rtl -prefix 
-Execute       get_config_rtl -auto_prefix 
-Execute       create_rtl_model mul_Matrix -vendor xilinx -mg_file C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/useLM' to 's_axilite & ap_none' (register).
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/useLN' to 's_axilite & ap_none' (register).
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/useLP' to 's_axilite & ap_none' (register).
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/arrayA' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/arrayB' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on port 'mul_Matrix/arrayR' to 'axis' (register, both mode).
-INFO: [RTGEN 206-500] Setting interface mode on function 'mul_Matrix' to 'ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'useLM', 'useLN' and 'useLP' to AXI-Lite port AXILiteS.
-INFO: [SYN 201-210] Renamed object name 'mul_Matrix_mac_muladd_8ns_8ns_32ns_32_1_1' to 'mul_Matrix_mac_mubkb' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'mul_Matrix_mac_mubkb': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'mul_Matrix'.
-Command       create_rtl_model done; 0.182 sec.
-INFO: [HLS 200-111]  Elapsed time: 0.273 seconds; current allocated memory: 76.387 MB.
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute       gen_rtl mul_Matrix -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/systemc/mul_Matrix -synmodules mul_Matrix 
-Execute       gen_rtl mul_Matrix -istop -style xilinx -f -lang vhdl -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/vhdl/mul_Matrix 
-Execute       gen_rtl mul_Matrix -istop -style xilinx -f -lang vlog -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/verilog/mul_Matrix 
-Execute       export_constraint_db -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl -f -tool general 
-Execute       report -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.design.xml -verbose -f -dv 
-Execute       report -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.sdaccel.xml -verbose -f -sdaccel 
-Execute       gen_tb_info mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix -p C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db 
-Execute       report -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/report/mul_Matrix_csynth.rpt -f 
-Execute       report -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/report/mul_Matrix_csynth.xml -f -x 
-Execute       report -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.verbose.rpt -verbose -f 
-Execute       db_write -model mul_Matrix -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.adb -f 
-Execute       sc_get_clocks mul_Matrix 
-Execute       sc_get_portdomain mul_Matrix 
-INFO-FLOW: Model list for RTL component generation: mul_Matrix
-INFO-FLOW: Handling components in module [mul_Matrix] ... 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-INFO-FLOW: Found component mul_Matrix_mac_mubkb.
-INFO-FLOW: Append model mul_Matrix_mac_mubkb
-INFO-FLOW: Found component mul_Matrix_AXILiteS_s_axi.
-INFO-FLOW: Append model mul_Matrix_AXILiteS_s_axi
-INFO-FLOW: Append model mul_Matrix
-INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: mul_Matrix_mac_mubkb mul_Matrix_AXILiteS_s_axi mul_Matrix
-INFO-FLOW: To file: write model mul_Matrix_mac_mubkb
-INFO-FLOW: To file: write model mul_Matrix_AXILiteS_s_axi
-INFO-FLOW: To file: write model mul_Matrix
-INFO-FLOW: Finished generating RTL model list.
-
-
-INFO-FLOW: RTL Generation done.
-INFO-FLOW: CAS Generation done.
-INFO-FLOW: CBC Generation done.
-Execute       get_config_sdx -target 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.218 sec.
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source done; 0.326 sec.
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.335 sec.
-Command       ap_source done; 0.336 sec.
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute         source ./AXILiteS.slave.tcl 
-Execute         is_m_axi_addr64 
-Command       ap_source done; 0.12 sec.
-Execute       get_config_sdx -target 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Command             ap_source done; 0.227 sec.
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command           ap_source done; 0.327 sec.
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command         ap_source done; 0.334 sec.
-Command       ap_source done; 0.334 sec.
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute       sc_get_clocks mul_Matrix 
-Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute       get_config_sdx -target 
-Execute       get_config_sdx -profile 
-Execute       ::config_rtl 
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 125.188 ; gain = 68.590
-INFO: [SYSC 207-301] Generating SystemC RTL for mul_Matrix.
-INFO: [VHDL 208-304] Generating VHDL RTL for mul_Matrix.
-INFO: [VLOG 209-307] Generating Verilog RTL for mul_Matrix.
-Command     autosyn done; 3.451 sec.
-Command   csynth_design done; 11.379 sec.
-Command ap_source done; 12.124 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Thu May 26 03:58:21 +0900 2022
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.101 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.104 sec.
-Command     ap_source done; 0.104 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.228 sec.
-Execute   export_design -flow impl -rtl verilog -format ip_catalog 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_sdx -target 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.103 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.104 sec.
-Command     ap_source done; 0.104 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.102 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.105 sec.
-Command     ap_source done; 0.105 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-ERROR: [IMPL 213-28] Failed to generate IP.
-Command   export_design done; error code: 2; 14.839 sec.
-Command ap_source done; error code: 1; 15.078 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Thu May 26 03:58:57 +0900 2022
-Execute     config_clock -quiet -name default -period 10 -default=false 
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
-Execute       get_default_platform 
-Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute       config_chip_info -quiet -speed medium 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.105 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.107 sec.
-Command     ap_source done; 0.107 sec.
-Execute     open_platform DefaultPlatform 
-Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     set_part xc7z020clg484-1 
-Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
-Execute         get_default_platform 
-Execute         license_isbetapart xc7z020 
-Command         license_isbetapart done; error code: 1; 
-Execute         get_default_platform 
-Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute         config_chip_info -quiet -speed slow 
-Execute       add_library xilinx/zynq/zynq_fpv6 
-Execute         get_default_platform 
-INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
-Execute       get_default_platform 
-Execute     get_default_platform 
-Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
-Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.189 sec.
-Execute   export_design -flow impl -rtl verilog -format ip_catalog 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.101 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_sdx -target 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.102 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.103 sec.
-Command     ap_source done; 0.104 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-ERROR: [IMPL 213-28] Failed to generate IP.
-Command   export_design done; error code: 2; 4.799 sec.
-Command ap_source done; error code: 1; 5.006 sec.
-Execute cleanup_all 
-INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Wed May 26 03:59:18 +0900 2021
+INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Sat May 28 01:53:15 +0900 2022
 Execute     config_clock -quiet -name default -period 10 -default=false 
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 Execute     open_platform DefaultPlatform 
@@ -904,8 +80,392 @@ Execute       get_default_platform
 Execute     get_default_platform 
 Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
 Execute     config_chip_info -quiet -speed slow 
-Command   open_solution done; 0.2 sec.
-Execute   export_design -flow impl -rtl verilog -format ip_catalog 
+Command   open_solution done; 0.214 sec.
+Execute   set_part xc7z020clg484-1 -tool vivado 
+Execute     add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute       get_default_platform 
+Execute       license_isbetapart xc7z020 
+Command       license_isbetapart done; error code: 1; 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed slow 
+Execute     add_library xilinx/zynq/zynq_fpv6 
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -lm 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -lm=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'HW2_HLS/Matrix_MUL.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling HW2_HLS/Matrix_MUL.cpp as C++
+Execute       get_default_platform 
+Execute       is_encrypted HW2_HLS/Matrix_MUL.cpp 
+Execute       get_default_platform 
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "HW2_HLS/Matrix_MUL.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E HW2_HLS/Matrix_MUL.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp
+Command       clang done; 0.857 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp"  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/useless.bc
+Command       clang done; 0.855 sec.
+INFO-FLOW: GCC PP time: 1 seconds per iteration
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 -directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: CDT Preprocessing with tidy-3.1...
+Execute       tidy_31 xilinx-directive2pragma C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 -directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/solution1.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/solution1.json -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.diag.yml C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.out.log 2> C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/xilinx-dataflow-lawyer.Matrix_MUL.pp.0.cpp.err.log 
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: tidy-3.1 time 0 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* --checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2018.2/msys" -hls  -fno-exceptions  -D__llvm__  -E "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__  -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -fno-exceptions -D__llvm__ -E C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.1.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp
+Command       clang done; 0.858 sec.
+Execute       get_default_platform 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot" -I "C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2018.2/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2018.2/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot -I C:/Xilinx/Vivado/2018.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.bc
+Command       clang done; 0.86 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/Matrix_MUL.g.bc -hls-opt -except-internalize matrixMul -LC:/Xilinx/Vivado/2018.2/win64/lib -lhlsm -lhlsmc++ -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g 
+Command       llvm-ld done; 0.69 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.703 ; gain = 45.742
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.703 ; gain = 45.742
+Execute       ::config_rtl 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2018.2/win64/lib -lfloatconversion -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.316 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top matrixMul -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.0.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.371 ; gain = 47.410
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.prechk.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 103.625 ; gain = 47.664
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.g.1.bc to C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -clib-intrinsic-prepare -dce -func-buffer -dce -array-normalize -func-legal -instcombine -gvn -constprop -dce -ptrArgReplace -mem2reg -instcombine -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -instcombine -dce -global-constprop -deadargelim -mem2reg -instcombine -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -instcombine -dce -ptrArgReplace -mem2reg -instcombine -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -instcombine -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -inst-simplify -dce -norm-name -function-inline -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.1.tmp.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 124.184 ; gain = 68.223
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -instcombine -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -bitwidth -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -dead-allocation-elimination -cdfg-build C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.2.bc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 124.191 ; gain = 68.230
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.513 sec.
+Command     elaborate done; 5.013 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'matrixMul' ...
+Execute       ap_set_top_model matrixMul 
+Execute       get_model_list matrixMul -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model matrixMul 
+Execute       get_model_list matrixMul -filter all-wo-channel 
+INFO-FLOW: Model list for configure: matrixMul
+INFO-FLOW: Configuring Module : matrixMul ...
+Execute       set_default_model matrixMul 
+Execute       apply_spec_resource_limit matrixMul 
+INFO-FLOW: Model list for preprocess: matrixMul
+INFO-FLOW: Preprocessing Module: matrixMul ...
+Execute       set_default_model matrixMul 
+Execute       cdfg_preprocess -model matrixMul 
+Execute       rtl_gen_preprocess matrixMul 
+WARNING: [SYN 201-107] Renaming port name 'matrixMul/in' to 'matrixMul/in_r' to avoid the conflict with HDL keywords or other object names.
+INFO-FLOW: Model list for synthesis: matrixMul
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model matrixMul 
+Execute       schedule -model matrixMul 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.839 seconds; current allocated memory: 76.137 MB.
+Execute       report -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.verbose.sched.rpt -verbose -f 
+INFO: [HLS 200-434] Only 0 loops out of a total 7 loops have been pipelined in this design.
+Execute       db_write -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.sched.adb -f 
+INFO-FLOW: Finish scheduling matrixMul.
+Execute       set_default_model matrixMul 
+Execute       bind -model matrixMul 
+BIND OPTION: fu_weight=[ 0.0 -- 1.0 ]
+BIND OPTION: model=matrixMul
+BIND OPTION: reg_weight=[ 0.0 -- 1.0 ]
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 76.472 MB.
+Execute       report -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.verbose.bind.rpt -verbose -f 
+Execute       db_write -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.bind.adb -f 
+INFO-FLOW: Finish binding matrixMul.
+Execute       get_model_list matrixMul -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess matrixMul 
+INFO-FLOW: Model list for RTL generation: matrixMul
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixMul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -prefix 
+Execute       get_config_rtl -auto_prefix 
+Execute       create_rtl_model matrixMul -vendor xilinx -mg_file C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixMul/lm' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixMul/ln' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixMul/lp' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixMul/in_r' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixMul/c' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixMul' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'matrixMul_mac_muladd_8ns_8ns_32ns_32_1_1' to 'matrixMul_mac_mulbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'matrixMul_mac_mulbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixMul'.
+INFO: [HLS 200-111]  Elapsed time: 0.154 seconds; current allocated memory: 77.155 MB.
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute       gen_rtl matrixMul -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/systemc/matrixMul -synmodules matrixMul 
+Execute       gen_rtl matrixMul -istop -style xilinx -f -lang vhdl -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/vhdl/matrixMul 
+Execute       gen_rtl matrixMul -istop -style xilinx -f -lang vlog -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/verilog/matrixMul 
+Execute       export_constraint_db -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.constraint.tcl -f -tool general 
+Execute       report -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.design.xml -verbose -f -dv 
+Execute       report -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.sdaccel.xml -verbose -f -sdaccel 
+Execute       gen_tb_info matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul -p C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db 
+Execute       report -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/report/matrixMul_csynth.rpt -f 
+Execute       report -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/syn/report/matrixMul_csynth.xml -f -x 
+Execute       report -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.verbose.rpt -verbose -f 
+Execute       db_write -model matrixMul -o C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.adb -f 
+Execute       sc_get_clocks matrixMul 
+Execute       sc_get_portdomain matrixMul 
+INFO-FLOW: Model list for RTL component generation: matrixMul
+INFO-FLOW: Handling components in module [matrixMul] ... 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+INFO-FLOW: Found component matrixMul_mac_mulbkb.
+INFO-FLOW: Append model matrixMul_mac_mulbkb
+INFO-FLOW: Found component matrixMul_a.
+INFO-FLOW: Append model matrixMul_a
+INFO-FLOW: Append model matrixMul
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: matrixMul_mac_mulbkb matrixMul_a matrixMul
+INFO-FLOW: To file: write model matrixMul_mac_mulbkb
+INFO-FLOW: To file: write model matrixMul_a
+INFO-FLOW: To file: write model matrixMul
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_config_sdx -target 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.115 sec.
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.118 sec.
+Command       ap_source done; 0.119 sec.
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'matrixMul_a_ram (RAM)' using block RAMs.
+Execute       get_config_sdx -target 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute               source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command           ap_source done; 0.108 sec.
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.112 sec.
+Command       ap_source done; 0.112 sec.
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+Execute         source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute         source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.compgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.constraint.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.constraint.tcl 
+Execute       sc_get_clocks matrixMul 
+Execute       source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       ::config_rtl 
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 126.957 ; gain = 70.996
+INFO: [SYSC 207-301] Generating SystemC RTL for matrixMul.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixMul.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixMul.
+Command     autosyn done; 1.405 sec.
+Command   csynth_design done; 6.421 sec.
+Command ap_source done; 6.681 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Sat May 28 01:53:28 +0900 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.117 sec.
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.119 sec.
+Command     ap_source done; 0.119 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.225 sec.
+Execute   cosim_design 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
@@ -928,22 +488,126 @@ Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.115 sec.
 Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.101 sec.
+Command       ap_source done; 0.117 sec.
+Command     ap_source done; 0.117 sec.
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/tb.status.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_sdx -target 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     get_default_platform 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.315 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 8.884 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 14.54 sec.
+Command ap_source done; 14.77 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Sat May 28 01:54:57 +0900 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
 Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
@@ -959,52 +623,43 @@ Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.107 sec.
 Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.101 sec.
+Command       ap_source done; 0.11 sec.
+Command     ap_source done; 0.11 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.rtl_wrap.cfg.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.192 sec.
+Execute   cosim_design 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
@@ -1027,74 +682,177 @@ Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command         ap_source done; 0.102 sec.
 Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.101 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.102 sec.
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_sdx -target 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/op_simcore.gen 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/interface.gen 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
-Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
-Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
-Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
-Command         ap_source done; 0.103 sec.
-Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.104 sec.
+Command       ap_source done; 0.105 sec.
 Command     ap_source done; 0.105 sec.
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.compgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/tb.status.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.constraint.tcl 
-Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/mul_Matrix.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     get_default_platform 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.274 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 8.45 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 13.936 sec.
+Command ap_source done; 14.133 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1 opened at Sat May 28 01:56:31 +0900 2022
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       get_default_platform 
+Execute       config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute       config_chip_info -quiet -speed medium 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.103 sec.
+Command     ap_source done; 0.103 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+Execute     set_part xc7z020clg484-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg484:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+Execute       get_default_platform 
+Execute     get_default_platform 
+Execute     config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 0.182 sec.
+Execute   cosim_design 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/common.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/generic/autopilot/APCoreGen.gen 
@@ -1118,15 +876,85 @@ Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/uti
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
 Execute           source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
-Command       ap_source done; 0.101 sec.
-Command     ap_source done; 0.101 sec.
 Execute     source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
 Execute       source C:/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
-Execute     get_config_rtl -vivado_synth_design_args 
 Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
-Execute     get_config_rtl -vivado_synth_strategy 
-Execute     get_config_rtl -vivado_synth_strategy 
-Execute     get_config_rtl -vivado_phys_opt 
-Command   export_design done; 147.957 sec.
-Command ap_source done; 148.163 sec.
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp 
+Execute     is_encrypted C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/test_matrixMul.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/test_matrixMul.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     get_default_platform 
+INFO-FLOW: TB processing: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/Matrix_MUL.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp
+INFO-FLOW: Marker-Pragma convertor: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.line.cpp ./sim/autowrap/testbench/line.tmp 1
+INFO-FLOW: Converting Markers to Pragmas...
+INFO-FLOW: Marker-Pragma convertor: ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp.line ./sim/autowrap/testbench/Matrix_MUL.cpp_pre.cpp.tb.cpp ./sim/autowrap/testbench/line.tmp 0
+INFO-FLOW: Converting Pragmas to Markers...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.rtl_wrap.cfg.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     get_default_platform 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.317 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     get_default_platform 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_HLS/solution1/.autopilot/db/matrixMul.tbgen.tcl 
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 8.665 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+Command   cosim_design done; 14.46 sec.
+Command ap_source done; 14.646 sec.
 Execute cleanup_all 

@@ -1,0 +1,350 @@
+
+
+================================================================
+== Vivado HLS Report for 'matrixMul'
+================================================================
+* Date:           Sat May 28 01:53:21 2022
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        HW2_HLS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.508|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    ?|    ?|    ?|    ?|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                 |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- Loop 1         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 1.1      |    ?|    ?|         2|          -|          -|     ?|    no    |
+        |- Loop 2         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 2.1      |    ?|    ?|         2|          -|          -|     ?|    no    |
+        |- Loop 3         |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        | + Loop 3.1      |    ?|    ?|         ?|          -|          -|     ?|    no    |
+        |  ++ Loop 3.1.1  |    ?|    ?|         3|          -|          -|     ?|    no    |
+        +-----------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 12
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+	3  / (tmp)
+	5  / (!tmp)
+3 --> 
+	4  / (tmp_2)
+	2  / (!tmp_2)
+4 --> 
+	3  / true
+5 --> 
+	6  / (tmp_3)
+	8  / (!tmp_3)
+6 --> 
+	7  / (tmp_s)
+	5  / (!tmp_s)
+7 --> 
+	6  / true
+8 --> 
+	9  / (tmp_5)
+9 --> 
+	10  / (tmp_11)
+	8  / (!tmp_11)
+10 --> 
+	11  / (tmp_13)
+	9  / (!tmp_13)
+11 --> 
+	12  / true
+12 --> 
+	10  / true
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %lm) nounwind, !map !7"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %ln) nounwind, !map !13"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %lp) nounwind, !map !17"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([32768 x i8]* %in_r) nounwind, !map !21"   --->   Operation 16 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([16384 x i32]* %c) nounwind, !map !28"   --->   Operation 17 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([10 x i8]* @matrixMul_str) nounwind"   --->   Operation 18 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lp_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %lp) nounwind"   --->   Operation 19 'read' 'lp_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%ln_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %ln) nounwind"   --->   Operation 20 'read' 'ln_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%lm_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %lm) nounwind"   --->   Operation 21 'read' 'lm_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%a = alloca [16384 x i8], align 1" [HW2_HLS/Matrix_MUL.cpp:6]   --->   Operation 22 'alloca' 'a' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%b = alloca [16384 x i8], align 1" [HW2_HLS/Matrix_MUL.cpp:7]   --->   Operation 23 'alloca' 'b' <Predicate = true> <Delay = 0.00> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_1 : Operation 24 [1/1] (1.76ns)   --->   "br label %.loopexit" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 24 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 2.52>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%i = phi i31 [ 0, %0 ], [ %i_1, %.loopexit.loopexit ]"   --->   Operation 25 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%i_cast = zext i31 %i to i32" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 26 'zext' 'i_cast' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (2.47ns)   --->   "%tmp = icmp slt i32 %i_cast, %lm_read" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 27 'icmp' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (2.52ns)   --->   "%i_1 = add i31 %i, 1" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 28 'add' 'i_1' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "br i1 %tmp, label %.preheader5.preheader, label %.preheader4.preheader" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 29 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%tmp_1 = trunc i31 %i to i10" [HW2_HLS/Matrix_MUL.cpp:11]   --->   Operation 30 'trunc' 'tmp_1' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_8_cast = call i17 @_ssdm_op_BitConcatenate.i17.i10.i7(i10 %tmp_1, i7 0)" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 31 'bitconcatenate' 'tmp_8_cast' <Predicate = (tmp)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (1.76ns)   --->   "br label %.preheader5" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 32 'br' <Predicate = (tmp)> <Delay = 1.76>
+ST_2 : Operation 33 [1/1] (1.76ns)   --->   "br label %.preheader4" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 33 'br' <Predicate = (!tmp)> <Delay = 1.76>
+
+State 3 <SV = 2> <Delay = 5.36>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%j = phi i31 [ %j_1, %1 ], [ 0, %.preheader5.preheader ]"   --->   Operation 34 'phi' 'j' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%j_cast = zext i31 %j to i32" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 35 'zext' 'j_cast' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (2.47ns)   --->   "%tmp_2 = icmp slt i32 %j_cast, %ln_read" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 36 'icmp' 'tmp_2' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 37 [1/1] (2.52ns)   --->   "%j_1 = add i31 %j, 1" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 37 'add' 'j_1' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "br i1 %tmp_2, label %1, label %.loopexit.loopexit" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 38 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%tmp_4 = trunc i31 %j to i17" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 39 'trunc' 'tmp_4' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (2.10ns)   --->   "%tmp_9 = add i17 %tmp_8_cast, %tmp_4" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 40 'add' 'tmp_9' <Predicate = (tmp_2)> <Delay = 2.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%tmp_9_cast = zext i17 %tmp_9 to i64" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 41 'zext' 'tmp_9_cast' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%in_addr = getelementptr [32768 x i8]* %in_r, i64 0, i64 %tmp_9_cast" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 42 'getelementptr' 'in_addr' <Predicate = (tmp_2)> <Delay = 0.00>
+ST_3 : Operation 43 [2/2] (3.25ns)   --->   "%in_load = load i8* %in_addr, align 1" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 43 'load' 'in_load' <Predicate = (tmp_2)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_3 : Operation 44 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 44 'br' <Predicate = (!tmp_2)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 6.50>
+ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [16384 x i8]* %a, i64 0, i64 %tmp_9_cast" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 45 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/2] (3.25ns)   --->   "%in_load = load i8* %in_addr, align 1" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 46 'load' 'in_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_4 : Operation 47 [1/1] (3.25ns)   --->   "store i8 %in_load, i8* %a_addr, align 1" [HW2_HLS/Matrix_MUL.cpp:13]   --->   Operation 47 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "br label %.preheader5" [HW2_HLS/Matrix_MUL.cpp:12]   --->   Operation 48 'br' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 2.52>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "%i1 = phi i31 [ %i_2, %.preheader4.loopexit ], [ 0, %.preheader4.preheader ]"   --->   Operation 49 'phi' 'i1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "%i1_cast = zext i31 %i1 to i32" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 50 'zext' 'i1_cast' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 51 [1/1] (2.47ns)   --->   "%tmp_3 = icmp slt i32 %i1_cast, %ln_read" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 51 'icmp' 'tmp_3' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (2.52ns)   --->   "%i_2 = add i31 %i1, 1" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 52 'add' 'i_2' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "br i1 %tmp_3, label %.preheader3.preheader, label %.preheader2.preheader" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 53 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%tmp_6 = trunc i31 %i1 to i10" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 54 'trunc' 'tmp_6' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (1.73ns)   --->   "%tmp_7 = add i10 128, %tmp_6" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 55 'add' 'tmp_7' <Predicate = (tmp_3)> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_16_cast2 = call i17 @_ssdm_op_BitConcatenate.i17.i10.i7(i10 %tmp_7, i7 0)" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 56 'bitconcatenate' 'tmp_16_cast2' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%tmp_8 = trunc i31 %i1 to i9" [HW2_HLS/Matrix_MUL.cpp:16]   --->   Operation 57 'trunc' 'tmp_8' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_18_cast = call i16 @_ssdm_op_BitConcatenate.i16.i9.i7(i9 %tmp_8, i7 0)" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 58 'bitconcatenate' 'tmp_18_cast' <Predicate = (tmp_3)> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (1.76ns)   --->   "br label %.preheader3" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 59 'br' <Predicate = (tmp_3)> <Delay = 1.76>
+ST_5 : Operation 60 [1/1] (1.76ns)   --->   "br label %.preheader2" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 60 'br' <Predicate = (!tmp_3)> <Delay = 1.76>
+
+State 6 <SV = 3> <Delay = 5.36>
+ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%j2 = phi i31 [ %j_2, %2 ], [ 0, %.preheader3.preheader ]"   --->   Operation 61 'phi' 'j2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%j2_cast = zext i31 %j2 to i32" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 62 'zext' 'j2_cast' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 63 [1/1] (2.47ns)   --->   "%tmp_s = icmp slt i32 %j2_cast, %lp_read" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 63 'icmp' 'tmp_s' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 64 [1/1] (2.52ns)   --->   "%j_2 = add i31 %j2, 1" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 64 'add' 'j_2' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "br i1 %tmp_s, label %2, label %.preheader4.loopexit" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 65 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (0.00ns)   --->   "%tmp_10 = trunc i31 %j2 to i16" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 66 'trunc' 'tmp_10' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_6 : Operation 67 [1/1] (0.00ns)   --->   "%tmp_12 = trunc i31 %j2 to i17" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 67 'trunc' 'tmp_12' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_6 : Operation 68 [1/1] (2.10ns)   --->   "%tmp_14 = add i17 %tmp_16_cast2, %tmp_12" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 68 'add' 'tmp_14' <Predicate = (tmp_s)> <Delay = 2.10> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_19_cast = sext i17 %tmp_14 to i64" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 69 'sext' 'tmp_19_cast' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%in_addr_1 = getelementptr [32768 x i8]* %in_r, i64 0, i64 %tmp_19_cast" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 70 'getelementptr' 'in_addr_1' <Predicate = (tmp_s)> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (2.07ns)   --->   "%tmp_16 = add i16 %tmp_18_cast, %tmp_10" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 71 'add' 'tmp_16' <Predicate = (tmp_s)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 72 [2/2] (3.25ns)   --->   "%in_load_1 = load i8* %in_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 72 'load' 'in_load_1' <Predicate = (tmp_s)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_6 : Operation 73 [1/1] (0.00ns)   --->   "br label %.preheader4"   --->   Operation 73 'br' <Predicate = (!tmp_s)> <Delay = 0.00>
+
+State 7 <SV = 4> <Delay = 6.50>
+ST_7 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_20_cast = zext i16 %tmp_16 to i64" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 74 'zext' 'tmp_20_cast' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 75 [1/1] (0.00ns)   --->   "%b_addr = getelementptr [16384 x i8]* %b, i64 0, i64 %tmp_20_cast" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 75 'getelementptr' 'b_addr' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 76 [1/2] (3.25ns)   --->   "%in_load_1 = load i8* %in_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 76 'load' 'in_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_7 : Operation 77 [1/1] (3.25ns)   --->   "store i8 %in_load_1, i8* %b_addr, align 1" [HW2_HLS/Matrix_MUL.cpp:18]   --->   Operation 77 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_7 : Operation 78 [1/1] (0.00ns)   --->   "br label %.preheader3" [HW2_HLS/Matrix_MUL.cpp:17]   --->   Operation 78 'br' <Predicate = true> <Delay = 0.00>
+
+State 8 <SV = 3> <Delay = 2.52>
+ST_8 : Operation 79 [1/1] (0.00ns)   --->   "%i3 = phi i31 [ %i_3, %.preheader2.loopexit ], [ 0, %.preheader2.preheader ]"   --->   Operation 79 'phi' 'i3' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 80 [1/1] (0.00ns)   --->   "%i3_cast = zext i31 %i3 to i32" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 80 'zext' 'i3_cast' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 81 [1/1] (2.47ns)   --->   "%tmp_5 = icmp slt i32 %i3_cast, %lm_read" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 81 'icmp' 'tmp_5' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 82 [1/1] (2.52ns)   --->   "%i_3 = add i31 %i3, 1" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 82 'add' 'i_3' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 83 [1/1] (0.00ns)   --->   "br i1 %tmp_5, label %.preheader1.preheader, label %5" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 83 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_17 = trunc i31 %i3 to i9" [HW2_HLS/Matrix_MUL.cpp:22]   --->   Operation 84 'trunc' 'tmp_17' <Predicate = (tmp_5)> <Delay = 0.00>
+ST_8 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_22_cast = call i16 @_ssdm_op_BitConcatenate.i16.i9.i7(i9 %tmp_17, i7 0)" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 85 'bitconcatenate' 'tmp_22_cast' <Predicate = (tmp_5)> <Delay = 0.00>
+ST_8 : Operation 86 [1/1] (1.76ns)   --->   "br label %.preheader1" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 86 'br' <Predicate = (tmp_5)> <Delay = 1.76>
+ST_8 : Operation 87 [1/1] (0.00ns)   --->   "ret void" [HW2_HLS/Matrix_MUL.cpp:31]   --->   Operation 87 'ret' <Predicate = (!tmp_5)> <Delay = 0.00>
+
+State 9 <SV = 4> <Delay = 2.52>
+ST_9 : Operation 88 [1/1] (0.00ns)   --->   "%j4 = phi i31 [ %j_3, %4 ], [ 0, %.preheader1.preheader ]"   --->   Operation 88 'phi' 'j4' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 89 [1/1] (0.00ns)   --->   "%j4_cast = zext i31 %j4 to i32" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 89 'zext' 'j4_cast' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 90 [1/1] (2.47ns)   --->   "%tmp_11 = icmp slt i32 %j4_cast, %lp_read" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 90 'icmp' 'tmp_11' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 91 [1/1] (2.52ns)   --->   "%j_3 = add i31 %j4, 1" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 91 'add' 'j_3' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 92 [1/1] (0.00ns)   --->   "br i1 %tmp_11, label %.preheader.preheader, label %.preheader2.loopexit" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 92 'br' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 93 [1/1] (0.00ns)   --->   "%tmp_18 = trunc i31 %j4 to i16" [HW2_HLS/Matrix_MUL.cpp:28]   --->   Operation 93 'trunc' 'tmp_18' <Predicate = (tmp_11)> <Delay = 0.00>
+ST_9 : Operation 94 [1/1] (2.07ns)   --->   "%tmp_19 = add i16 %tmp_22_cast, %tmp_18" [HW2_HLS/Matrix_MUL.cpp:28]   --->   Operation 94 'add' 'tmp_19' <Predicate = (tmp_11)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 95 [1/1] (0.00ns)   --->   "%tmp_23_cast = zext i16 %tmp_19 to i64" [HW2_HLS/Matrix_MUL.cpp:28]   --->   Operation 95 'zext' 'tmp_23_cast' <Predicate = (tmp_11)> <Delay = 0.00>
+ST_9 : Operation 96 [1/1] (0.00ns)   --->   "%c_addr = getelementptr [16384 x i32]* %c, i64 0, i64 %tmp_23_cast" [HW2_HLS/Matrix_MUL.cpp:28]   --->   Operation 96 'getelementptr' 'c_addr' <Predicate = (tmp_11)> <Delay = 0.00>
+ST_9 : Operation 97 [1/1] (1.76ns)   --->   "br label %.preheader" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 97 'br' <Predicate = (tmp_11)> <Delay = 1.76>
+ST_9 : Operation 98 [1/1] (0.00ns)   --->   "br label %.preheader2"   --->   Operation 98 'br' <Predicate = (!tmp_11)> <Delay = 0.00>
+
+State 10 <SV = 5> <Delay = 5.33>
+ST_10 : Operation 99 [1/1] (0.00ns)   --->   "%sum = phi i32 [ %sum_1, %3 ], [ 0, %.preheader.preheader ]"   --->   Operation 99 'phi' 'sum' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 100 [1/1] (0.00ns)   --->   "%n = phi i31 [ %n_1, %3 ], [ 0, %.preheader.preheader ]"   --->   Operation 100 'phi' 'n' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 101 [1/1] (0.00ns)   --->   "%n_cast = zext i31 %n to i32" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 101 'zext' 'n_cast' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 102 [1/1] (2.47ns)   --->   "%tmp_13 = icmp slt i32 %n_cast, %ln_read" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 102 'icmp' 'tmp_13' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 103 [1/1] (2.52ns)   --->   "%n_1 = add i31 %n, 1" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 103 'add' 'n_1' <Predicate = true> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 104 [1/1] (0.00ns)   --->   "br i1 %tmp_13, label %3, label %4" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 104 'br' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 105 [1/1] (0.00ns)   --->   "%tmp_20 = trunc i31 %n to i16" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 105 'trunc' 'tmp_20' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 106 [1/1] (2.07ns)   --->   "%tmp_21 = add i16 %tmp_22_cast, %tmp_20" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 106 'add' 'tmp_21' <Predicate = (tmp_13)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 107 [1/1] (0.00ns)   --->   "%tmp_24_cast = zext i16 %tmp_21 to i64" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 107 'zext' 'tmp_24_cast' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 108 [1/1] (0.00ns)   --->   "%a_addr_1 = getelementptr [16384 x i8]* %a, i64 0, i64 %tmp_24_cast" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 108 'getelementptr' 'a_addr_1' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 109 [1/1] (0.00ns)   --->   "%tmp_22 = trunc i31 %n to i9" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 109 'trunc' 'tmp_22' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 110 [1/1] (0.00ns)   --->   "%tmp_26_cast = call i16 @_ssdm_op_BitConcatenate.i16.i9.i7(i9 %tmp_22, i7 0)" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 110 'bitconcatenate' 'tmp_26_cast' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 111 [1/1] (2.07ns)   --->   "%tmp_23 = add i16 %tmp_26_cast, %tmp_18" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 111 'add' 'tmp_23' <Predicate = (tmp_13)> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 112 [1/1] (0.00ns)   --->   "%tmp_27_cast = zext i16 %tmp_23 to i64" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 112 'zext' 'tmp_27_cast' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 113 [1/1] (0.00ns)   --->   "%b_addr_1 = getelementptr [16384 x i8]* %b, i64 0, i64 %tmp_27_cast" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 113 'getelementptr' 'b_addr_1' <Predicate = (tmp_13)> <Delay = 0.00>
+ST_10 : Operation 114 [2/2] (3.25ns)   --->   "%a_load = load i8* %a_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 114 'load' 'a_load' <Predicate = (tmp_13)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_10 : Operation 115 [2/2] (3.25ns)   --->   "%b_load = load i8* %b_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 115 'load' 'b_load' <Predicate = (tmp_13)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_10 : Operation 116 [1/1] (3.25ns)   --->   "store i32 %sum, i32* %c_addr, align 4" [HW2_HLS/Matrix_MUL.cpp:28]   --->   Operation 116 'store' <Predicate = (!tmp_13)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_10 : Operation 117 [1/1] (0.00ns)   --->   "br label %.preheader1" [HW2_HLS/Matrix_MUL.cpp:23]   --->   Operation 117 'br' <Predicate = (!tmp_13)> <Delay = 0.00>
+
+State 11 <SV = 6> <Delay = 3.25>
+ST_11 : Operation 118 [1/2] (3.25ns)   --->   "%a_load = load i8* %a_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 118 'load' 'a_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+ST_11 : Operation 119 [1/2] (3.25ns)   --->   "%b_load = load i8* %b_addr_1, align 1" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 119 'load' 'b_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 16384> <RAM>
+
+State 12 <SV = 7> <Delay = 6.38>
+ST_12 : Operation 120 [1/1] (0.00ns)   --->   "%tmp_15_cast = zext i8 %a_load to i16" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 120 'zext' 'tmp_15_cast' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 121 [1/1] (0.00ns)   --->   "%tmp_16_cast = zext i8 %b_load to i16" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 121 'zext' 'tmp_16_cast' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 122 [1/1] (3.36ns)   --->   "%tmp_15 = mul i16 %tmp_16_cast, %tmp_15_cast" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 122 'mul' 'tmp_15' <Predicate = true> <Delay = 3.36> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 123 [1/1] (0.00ns)   --->   "%tmp_17_cast = zext i16 %tmp_15 to i32" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 123 'zext' 'tmp_17_cast' <Predicate = true> <Delay = 0.00>
+ST_12 : Operation 124 [1/1] (3.02ns)   --->   "%sum_1 = add nsw i32 %sum, %tmp_17_cast" [HW2_HLS/Matrix_MUL.cpp:26]   --->   Operation 124 'add' 'sum_1' <Predicate = true> <Delay = 3.02> <Core = "DSP48">   --->   Core 61 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 125 [1/1] (0.00ns)   --->   "br label %.preheader" [HW2_HLS/Matrix_MUL.cpp:25]   --->   Operation 125 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', HW2_HLS/Matrix_MUL.cpp:11) [19]  (1.77 ns)
+
+ <State 2>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', HW2_HLS/Matrix_MUL.cpp:11) [19]  (0 ns)
+	'add' operation ('i', HW2_HLS/Matrix_MUL.cpp:11) [22]  (2.52 ns)
+
+ <State 3>: 5.36ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', HW2_HLS/Matrix_MUL.cpp:12) [29]  (0 ns)
+	'add' operation ('tmp_9', HW2_HLS/Matrix_MUL.cpp:13) [36]  (2.11 ns)
+	'getelementptr' operation ('in_addr', HW2_HLS/Matrix_MUL.cpp:13) [38]  (0 ns)
+	'load' operation ('in_load', HW2_HLS/Matrix_MUL.cpp:13) on array 'in_r' [40]  (3.25 ns)
+
+ <State 4>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('in_load', HW2_HLS/Matrix_MUL.cpp:13) on array 'in_r' [40]  (3.25 ns)
+	'store' operation (HW2_HLS/Matrix_MUL.cpp:13) of variable 'in_load', HW2_HLS/Matrix_MUL.cpp:13 on array 'a', HW2_HLS/Matrix_MUL.cpp:6 [41]  (3.25 ns)
+
+ <State 5>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', HW2_HLS/Matrix_MUL.cpp:16) [48]  (0 ns)
+	'add' operation ('i', HW2_HLS/Matrix_MUL.cpp:16) [51]  (2.52 ns)
+
+ <State 6>: 5.36ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', HW2_HLS/Matrix_MUL.cpp:17) [61]  (0 ns)
+	'add' operation ('tmp_14', HW2_HLS/Matrix_MUL.cpp:18) [69]  (2.11 ns)
+	'getelementptr' operation ('in_addr_1', HW2_HLS/Matrix_MUL.cpp:18) [71]  (0 ns)
+	'load' operation ('in_load_1', HW2_HLS/Matrix_MUL.cpp:18) on array 'in_r' [75]  (3.25 ns)
+
+ <State 7>: 6.51ns
+The critical path consists of the following:
+	'load' operation ('in_load_1', HW2_HLS/Matrix_MUL.cpp:18) on array 'in_r' [75]  (3.25 ns)
+	'store' operation (HW2_HLS/Matrix_MUL.cpp:18) of variable 'in_load_1', HW2_HLS/Matrix_MUL.cpp:18 on array 'b', HW2_HLS/Matrix_MUL.cpp:7 [76]  (3.25 ns)
+
+ <State 8>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', HW2_HLS/Matrix_MUL.cpp:22) [83]  (0 ns)
+	'add' operation ('i', HW2_HLS/Matrix_MUL.cpp:22) [86]  (2.52 ns)
+
+ <State 9>: 2.52ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', HW2_HLS/Matrix_MUL.cpp:23) [93]  (0 ns)
+	'add' operation ('j', HW2_HLS/Matrix_MUL.cpp:23) [96]  (2.52 ns)
+
+ <State 10>: 5.33ns
+The critical path consists of the following:
+	'phi' operation ('n') with incoming values : ('n', HW2_HLS/Matrix_MUL.cpp:25) [106]  (0 ns)
+	'add' operation ('tmp_23', HW2_HLS/Matrix_MUL.cpp:26) [118]  (2.08 ns)
+	'getelementptr' operation ('b_addr_1', HW2_HLS/Matrix_MUL.cpp:26) [120]  (0 ns)
+	'load' operation ('b_load', HW2_HLS/Matrix_MUL.cpp:26) on array 'b', HW2_HLS/Matrix_MUL.cpp:7 [123]  (3.25 ns)
+
+ <State 11>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('a_load', HW2_HLS/Matrix_MUL.cpp:26) on array 'a', HW2_HLS/Matrix_MUL.cpp:6 [121]  (3.25 ns)
+
+ <State 12>: 6.38ns
+The critical path consists of the following:
+	'mul' operation ('tmp_15', HW2_HLS/Matrix_MUL.cpp:26) [125]  (3.36 ns)
+	'add' operation ('sum', HW2_HLS/Matrix_MUL.cpp:26) [127]  (3.02 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
