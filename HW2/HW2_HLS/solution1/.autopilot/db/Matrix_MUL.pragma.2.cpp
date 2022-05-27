@@ -298,8 +298,13 @@ typedef unsigned char u8;
 typedef unsigned int u32;
 
 void matrixMul(int lm, int ln, int lp, u8 in[256][128], u32 c[128][128]){_ssdm_SpecArrayDimSize(in, 256);_ssdm_SpecArrayDimSize(c, 128);
+_ssdm_op_SpecInterface(c, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(in, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(ln, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(lp, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(lm, "s_axilite", 1, 1, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
-    u8 a[128][128];
+ u8 a[128][128];
  u8 b[128][128];
 
 

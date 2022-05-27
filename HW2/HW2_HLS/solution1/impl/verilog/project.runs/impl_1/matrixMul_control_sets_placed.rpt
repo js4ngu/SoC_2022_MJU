@@ -1,0 +1,100 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri May 28 02:08:19 2021
+| Host         : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file matrixMul_control_sets_placed.rpt
+| Design       : matrixMul
+| Device       : xc7z020
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    33 |
+| Unused register locations in slices containing registers |    60 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            1 |
+|     12 |            1 |
+|     14 |            3 |
+|    16+ |           28 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              50 |           10 |
+| Yes          | No                    | No                     |            1180 |          145 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             626 |           59 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+----------------------------------------------+-----------------------------------------+------------------+----------------+
+| Clock Signal |                 Enable Signal                |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++--------------+----------------------------------------------+-----------------------------------------+------------------+----------------+
+|  ap_clk      |                                              |                                         |                2 |              4 |
+|  ap_clk      | matrixMul_AXILiteS_s_axi_U/waddr             |                                         |                1 |             12 |
+|  ap_clk      | j_reg_1380                                   |                                         |                1 |             14 |
+|  ap_clk      | j2_reg_1600                                  |                                         |                1 |             14 |
+|  ap_clk      | j4_reg_182                                   |                                         |                1 |             14 |
+|  ap_clk      | in_r_0_load_B                                |                                         |                2 |             16 |
+|  ap_clk      | in_r_0_load_A                                |                                         |                1 |             16 |
+|  ap_clk      | n_reg_2070                                   |                                         |                3 |             28 |
+|  ap_clk      | tmp_10_reg_5050                              |                                         |                4 |             28 |
+|  ap_clk      | tmp_9_reg_4790                               |                                         |                5 |             28 |
+|  ap_clk      |                                              | matrixMul_AXILiteS_s_axi_U/ap_rst_n_inv |               10 |             50 |
+|  ap_clk      | ap_CS_fsm_state4                             |                                         |                9 |             62 |
+|  ap_clk      | ap_block_state11_io                          |                                         |                9 |             62 |
+|  ap_clk      | ap_CS_fsm_state10                            |                                         |                9 |             62 |
+|  ap_clk      | ap_CS_fsm_state7                             |                                         |                9 |             62 |
+|  ap_clk      | ap_CS_fsm_state13                            | n_reg_2070                              |                7 |             62 |
+|  ap_clk      | i1_reg_149[30]_i_2_n_4                       | i1_reg_149[30]_i_1_n_4                  |                5 |             62 |
+|  ap_clk      | i3_reg_171[30]_i_2_n_4                       | ap_NS_fsm123_out                        |                8 |             62 |
+|  ap_clk      | i_reg_127[30]_i_2_n_4                        | i_reg_127                               |                7 |             62 |
+|  ap_clk      | p_31_in                                      |                                         |                9 |             62 |
+|  ap_clk      | ap_CS_fsm_state6                             |                                         |                9 |             62 |
+|  ap_clk      | j4_reg_182[30]_i_2_n_4                       | j4_reg_182                              |                7 |             62 |
+|  ap_clk      | ap_CS_fsm_state3                             |                                         |                9 |             62 |
+|  ap_clk      | a_U/matrixMul_a_ram_U/we0                    | j_reg_1380                              |                5 |             62 |
+|  ap_clk      | b_U/matrixMul_a_ram_U/we0                    | j2_reg_1600                             |                5 |             62 |
+|  ap_clk      | matrixMul_AXILiteS_s_axi_U/p_0_in3_out       | matrixMul_AXILiteS_s_axi_U/ap_rst_n_inv |                5 |             64 |
+|  ap_clk      | matrixMul_AXILiteS_s_axi_U/p_0_in5_out       | matrixMul_AXILiteS_s_axi_U/ap_rst_n_inv |                4 |             64 |
+|  ap_clk      | matrixMul_AXILiteS_s_axi_U/p_0_in1_out       | matrixMul_AXILiteS_s_axi_U/ap_rst_n_inv |                6 |             64 |
+|  ap_clk      | matrixMul_AXILiteS_s_axi_U/rdata[31]_i_1_n_4 |                                         |                9 |             64 |
+|  ap_clk      | c_1_load_A                                   |                                         |                6 |             64 |
+|  ap_clk      | c_1_load_B                                   |                                         |                8 |             64 |
+|  ap_clk      | ap_CS_fsm_state2                             |                                         |               23 |            192 |
+|  ap_clk      | ln_0_data_reg[31]_i_1_n_4                    |                                         |               17 |            192 |
++--------------+----------------------------------------------+-----------------------------------------+------------------+----------------+
+
+

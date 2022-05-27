@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'matrixMul'
 ================================================================
-* Date:           Sat May 28 01:53:21 2022
+* Date:           Sat May 28 02:04:19 2022
 
 * Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
 * Project:        HW2_HLS
@@ -20,7 +20,7 @@
     +--------+-------+----------+------------+
     |  Clock | Target| Estimated| Uncertainty|
     +--------+-------+----------+------------+
-    |ap_clk  |  10.00|     6.508|        1.25|
+    |ap_clk  |  10.00|     6.380|        1.25|
     +--------+-------+----------+------------+
 
 + Latency (clock cycles): 
@@ -60,14 +60,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
 +-----------------+---------+-------+--------+-------+
 |DSP              |        -|      1|       -|      -|
-|Expression       |        -|      -|       0|    546|
+|Expression       |        -|      -|       0|    510|
 |FIFO             |        -|      -|       -|      -|
-|Instance         |        -|      -|       -|      -|
+|Instance         |        0|      -|     144|    232|
 |Memory           |       16|      -|       0|      0|
-|Multiplexer      |        -|      -|       -|    173|
-|Register         |        -|      -|     595|      -|
+|Multiplexer      |        -|      -|       -|    230|
+|Register         |        -|      -|     851|      -|
 +-----------------+---------+-------+--------+-------+
-|Total            |       16|      1|     595|    719|
+|Total            |       16|      1|     995|    972|
 +-----------------+---------+-------+--------+-------+
 |Available        |      280|    220|  106400|  53200|
 +-----------------+---------+-------+--------+-------+
@@ -76,7 +76,13 @@
 
 + Detail: 
     * Instance: 
-    N/A
+    +----------------------------+--------------------------+---------+-------+-----+-----+
+    |          Instance          |          Module          | BRAM_18K| DSP48E|  FF | LUT |
+    +----------------------------+--------------------------+---------+-------+-----+-----+
+    |matrixMul_AXILiteS_s_axi_U  |matrixMul_AXILiteS_s_axi  |        0|      0|  144|  232|
+    +----------------------------+--------------------------+---------+-------+-----+-----+
+    |Total                       |                          |        0|      0|  144|  232|
+    +----------------------------+--------------------------+---------+-------+-----+-----+
 
     * DSP48: 
     +-------------------------+----------------------+--------------+
@@ -99,86 +105,112 @@
     N/A
 
     * Expression: 
-    +------------------+----------+-------+---+----+------------+------------+
-    |   Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
-    +------------------+----------+-------+---+----+------------+------------+
-    |i_1_fu_234_p2     |     +    |      0|  0|  38|          31|           1|
-    |i_2_fu_290_p2     |     +    |      0|  0|  38|          31|           1|
-    |i_3_fu_377_p2     |     +    |      0|  0|  38|          31|           1|
-    |j_1_fu_261_p2     |     +    |      0|  0|  38|          31|           1|
-    |j_2_fu_335_p2     |     +    |      0|  0|  38|          31|           1|
-    |j_3_fu_404_p2     |     +    |      0|  0|  38|          31|           1|
-    |n_1_fu_433_p2     |     +    |      0|  0|  38|          31|           1|
-    |tmp_14_fu_349_p2  |     +    |      0|  0|  24|          17|          17|
-    |tmp_16_fu_359_p2  |     +    |      0|  0|  23|          16|          16|
-    |tmp_19_fu_414_p2  |     +    |      0|  0|  23|          16|          16|
-    |tmp_21_fu_443_p2  |     +    |      0|  0|  23|          16|          16|
-    |tmp_23_fu_465_p2  |     +    |      0|  0|  23|          16|          16|
-    |tmp_7_fu_300_p2   |     +    |      0|  0|  14|           8|          10|
-    |tmp_9_fu_271_p2   |     +    |      0|  0|  24|          17|          17|
-    |tmp_11_fu_399_p2  |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_13_fu_428_p2  |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_2_fu_256_p2   |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_3_fu_285_p2   |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_5_fu_372_p2   |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_fu_229_p2     |   icmp   |      0|  0|  18|          32|          32|
-    |tmp_s_fu_330_p2   |   icmp   |      0|  0|  18|          32|          32|
-    +------------------+----------+-------+---+----+------------+------------+
-    |Total             |          |      0|  0| 546|         547|         339|
-    +------------------+----------+-------+---+----+------------+------------+
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |i_1_fu_227_p2          |     +    |      0|  0|  38|          31|           1|
+    |i_2_fu_282_p2          |     +    |      0|  0|  38|          31|           1|
+    |i_3_fu_337_p2          |     +    |      0|  0|  38|          31|           1|
+    |j_1_fu_254_p2          |     +    |      0|  0|  38|          31|           1|
+    |j_2_fu_309_p2          |     +    |      0|  0|  38|          31|           1|
+    |j_3_fu_364_p2          |     +    |      0|  0|  38|          31|           1|
+    |n_1_fu_383_p2          |     +    |      0|  0|  38|          31|           1|
+    |tmp_10_fu_319_p2       |     +    |      0|  0|  23|          16|          16|
+    |tmp_16_fu_393_p2       |     +    |      0|  0|  23|          16|          16|
+    |tmp_18_fu_415_p2       |     +    |      0|  0|  23|          16|          16|
+    |tmp_9_fu_264_p2        |     +    |      0|  0|  23|          16|          16|
+    |ap_block_state11_io    |    and   |      0|  0|   2|           1|           1|
+    |c_1_load_A             |    and   |      0|  0|   2|           1|           1|
+    |c_1_load_B             |    and   |      0|  0|   2|           1|           1|
+    |in_r_0_load_A          |    and   |      0|  0|   2|           1|           1|
+    |in_r_0_load_B          |    and   |      0|  0|   2|           1|           1|
+    |c_1_state_cmp_full     |   icmp   |      0|  0|   8|           2|           1|
+    |in_r_0_state_cmp_full  |   icmp   |      0|  0|   8|           2|           1|
+    |tmp_11_fu_378_p2       |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_2_fu_249_p2        |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_3_fu_277_p2        |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_5_fu_332_p2        |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_8_fu_359_p2        |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_fu_222_p2          |   icmp   |      0|  0|  18|          32|          32|
+    |tmp_s_fu_304_p2        |   icmp   |      0|  0|  18|          32|          32|
+    +-----------------------+----------+-------+---+----+------------+------------+
+    |Total                  |          |      0|  0| 510|         514|         302|
+    +-----------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +---------------+----+-----------+-----+-----------+
-    |      Name     | LUT| Input Size| Bits| Total Bits|
-    +---------------+----+-----------+-----+-----------+
-    |a_address0     |  15|          3|   14|         42|
-    |ap_NS_fsm      |  56|         13|    1|         13|
-    |b_address0     |  15|          3|   14|         42|
-    |i1_reg_157     |   9|          2|   31|         62|
-    |i3_reg_179     |   9|          2|   31|         62|
-    |i_reg_135      |   9|          2|   31|         62|
-    |in_r_address0  |  15|          3|   15|         45|
-    |j2_reg_168     |   9|          2|   31|         62|
-    |j4_reg_190     |   9|          2|   31|         62|
-    |j_reg_146      |   9|          2|   31|         62|
-    |n_reg_214      |   9|          2|   31|         62|
-    |sum_reg_201    |   9|          2|   32|         64|
-    +---------------+----+-----------+-----+-----------+
-    |Total          | 173|         38|  293|        640|
-    +---------------+----+-----------+-----+-----------+
+    +------------------+----+-----------+-----+-----------+
+    |       Name       | LUT| Input Size| Bits| Total Bits|
+    +------------------+----+-----------+-----+-----------+
+    |a_address0        |  15|          3|   14|         42|
+    |ap_NS_fsm         |  62|         15|    1|         15|
+    |b_address0        |  15|          3|   14|         42|
+    |c_1_data_out      |   9|          2|   32|         64|
+    |c_1_state         |  15|          3|    2|          6|
+    |c_TDATA_blk_n     |   9|          2|    1|          2|
+    |i1_reg_149        |   9|          2|   31|         62|
+    |i3_reg_171        |   9|          2|   31|         62|
+    |i_reg_127         |   9|          2|   31|         62|
+    |in_r_0_data_out   |   9|          2|    8|         16|
+    |in_r_0_state      |  15|          3|    2|          6|
+    |in_r_TDATA_blk_n  |   9|          2|    1|          2|
+    |j2_reg_160        |   9|          2|   31|         62|
+    |j4_reg_182        |   9|          2|   31|         62|
+    |j_reg_138         |   9|          2|   31|         62|
+    |n_reg_207         |   9|          2|   31|         62|
+    |sum_reg_193       |   9|          2|   32|         64|
+    +------------------+----+-----------+-----+-----------+
+    |Total             | 230|         51|  324|        693|
+    +------------------+----+-----------+-----+-----------+
 
     * Register: 
     +----------------------+----+----+-----+-----------+
     |         Name         | FF | LUT| Bits| Const Bits|
     +----------------------+----+----+-----+-----------+
-    |a_load_reg_625        |   8|   0|    8|          0|
-    |ap_CS_fsm             |  12|   0|   12|          0|
-    |b_load_reg_630        |   8|   0|    8|          0|
-    |c_addr_reg_602        |  14|   0|   14|          0|
-    |i1_reg_157            |  31|   0|   31|          0|
-    |i3_reg_179            |  31|   0|   31|          0|
-    |i_1_reg_511           |  31|   0|   31|          0|
-    |i_2_reg_542           |  31|   0|   31|          0|
-    |i_3_reg_578           |  31|   0|   31|          0|
-    |i_reg_135             |  31|   0|   31|          0|
-    |j2_reg_168            |  31|   0|   31|          0|
-    |j4_reg_190            |  31|   0|   31|          0|
-    |j_1_reg_524           |  31|   0|   31|          0|
-    |j_2_reg_560           |  31|   0|   31|          0|
-    |j_3_reg_592           |  31|   0|   31|          0|
-    |j_reg_146             |  31|   0|   31|          0|
-    |n_1_reg_610           |  31|   0|   31|          0|
-    |n_reg_214             |  31|   0|   31|          0|
-    |sum_reg_201           |  32|   0|   32|          0|
-    |tmp_16_cast2_reg_547  |  10|   0|   17|          7|
-    |tmp_16_reg_570        |  16|   0|   16|          0|
-    |tmp_18_cast_reg_552   |   9|   0|   16|          7|
-    |tmp_18_reg_597        |  16|   0|   16|          0|
-    |tmp_22_cast_reg_583   |   9|   0|   16|          7|
-    |tmp_8_cast_reg_516    |  10|   0|   17|          7|
-    |tmp_9_cast_reg_529    |  17|   0|   64|         47|
+    |a_load_reg_554        |   8|   0|    8|          0|
+    |ap_CS_fsm             |  14|   0|   14|          0|
+    |b_load_reg_559        |   8|   0|    8|          0|
+    |c_1_payload_A         |  32|   0|   32|          0|
+    |c_1_payload_B         |  32|   0|   32|          0|
+    |c_1_sel_rd            |   1|   0|    1|          0|
+    |c_1_sel_wr            |   1|   0|    1|          0|
+    |c_1_state             |   2|   0|    2|          0|
+    |i1_reg_149            |  31|   0|   31|          0|
+    |i3_reg_171            |  31|   0|   31|          0|
+    |i_1_reg_461           |  31|   0|   31|          0|
+    |i_2_reg_487           |  31|   0|   31|          0|
+    |i_3_reg_513           |  31|   0|   31|          0|
+    |i_reg_127             |  31|   0|   31|          0|
+    |in_r_0_payload_A      |   8|   0|    8|          0|
+    |in_r_0_payload_B      |   8|   0|    8|          0|
+    |in_r_0_sel_rd         |   1|   0|    1|          0|
+    |in_r_0_sel_wr         |   1|   0|    1|          0|
+    |in_r_0_state          |   2|   0|    2|          0|
+    |j2_reg_160            |  31|   0|   31|          0|
+    |j4_reg_182            |  31|   0|   31|          0|
+    |j_1_reg_474           |  31|   0|   31|          0|
+    |j_2_reg_500           |  31|   0|   31|          0|
+    |j_3_reg_526           |  31|   0|   31|          0|
+    |j_reg_138             |  31|   0|   31|          0|
+    |lm_0_data_reg         |  32|   0|   32|          0|
+    |lm_0_vld_reg          |   0|   0|    1|          1|
+    |lm_read_reg_452       |  32|   0|   32|          0|
+    |ln_0_data_reg         |  32|   0|   32|          0|
+    |ln_0_vld_reg          |   0|   0|    1|          1|
+    |ln_read_reg_445       |  32|   0|   32|          0|
+    |lp_0_data_reg         |  32|   0|   32|          0|
+    |lp_0_vld_reg          |   0|   0|    1|          1|
+    |lp_read_reg_439       |  32|   0|   32|          0|
+    |n_1_reg_539           |  31|   0|   31|          0|
+    |n_reg_207             |  31|   0|   31|          0|
+    |sum_reg_193           |  32|   0|   32|          0|
+    |tmp_10_reg_505        |  16|   0|   16|          0|
+    |tmp_14_reg_531        |  16|   0|   16|          0|
+    |tmp_15_cast1_reg_492  |   9|   0|   16|          7|
+    |tmp_18_cast_reg_518   |   9|   0|   16|          7|
+    |tmp_7_cast_reg_466    |   9|   0|   16|          7|
+    |tmp_9_reg_479         |  16|   0|   16|          0|
     +----------------------+----+----+-----+-----------+
-    |Total                 | 595|   0|  670|         75|
+    |Total                 | 851|   0|  875|         24|
     +----------------------+----+----+-----+-----------+
 
 
@@ -187,24 +219,37 @@
 == Interface
 ================================================================
 * Summary: 
-+---------------+-----+-----+------------+--------------+--------------+
-|   RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
-+---------------+-----+-----+------------+--------------+--------------+
-|ap_clk         |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
-|ap_rst         |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
-|ap_start       |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
-|ap_done        | out |    1| ap_ctrl_hs |   matrixMul  | return value |
-|ap_idle        | out |    1| ap_ctrl_hs |   matrixMul  | return value |
-|ap_ready       | out |    1| ap_ctrl_hs |   matrixMul  | return value |
-|lm             |  in |   32|   ap_none  |      lm      |    scalar    |
-|ln             |  in |   32|   ap_none  |      ln      |    scalar    |
-|lp             |  in |   32|   ap_none  |      lp      |    scalar    |
-|in_r_address0  | out |   15|  ap_memory |     in_r     |     array    |
-|in_r_ce0       | out |    1|  ap_memory |     in_r     |     array    |
-|in_r_q0        |  in |    8|  ap_memory |     in_r     |     array    |
-|c_address0     | out |   14|  ap_memory |       c      |     array    |
-|c_ce0          | out |    1|  ap_memory |       c      |     array    |
-|c_we0          | out |    1|  ap_memory |       c      |     array    |
-|c_d0           | out |   32|  ap_memory |       c      |     array    |
-+---------------+-----+-----+------------+--------------+--------------+
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_AWADDR   |  in |    6|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_ARADDR   |  in |    6|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |    scalar    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |    scalar    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
+|ap_start                |  in |    1| ap_ctrl_hs |   matrixMul  | return value |
+|ap_done                 | out |    1| ap_ctrl_hs |   matrixMul  | return value |
+|ap_idle                 | out |    1| ap_ctrl_hs |   matrixMul  | return value |
+|ap_ready                | out |    1| ap_ctrl_hs |   matrixMul  | return value |
+|in_r_TDATA              |  in |    8|    axis    |     in_r     |    pointer   |
+|in_r_TVALID             |  in |    1|    axis    |     in_r     |    pointer   |
+|in_r_TREADY             | out |    1|    axis    |     in_r     |    pointer   |
+|c_TDATA                 | out |   32|    axis    |       c      |    pointer   |
+|c_TVALID                | out |    1|    axis    |       c      |    pointer   |
+|c_TREADY                |  in |    1|    axis    |       c      |    pointer   |
++------------------------+-----+-----+------------+--------------+--------------+
 

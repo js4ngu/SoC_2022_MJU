@@ -150,8 +150,13 @@ typedef unsigned char u8;
 typedef unsigned int u32;
 
 void matrixMul(int lm, int ln, int lp, u8 in[256][128], u32 c[128][128]){_ssdm_SpecArrayDimSize(in, 256);_ssdm_SpecArrayDimSize(c, 128);
+#pragma HLS INTERFACE axis register both port=&c
+#pragma HLS INTERFACE axis register both port=&in
+#pragma HLS INTERFACE s_axilite register port=&ln
+#pragma HLS INTERFACE s_axilite register port=&lp
+#pragma HLS INTERFACE s_axilite register port=&lm
 
-    u8 a[128][128];
+ u8 a[128][128];
  u8 b[128][128];
 
 

@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Fri May 28 02:07:37 2021
+| Host         : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
+| Command      : report_timing -file ./report/matrixMul_timing_synth.rpt
+| Design       : matrixMul
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.928ns  (required time - arrival time)
+  Source:                 j4_reg_182_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            n_reg_207_reg[0]/R
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.464ns  (logic 1.888ns (42.294%)  route 2.576ns (57.706%))
+  Logic Levels:           6  (CARRY4=4 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=940, unset)          0.973     0.973    ap_clk
+                         FDRE                                         r  j4_reg_182_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.518     1.491 f  j4_reg_182_reg[0]/Q
+                         net (fo=5, unplaced)         0.769     2.260    j4_reg_182_reg_n_4_[0]
+                         LUT4 (Prop_lut4_I1_O)        0.319     2.579 r  ap_CS_fsm[10]_i_33/O
+                         net (fo=1, unplaced)         0.000     2.579    ap_CS_fsm[10]_i_33_n_4
+                         CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.576     3.155 r  ap_CS_fsm_reg[10]_i_21/CO[3]
+                         net (fo=1, unplaced)         0.009     3.164    ap_CS_fsm_reg[10]_i_21_n_4
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.281 r  ap_CS_fsm_reg[10]_i_12/CO[3]
+                         net (fo=1, unplaced)         0.000     3.281    ap_CS_fsm_reg[10]_i_12_n_4
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.398 r  ap_CS_fsm_reg[10]_i_3/CO[3]
+                         net (fo=1, unplaced)         0.000     3.398    ap_CS_fsm_reg[10]_i_3_n_4
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     3.515 r  ap_CS_fsm_reg[10]_i_2/CO[3]
+                         net (fo=4, unplaced)         0.942     4.457    tmp_8_fu_359_p2
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.581 r  n_reg_207[30]_i_1/O
+                         net (fo=46, unplaced)        0.856     5.437    n_reg_2070
+                         FDRE                                         r  n_reg_207_reg[0]/R
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=940, unset)          0.924    10.924    ap_clk
+                         FDRE                                         r  n_reg_207_reg[0]/C
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+                         FDRE (Setup_fdre_C_R)       -0.524    10.365    n_reg_207_reg[0]
+  -------------------------------------------------------------------
+                         required time                         10.365    
+                         arrival time                          -5.437    
+  -------------------------------------------------------------------
+                         slack                                  4.928    
+
+
+
+
