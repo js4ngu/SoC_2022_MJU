@@ -1,7 +1,11 @@
-void matrixMul(int lm, int ln, int lp, int in[256][128]){
-    int a[128][128]; //1st array : lm * ln
-	int b[128][128]; //2nd array : ln * lp
-	int c[128][128]; //output array : lm * lp
+typedef unsigned char u8;
+typedef unsigned int u32;
+
+void matrixMul(int lm, int ln, int lp, u8 in[256][128], u32 c[128][128]){
+
+    u8 a[128][128]; //1st array : lm * ln
+	u8 b[128][128]; //2nd array : ln * lp
+	//u32 c[128][128] = {0,}; //output array : lm * lp
 
     // Split input array
     for (int i = 0; i < lm; i++) {
