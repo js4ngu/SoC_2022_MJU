@@ -1,0 +1,8 @@
+02:50:49 **** Auto Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+
+02:50:49 Build Finished (took 163ms)
+

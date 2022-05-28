@@ -5405,3 +5405,3550 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 1 0 2022-05-28 03:43:20.380
 !MESSAGE Executed Webtalk command
+!SESSION 2022-05-29 02:50:03.095 -----------------------------------------------
+eclipse.buildId=2018.2
+java.version=1.8.0_112
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk
+
+!ENTRY org.eclipse.ui 2 0 2022-05-29 02:50:13.444
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-29 02:50:13.444
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY org.eclipse.ui 2 0 2022-05-29 02:50:14.097
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-29 02:50:14.097
+!MESSAGE Commands should really have a category: plug-in='com.xilinx.sdk.appwiz', id='com.xilinx.sdk.app.commands.ChangeAtfBuiltReferences', categoryId='com.xilinx.sdk.app.commands.category'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:20.126
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:20.127
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:21.988
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-3
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:21.988
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:21.989
+!MESSAGE XSCT Command: [setws C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:21.990
+!MESSAGE XSCT command with result: [setws C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:22.005
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.393
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: Worker-7
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.411
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.414
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.415
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.417
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.419
+!MESSAGE XSCT Command: [hsi::utils::get_supported_os -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.427
+!MESSAGE XSCT command with result: [hsi::utils::get_supported_os -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"ps7_cortexa9_0": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
+"version": "1.1",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_1",
+},
+"standalone_v6_7": {"name": "standalone",
+"version": "6.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/bsp/standalone_v6_7",
+},
+},
+"ps7_cortexa9_1": {"freertos10_xilinx_v1_1": {"name": "freertos10_xilinx",
+"version": "1.1",
+"desc": "FreeRTOS is a market leading open source RTOS",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/ThirdParty/bsp/freertos10_xilinx_v1_1",
+},
+"standalone_v6_7": {"name": "standalone",
+"version": "6.7",
+"desc": "Standalone is a simple, low-level software layer. It provides access to basic processor features such as caches, interrupts and exceptions as well as the basic features of a hosted environment, such as standard input and output, profiling, abort and exit.",
+"compilerflags": "",
+"linkerflags": "-Wl,--start-group,-lxil,-lgcc,-lc,--end-group",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/lib/bsp/standalone_v6_7",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.440
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.442
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0], Result: [null, axi_dma_0 axi_timer_0 matrixMul_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_slcr_0 ps7_uart_1 ps7_xadc_0]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.442
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.461
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.462
+!MESSAGE XSCT Command: [hsi::utils::get_drivers_for_hw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.518
+!MESSAGE XSCT command with result: [hsi::utils::get_drivers_for_hw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_dma_0": {"version": "7.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"axidma_v9_7": {"name": "axidma",
+"version": "9.7",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/axidma_v9_7",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"axi_smc": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"axi_timer_0": {"version": "2.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"tmrctr_v4_4": {"name": "tmrctr",
+"version": "4.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/tmrctr_v4_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"matrixMul_0": {"version": "1.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"matrixMul_v1_0": {"name": "matrixMul",
+"version": "1.0",
+"repo": "C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/drivers/matrixMul_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"processing_system7_0": {"version": "5.5",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_0_axi_periph": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"rst_ps7_0_100M": {"version": "5.0",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconcat_0": {"version": "2.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"xlconstant_0": {"version": "1.1",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_clockc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_uart_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"uartps_v3_6": {"name": "uartps",
+"version": "3.6",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/uartps_v3_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_pl310_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_pmu_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_qspi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"qspips_v3_4": {"name": "qspips",
+"version": "3.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/qspips_v3_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_qspi_linear_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_axi_interconnect_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_cortexa9_0": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_6": {"name": "cpu_cortexa9",
+"version": "2.6",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_cortexa9_1": {"version": "5.2",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"cpu_cortexa9_v2_6": {"name": "cpu_cortexa9",
+"version": "2.6",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/cpu_cortexa9_v2_6",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"ddrps_v1_0": {"name": "ddrps",
+"version": "1.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/ddrps_v1_0",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpio_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"gpiops_v3_3": {"name": "gpiops",
+"version": "3.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/gpiops_v3_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ddrc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dev_cfg_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"devcfg_v3_5": {"name": "devcfg",
+"version": "3.5",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/devcfg_v3_5",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_xadc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"xadcps_v2_2": {"name": "xadcps",
+"version": "2.2",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/xadcps_v2_2",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_ocmc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_coresight_comp_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"coresightps_dcc_v1_4": {"name": "coresightps_dcc",
+"version": "1.4",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/coresightps_dcc_v1_4",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_gpv_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scuc_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_globaltimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_intc_dist_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_l2cachec_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_s": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_3": {"name": "dmaps",
+"version": "2.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_iop_bus_config_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_ram_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_scugic_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scugic_v3_9": {"name": "scugic",
+"version": "3.9",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scugic_v3_9",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scutimer_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scutimer_v2_1": {"name": "scutimer",
+"version": "2.1",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scutimer_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_scuwdt_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"scuwdt_v2_1": {"name": "scuwdt",
+"version": "2.1",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/scuwdt_v2_1",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_slcr_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_dma_ns": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+"dmaps_v2_3": {"name": "dmaps",
+"version": "2.3",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/dmaps_v2_3",
+"compilerflags": "",
+"linkerflags": "",
+},
+},
+},
+"ps7_afi_0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_1": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_2": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_afi_3": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+"ps7_m_axi_gp0": {"version": "1.00.a",
+"driver_info": {"generic": {"name": "generic",
+"version": "2.0",
+"repo": "C:/Xilinx/SDK/2018.2/data/embeddedsw/XilinxProcessorIPLib/drivers/generic_v2_0",
+},
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.573
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.574
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.575
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.584
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.588
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.590
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.638
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:25.640
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.942
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.945
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.946
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.948
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.948
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.959
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.962
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.964
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.964
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.967
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, {"axi_dma_0": {"hier_name": "axi_dma_0",
+"type": "axi_dma",
+"version": "7.1",
+"ip_type": "PERIPHERAL",
+},
+"axi_smc": {"hier_name": "axi_smc",
+"type": "smartconnect",
+"version": "1.0",
+"ip_type": "BUS",
+},
+"axi_timer_0": {"hier_name": "axi_timer_0",
+"type": "axi_timer",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"matrixMul_0": {"hier_name": "matrixMul_0",
+"type": "matrixMul",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"xlconcat_0": {"hier_name": "xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"xlconstant_0": {"hier_name": "xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.977
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_ENDIANNESS], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:45.979
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf ps7_cortexa9_0 C_ENDIANNESS], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.690
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.692
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.692
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.704
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.705
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.710
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.711
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.712
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.713
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.720
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.721
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.722
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.743
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.746
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.746
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.751
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.752
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.753
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.754
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.755
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.755
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xuartps_hello_world_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.799
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xuartps_hello_world_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.886
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:50:46.898
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:50:47.394
+!MESSAGE Indexed 'Hello_world_bsp_xuartps_hello_world_example_1' (1 sources, 38 headers) in 0.408 sec: 655 declarations; 1,512 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.811
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.823
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.824
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.826
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.827
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.837
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.838
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.841
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.841
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:12.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.117
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.119
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.119
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.127
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.128
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.135
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.136
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.138
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.139
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.141
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.141
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.144
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.172
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.174
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.175
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.190
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.191
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.193
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.193
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.194
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.195
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_fast_intr_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.226
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_fast_intr_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.295
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.307
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.325
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.327
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.328
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.346
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.605
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.607
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.608
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.610
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.611
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.621
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.622
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.624
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.624
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.626
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.637
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.638
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.648
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.651
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.652
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.654
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.655
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.656
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.657
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.667
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.668
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_intr_64bit_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.695
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_intr_64bit_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.760
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.771
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.787
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.789
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.790
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:13.805
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.065
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.067
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.067
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.078
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.079
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.083
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.084
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.086
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.086
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.094
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.095
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.097
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.106
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.108
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.109
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.110
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.111
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.113
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.113
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.114
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.114
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_intr_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.143
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_intr_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.200
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.210
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.236
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.238
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.238
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.240
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.499
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.501
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.502
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.504
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.508
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.509
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.510
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.511
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.512
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.513
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.515
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.526
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.529
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.529
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.531
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.532
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.534
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.534
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.536
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.536
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_low_level_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.564
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_low_level_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.633
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.643
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.659
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.661
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.662
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.664
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.923
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.926
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.926
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.932
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.932
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.939
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.940
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.943
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.943
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.946
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.946
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.948
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.962
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.966
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.966
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.969
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.970
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.971
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.971
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.973
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:14.973
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_polled_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.029
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_polled_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.085
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.102
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.131
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.132
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.133
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.135
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.385
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.387
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.387
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.390
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.390
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.394
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"axi_dma_0": {"name": "axidma",
+"ver": "9.7",
+},
+"axi_timer_0": {"name": "tmrctr",
+"ver": "4.4",
+},
+"matrixMul_0": {"name": "matrixMul",
+"ver": "1.0",
+},
+"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.395
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.396
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.396
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.398
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.399
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.400
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.411
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.415
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.415
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.417
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.417
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.419
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.419
+!MESSAGE XSCT Command: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.420
+!MESSAGE XSCT command with result: [::hsi::utils::opensw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.420
+!MESSAGE XSCT Command: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_selftest_example_1/src], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.463
+!MESSAGE XSCT command with result: [::hsi::utils::generate_app_template -hw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -sw C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss -app empty_application -processor ps7_cortexa9_0 -os standalone -dir C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp_xtmrctr_selftest_example_1/src], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.515
+!MESSAGE XSCT Command: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:51:15.525
+!MESSAGE XSCT command with result: [::hsi::utils::get_config_params_for_sw -json C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/Hello_world_bsp/system.mss], Result: [null, {"ps7_cortexa9_0": {"archiver": {"category": "",
+"value": "arm-none-eabi-ar",
+"default": "arm-none-eabi-ar",
+"type": "string",
+"desc": "Archiver used to archive libraries for both BSP generation as well as for applications",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler": {"category": "",
+"value": "arm-none-eabi-gcc",
+"default": "arm-none-eabi-gcc",
+"type": "string",
+"desc": "Compiler used to compile both BSP/Libraries and Applications.",
+"permit": "",
+"options": {},
+"range": "",
+},
+"compiler_flags": {"category": "",
+"value": "-O2 -c",
+"default": "-O2 -c",
+"type": "string",
+"desc": "Compiler flags used in BSP and library generation. '-c' flag stands for 'compile and assemble, but do not link'. Without this flag, gcc tries to link the code, which will fail bacause there is no application involved during libgen. '-O2' can be overwritten by extra compiler flags",
+"permit": "none",
+"options": {},
+"range": "",
+},
+"extra_compiler_flags": {"category": "",
+"value": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"default": "-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra",
+"type": "string",
+"desc": "Extra compiler flags used in BSP and library generation.",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+"standalone": {"enable_sw_intrusive_profiling": {"category": "sw_intrusive_profiling",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable S/W Intrusive Profiling on Hardware Targets",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"hypervisor_guest": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable hypervisor guest support for A53 64bit EL1 Non-Secure. If hypervisor_guest is not selected, BSP will be built for EL3.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"lockstep_mode_debug": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable debug logic in non-JTAG boot mode, when Cortex R5 is configured in lockstep mode",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"microblaze_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Enable MicroBlaze Exceptions",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"predecode_fpu_exceptions": {"category": "microblaze_exceptions",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "(MicroBlaze) Predecode FPU exceptions and save operand info before invoking user registered exception handler.",
+"permit": "user",
+"options": {},
+"range": "",
+},
+"profile_timer": {"category": "sw_intrusive_profiling",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "Specify the Timer to use for Profiling. For PowerPC system, specify none to use PIT timer. For ARM system, specify none to use SCU timer",
+"permit": "",
+"options": {},
+"range": "axi_timer_0",
+},
+"sleep_timer": {"category": "",
+"value": "none",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "This parameter is used to select specific timer for sleep functionality",
+"permit": "user",
+"options": {},
+"range": "ps7_globaltimer_0 axi_timer_0",
+},
+"stdin": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdin peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"stdout": {"category": "",
+"value": "ps7_uart_1",
+"default": "none",
+"type": "peripheral_instance",
+"desc": "stdout peripheral",
+"permit": "",
+"options": {},
+"range": "ps7_coresight_comp_0 ps7_uart_1",
+},
+"ttc_select_cntr": {"category": "",
+"value": "2",
+"default": "2",
+"type": "enum",
+"desc": "Selects the counter to be used in the repective module. Allowed range is 0-2",
+"permit": "user",
+"options": {"0": "0",
+"1": "1",
+"2": "2",
+},
+"range": "",
+},
+"zynqmp_fsbl_bsp": {"category": "",
+"value": "false",
+"default": "false",
+"type": "bool",
+"desc": "Disable or Enable Optimization for FSBL's BSP. ZynqMP FSBL will set this to true",
+"permit": "",
+"options": {},
+"range": "",
+},
+},
+}]. Thread: main
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:15.982
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_fast_intr_example_1' (1 sources, 38 headers) in 0.198 sec: 685 declarations; 1,594 references; 1 unresolved inclusions; 0 syntax errors; 12 unresolved names (0.52%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:16.134
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_selftest_example_1' (1 sources, 37 headers) in 0.134 sec: 625 declarations; 1,469 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:16.293
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_intr_example_1' (1 sources, 40 headers) in 0.142 sec: 778 declarations; 1,709 references; 0 unresolved inclusions; 0 syntax errors; 1 unresolved names (0.04%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:16.449
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_low_level_example_1' (1 sources, 36 headers) in 0.146 sec: 550 declarations; 1,492 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:16.615
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_intr_64bit_example_1' (1 sources, 38 headers) in 0.154 sec: 677 declarations; 1,606 references; 1 unresolved inclusions; 0 syntax errors; 11 unresolved names (0.48%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:51:16.750
+!MESSAGE Indexed 'Hello_world_bsp_xtmrctr_polled_example_1' (1 sources, 37 headers) in 0.122 sec: 627 declarations; 1,490 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun May 29 02:49:27 2022
+# Process ID: 11652
+# Current directory: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13988 C:\Users\SEP16\SoC_2022_MJU\HW2\HW2_vivado\HW2_vivado.xpr
+# Log file: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/vivado.log
+# Journal file: C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado\vivado.jou
+#---------------------------------------------------------stastart_gopopen_project C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.xpopupdate_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk -hwspec C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper.hdf
+open_bd_design {C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.srcs/sources_1/bd/design_1/design_1.bd}

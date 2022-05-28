@@ -4,3 +4,17 @@
 03:41:17 INFO  : Successfully done setting XSCT server connection channel  
 03:41:17 INFO  : Successfully done setting SDK workspace  
 03:41:17 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper.hdf.
+02:50:17 INFO  : Registering command handlers for SDK TCF services
+02:50:18 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\SEP16\SoC_2022_MJU\HW2\HW2_vivado\HW2_vivado.sdk\temp_xsdb_launch_script.tcl
+02:50:20 INFO  : XSCT server has started successfully.
+02:50:21 INFO  : Successfully done setting XSCT server connection channel  
+02:50:21 INFO  : Successfully done setting SDK workspace  
+02:50:21 INFO  : Processing command line option -hwspec C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.sdk/design_1_wrapper.hdf.
+02:50:25 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+02:50:46 INFO  : Example project Hello_world_bsp_xuartps_hello_world_example_1 has been created successfully.
+02:51:13 INFO  : Example project Hello_world_bsp_xtmrctr_fast_intr_example_1 has been created successfully.
+02:51:13 INFO  : Example project Hello_world_bsp_xtmrctr_intr_64bit_example_1 has been created successfully.
+02:51:14 INFO  : Example project Hello_world_bsp_xtmrctr_intr_example_1 has been created successfully.
+02:51:14 INFO  : Example project Hello_world_bsp_xtmrctr_low_level_example_1 has been created successfully.
+02:51:15 INFO  : Example project Hello_world_bsp_xtmrctr_polled_example_1 has been created successfully.
+02:51:15 INFO  : Example project Hello_world_bsp_xtmrctr_selftest_example_1 has been created successfully.

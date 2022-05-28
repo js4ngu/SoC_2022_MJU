@@ -10230,3 +10230,179 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.cdt.core 1 0 2022-05-29 02:45:32.505
 !MESSAGE Indexed 'hello_World_bsp_xscutimer_intr_example_1' (1 sources, 40 headers) in 0.098 sec: 721 declarations; 1,700 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.363
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.367
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.367
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.368
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.368
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.368
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Fri Aug  5 14:28:49 2016",
+"vivado_version": "2016.3.0",
+"part": "xc7z020clg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.368
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:52.372
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.012
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss ], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.025
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss ], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.028
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.030
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "6.7",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.031
+!MESSAGE XSCT Command: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.032
+!MESSAGE XSCT command with result: [::hsi::utils::get_libs_from_sw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.032
+!MESSAGE XSCT Command: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.033
+!MESSAGE XSCT command with result: [::hsi::utils::get_sw_libs -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, {}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.035
+!MESSAGE XSCT Command: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.052
+!MESSAGE XSCT command with result: [::hsi::utils::get_drivers_for_sw -json C:/Users/SEP16/SoC_2022_MJU/LAB2-1/zed_hw_platform/system.hdf C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, {"ps7_afi_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_2": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_afi_3": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_coresight_comp_0": {"name": "coresightps_dcc",
+"ver": "1.4",
+},
+"ps7_ddr_0": {"name": "ddrps",
+"ver": "1.0",
+},
+"ps7_ddrc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_dev_cfg_0": {"name": "devcfg",
+"ver": "3.5",
+},
+"ps7_dma_ns": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_dma_s": {"name": "dmaps",
+"ver": "2.3",
+},
+"ps7_ethernet_0": {"name": "emacps",
+"ver": "3.7",
+},
+"ps7_globaltimer_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_gpio_0": {"name": "gpiops",
+"ver": "3.3",
+},
+"ps7_gpv_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_intc_dist_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_iop_bus_config_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_l2cachec_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ocmc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pl310_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_pmu_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_qspi_0": {"name": "qspips",
+"ver": "3.4",
+},
+"ps7_qspi_linear_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ram_1": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scuc_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_scugic_0": {"name": "scugic",
+"ver": "3.9",
+},
+"ps7_scutimer_0": {"name": "scutimer",
+"ver": "2.1",
+},
+"ps7_scuwdt_0": {"name": "scuwdt",
+"ver": "2.1",
+},
+"ps7_sd_0": {"name": "sdps",
+"ver": "3.5",
+},
+"ps7_slcr_0": {"name": "generic",
+"ver": "2.0",
+},
+"ps7_ttc_0": {"name": "ttcps",
+"ver": "3.6",
+},
+"ps7_uart_1": {"name": "uartps",
+"ver": "3.6",
+},
+"ps7_usb_0": {"name": "usbps",
+"ver": "2.4",
+},
+"ps7_xadc_0": {"name": "xadcps",
+"ver": "2.2",
+},
+"ps7_cortexa9_0": {"name": "cpu_cortexa9",
+"ver": "2.6",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.054
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-05-29 02:47:54.054
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/SEP16/SoC_2022_MJU/LAB2-1/hello_World_bsp/system.mss], Result: [null, ]. Thread: main
