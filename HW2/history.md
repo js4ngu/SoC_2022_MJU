@@ -53,3 +53,13 @@ C로 만 sim한 결과 계산 잘나옴
 
 # 8번 커밋
 * SDK에서 작업가능하게 셋팅해두었음.
+
+# 9번 커밋
+* LAB 시간에 사용하였던 DMA 코드와 AXI-LITE 코드를 분석하였음.
+* DMA의 경우 출력하는 어레이 사이즈 정도 만 수정하면 될듯.
+* AXI-LITE로 쏴주는 코드는 xmatrixmul.h xmatrixmul_hw xparameter.h 에서 적절한 함수 및 파라메타 가지고 와서 변경해주었음
+* 이러한 코드들로 우선 원형함수 만 남긴 코드를 작성하였음 -> memo_DMA / memo_AXI-LITE 코드임.
+* 그리고 해당 코드들을 적절히 재배치한 memo_DMA & AXI-LITE 코드도 작성하였음.
+* memo_DMA & AXI-LITE의 경우 c에서 검증할떄 사용한 초기화 함수들을 집어 넣어줬음.
+* memo_DMA & AXI-LITE 를 일단 타켓에 올려보고 값을 제대로 뱉는지 확인하는 과정이 필요할 거 같음.
+* 제대로 된다면, 주석처리해둔 곳에 TIMER 함수들 작성하면 될듯

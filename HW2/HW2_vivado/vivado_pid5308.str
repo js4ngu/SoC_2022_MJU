@@ -149,3 +149,7 @@ dismissDialog("Open Block Design"); // bx (ck)
 // CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
 // CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
 // CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_ps7_0_100M_peripheral_aresetn 
+// [GUI Memory]: 102 MB (+388kb) [00:11:09]
+// HMemoryUtils.trashcanNow. Engine heap size: 845 MB. GUI used memory: 61 MB. Current time: 5/29/22 3:20:13 AM KST
+// [GUI Memory]: 108 MB (+1627kb) [00:48:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 845 MB. GUI used memory: 57 MB. Current time: 5/29/22 3:50:14 AM KST

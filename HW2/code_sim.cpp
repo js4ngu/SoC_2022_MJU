@@ -90,5 +90,5 @@ void matrixMul(int lm, int ln, int lp, int in[256][128]){
 			printf("%d ", c[i][n]);
 		}
 		printf("\n");
-	}   
+	}
 }

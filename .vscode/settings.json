@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "xgpiops.h": "c"
+        "xgpiops.h": "c",
+        "xmatrixmul_hw.h": "c",
+        "xmatrixmul.h": "c"
     }
 }

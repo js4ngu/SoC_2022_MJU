@@ -21,6 +21,7 @@ int XMatrixmul_CfgInitialize(XMatrixmul *InstancePtr, XMatrixmul_Config *ConfigP
 }
 #endif
 
+//Setting LMvalue
 void XMatrixmul_Set_lm(XMatrixmul *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -37,7 +38,7 @@ u32 XMatrixmul_Get_lm(XMatrixmul *InstancePtr) {
     Data = XMatrixmul_ReadReg(InstancePtr->Axilites_BaseAddress, XMATRIXMUL_AXILITES_ADDR_LM_DATA);
     return Data;
 }
-
+//Setting LNvalue
 void XMatrixmul_Set_ln(XMatrixmul *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
@@ -54,7 +55,7 @@ u32 XMatrixmul_Get_ln(XMatrixmul *InstancePtr) {
     Data = XMatrixmul_ReadReg(InstancePtr->Axilites_BaseAddress, XMATRIXMUL_AXILITES_ADDR_LN_DATA);
     return Data;
 }
-
+//Setting LPvalue
 void XMatrixmul_Set_lp(XMatrixmul *InstancePtr, u32 Data) {
     Xil_AssertVoid(InstancePtr != NULL);
     Xil_AssertVoid(InstancePtr->IsReady == XIL_COMPONENT_IS_READY);
