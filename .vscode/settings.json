@@ -2,6 +2,7 @@
     "files.associations": {
         "xgpiops.h": "c",
         "xmatrixmul_hw.h": "c",
-        "xmatrixmul.h": "c"
+        "xmatrixmul.h": "c",
+        "xtmrctr.h": "c"
     }
 }

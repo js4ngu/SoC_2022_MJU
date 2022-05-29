@@ -33,3 +33,5 @@ Excluding </processing_system7_0/S_AXI_ACP/ACP_IOP> from </axi_dma_0/Data_S2MM>
 Excluding </processing_system7_0/S_AXI_ACP/ACP_M_AXI_GP0> from </axi_dma_0/Data_S2MM>
 Successfully read diagram <design_1> from BD file <C:/Users/SEP16/SoC_2022_MJU/HW2/HW2_vivado/HW2_vivado.srcs/sources_1/bd/design_1/design_1.bd>
 open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1024.883 ; gain = 95.121
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 29 04:08:12 2022...
