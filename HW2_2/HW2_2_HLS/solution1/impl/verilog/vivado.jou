@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Jun  1 17:10:20 2021
-# Process ID: 7832
+# Start of session at: Tue Jun  1 17:28:46 2021
+# Process ID: 2496
 # Current directory: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog
 # Command line: vivado.exe -notrace -mode batch -source run_vivado.tcl
 # Log file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/vivado.log

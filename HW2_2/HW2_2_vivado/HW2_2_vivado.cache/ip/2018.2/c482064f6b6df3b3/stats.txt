@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Jun 01 09:00:53 UTC 2022
+VLNV: xilinx.com:hls:matrixmul:1.0
+SynthRuntime: 45

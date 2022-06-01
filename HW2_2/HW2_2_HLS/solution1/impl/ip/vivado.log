@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Jun  1 17:10:15 2021
-# Process ID: 16864
+# Start of session at: Tue Jun  1 17:28:41 2021
+# Process ID: 12604
 # Current directory: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/ip
 # Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
 # Log file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/ip/vivado.log
@@ -13,4 +13,4 @@ source run_ippack.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-INFO: [Common 17-206] Exiting Vivado at Tue Jun  1 17:10:18 2021...
+INFO: [Common 17-206] Exiting Vivado at Tue Jun  1 17:28:45 2021...

@@ -1,0 +1,4 @@
+NumberHits:1
+Timestamp: Wed Jun 01 09:00:10 UTC 2022
+VLNV: xilinx.com:ip:xlconcat:2.1
+SynthRuntime: 45
