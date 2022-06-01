@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'matrixmul'
 ================================================================
-* Date:           Wed Jun  1 16:20:16 2022
+* Date:           Tue Jun  1 17:10:03 2021
 
 * Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
 * Project:        HW2_2_HLS
@@ -374,9 +374,9 @@ The critical path consists of the following:
  <State 14>: 5.33ns
 The critical path consists of the following:
 	'phi' operation ('k') with incoming values : ('k', HW2_2_HLS/matrixMull.cpp:47) [136]  (0 ns)
-	'add' operation ('tmp_17', HW2_2_HLS/matrixMull.cpp:48) [148]  (2.08 ns)
-	'getelementptr' operation ('B_addr_1', HW2_2_HLS/matrixMull.cpp:48) [150]  (0 ns)
-	'load' operation ('B_load', HW2_2_HLS/matrixMull.cpp:48) on array 'B', HW2_2_HLS/matrixMull.cpp:16 [153]  (3.25 ns)
+	'add' operation ('tmp_15', HW2_2_HLS/matrixMull.cpp:48) [143]  (2.08 ns)
+	'getelementptr' operation ('A_addr_1', HW2_2_HLS/matrixMull.cpp:48) [145]  (0 ns)
+	'load' operation ('A_load', HW2_2_HLS/matrixMull.cpp:48) on array 'A', HW2_2_HLS/matrixMull.cpp:15 [151]  (3.25 ns)
 
  <State 15>: 3.25ns
 The critical path consists of the following:

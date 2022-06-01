@@ -1,0 +1,202 @@
+HLS Flow with Adder example
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  12  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+
+C:\Users\SEP16\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>set PATH= 
+
+C:\Users\SEP16\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>call C:/Xilinx/Vivado/2018.2/bin/xelab xil_defaultlib.apatb_matrixmul_top glbl -prj matrixmul.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s matrixmul  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_top glbl -prj matrixmul.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrixmul 
+Multi-threading is on. Using 6 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_AB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_Input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_A_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_mac_mulbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_mulbkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_mac_mulbkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_A_ram
+Compiling module xil_defaultlib.matrixmul_A(DataWidth=8,AddressR...
+Compiling module xil_defaultlib.matrixmul_mac_mulbkb_DSP48_0
+Compiling module xil_defaultlib.matrixmul_mac_mulbkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrixmul
+Compiling module xil_defaultlib.AESL_automem_Input_r
+Compiling module xil_defaultlib.AESL_automem_AB
+Compiling module xil_defaultlib.apatb_matrixmul_top
+Compiling module work.glbl
+Built simulation snapshot matrixmul
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/xsim.dir/matrixmul/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Jun  1 17:05:37 2022...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul/xsim_script.tcl
+# xsim {matrixmul} -autoloadwcfg -tclbatch {matrixmul.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source matrixmul.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "17455000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 17495 ns : File "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul.autotb.v" Line 268
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jun  1 17:05:42 2022...
+HLS Flow with Adder example
+[8][8] : 0  12
+[8][8] : 0  12
+[8][8] : 0  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+[8][8] : 0  12
+[8][8] : 0  12
+[8][8] : 0  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+[8][8] : 0  12
+[8][8] : 0  12
+[8][8] : 0  12
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0

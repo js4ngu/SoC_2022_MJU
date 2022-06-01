@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'matrixmul'" level="0">
-<item name = "Date">Wed Jun  1 16:20:16 2022
+<item name = "Date">Tue Jun  1 17:10:04 2021
 </item>
 <item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
 <item name = "Project">HW2_2_HLS</item>

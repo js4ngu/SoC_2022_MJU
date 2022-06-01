@@ -1,7 +1,7 @@
 /*
-#define lm 7
-#define ln 7
-#define lp 7
+#define lm 3
+#define ln 3
+#define lp 3
 */
 
 void matrixmul(int lm, int ln, int lp,unsigned char Input[256][128], unsigned int AB[128][128]){
