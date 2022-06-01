@@ -1,1 +1,8 @@
-18:08:57 **** Build of configuration Debug for project Hello_world ****
+18:09:00 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+
+18:09:00 Build Finished (took 167ms)
+
