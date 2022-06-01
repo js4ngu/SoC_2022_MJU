@@ -1,0 +1,56 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'SEP16' on host 'desktop-437tbdq' (Windows NT_amd64 version 6.2) on Wed Jun 01 16:20:12 +0900 2022
+INFO: [HLS 200-10] In directory 'C:/Users/SEP16/SoC_2022_MJU/HW2_2'
+INFO: [HLS 200-10] Opening project 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS'.
+INFO: [HLS 200-10] Adding design file 'HW2_2_HLS/matrixMull.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'HW2_2_HLS/TB_matrixMull.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [HLS 200-10] Analyzing design file 'HW2_2_HLS/matrixMull.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 101.949 ; gain = 45.418
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 101.949 ; gain = 45.418
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 103.551 ; gain = 47.020
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 103.805 ; gain = 47.273
+WARNING: [XFORM 203-124] Array  'Input': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+WARNING: [XFORM 203-124] Array  'AB': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 124.457 ; gain = 67.926
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 124.457 ; gain = 67.926
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'matrixmul' ...
+WARNING: [SYN 201-107] Renaming port name 'matrixmul/Input' to 'matrixmul/Input_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 3.795 seconds; current allocated memory: 76.717 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 10 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 77.111 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'matrixmul' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/lm' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/ln' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/lp' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/Input_r' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'matrixmul/AB' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'matrixmul' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'lm', 'ln' and 'lp' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'matrixmul_mac_muladd_8ns_8ns_32ns_32_1_1' to 'matrixmul_mac_mulbkb' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'matrixmul_mac_mulbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'matrixmul'.
+INFO: [HLS 200-111]  Elapsed time: 0.114 seconds; current allocated memory: 78.123 MB.
+INFO: [RTMG 210-278] Implementing memory 'matrixmul_A_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 128.980 ; gain = 72.449
+INFO: [SYSC 207-301] Generating SystemC RTL for matrixmul.
+INFO: [VHDL 208-304] Generating VHDL RTL for matrixmul.
+INFO: [VLOG 209-307] Generating Verilog RTL for matrixmul.
+INFO: [HLS 200-112] Total elapsed time: 4.927 seconds; peak allocated memory: 78.123 MB.

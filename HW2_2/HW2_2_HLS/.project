@@ -47,6 +47,11 @@
 			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/matrixMull.cpp</location>
 		</link>
 		<link>
+			<name>testbench/TB_matrixMull.cpp</name>
+			<type>1</type>
+			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_matrixMull.cpp</location>
+		</link>
+		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
 			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive</location>
