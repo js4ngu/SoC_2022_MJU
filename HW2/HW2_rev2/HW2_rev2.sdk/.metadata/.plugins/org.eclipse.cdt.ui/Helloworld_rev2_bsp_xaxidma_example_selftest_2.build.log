@@ -1,0 +1,8 @@
+06:27:59 **** Auto Build of configuration Debug for project Helloworld_rev2_bsp_xaxidma_example_selftest_2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+
+06:27:59 Build Finished (took 227ms)
+

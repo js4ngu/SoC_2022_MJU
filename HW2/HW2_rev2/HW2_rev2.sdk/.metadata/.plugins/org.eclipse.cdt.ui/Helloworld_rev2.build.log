@@ -1,0 +1,27 @@
+08:24:03 **** Auto Build of configuration Debug for project Helloworld_rev2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Helloworld_rev2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from ../../Helloworld_rev2_bsp/ps7_cortexa9_0/include/xil_printf.h:12:0,
+                 from ../src/helloworld.c:5:
+../src/helloworld.c: In function 'main':
+../../Helloworld_rev2_bsp/ps7_cortexa9_0/include/xparameters.h:259:36: error: expected ')' before numeric constant
+ #define XPAR_MATRIXMUL_0_DEVICE_ID 0
+                                    ^
+../src/helloworld.c:108:48: note: in expansion of macro 'XPAR_MATRIXMUL_0_DEVICE_ID'
+   XMatrixmul_Initialize(&MatrixMulInstance_Ptr XPAR_MATRIXMUL_0_DEVICE_ID);
+                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/helloworld.c:108:3: error: too few arguments to function 'XMatrixmul_Initialize'
+   XMatrixmul_Initialize(&MatrixMulInstance_Ptr XPAR_MATRIXMUL_0_DEVICE_ID);
+   ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:7:0:
+../../Helloworld_rev2_bsp/ps7_cortexa9_0/include/xmatrixmul.h:75:5: note: declared here
+ int XMatrixmul_Initialize(XMatrixmul *InstancePtr, u16 DeviceId);
+     ^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/helloworld.o] ¿À·ù 1
+
+08:24:03 Build Finished (took 296ms)
+

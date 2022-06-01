@@ -1,4 +1,0 @@
-matrixMul_mac_mulbkb
-matrixMul_a
-matrixMul_AXILiteS_s_axi
-matrixMul

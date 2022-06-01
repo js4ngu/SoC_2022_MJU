@@ -372,3 +372,711 @@ make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm
 make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
 "Compiling xadcps"
 'Finished building libraries'
+05:26:12 **** Clean-only build of configuration Debug for project Hello_world ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Hello_world.elf.size  Hello_world.elf
+' '
+05:26:12 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:10: warning: "/*" within comment [-Wcomment]
+  *   uart/***************************** Include Files *********************************/
+           
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:239:31: error: 'input' undeclared (first use in this function); did you mean 'ino_t'?
+             xil_printf("%d ", input[i][j]);
+                               ^~~~~
+                               ino_t
+../src/helloworld.c:239:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:83:29: error: 'ARRAY_LENGTH' undeclared (first use in this function)
+ #define BYTES_TO_TRANSFER 4*ARRAY_LENGTH
+                             ^
+../src/helloworld.c:255:38: note: in expansion of macro 'BYTES_TO_TRANSFER'
+  Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
+                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:598:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Configurable'
+  *   lite    Configurable only in HW design
+              ^~~~~~~~~~~~
+../src/helloworld.c:598:14: error: unknown type name 'Configurable'
+make: *** [src/helloworld.o] 오류 1
+05:26:15 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_fast_intr_example.o  ./src/xtmrctr_fast_intr_example.d  Hello_world_bsp_xtmrctr_fast_intr_example_1.elf.size  Hello_world_bsp_xtmrctr_fast_intr_example_1.elf
+' '
+05:26:15 **** Auto Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:26:16 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_intr_64bit_example.o  ./src/xtmrctr_intr_64bit_example.d  Hello_world_bsp_xtmrctr_intr_64bit_example_1.elf.size  Hello_world_bsp_xtmrctr_intr_64bit_example_1.elf
+' '
+05:26:16 **** Auto Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:26:16 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_intr_example.o  ./src/xtmrctr_intr_example.d  Hello_world_bsp_xtmrctr_intr_example_1.elf.size  Hello_world_bsp_xtmrctr_intr_example_1.elf
+' '
+05:26:17 **** Auto Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:26:17 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_low_level_example.o  ./src/xtmrctr_low_level_example.d  Hello_world_bsp_xtmrctr_low_level_example_1.elf.size  Hello_world_bsp_xtmrctr_low_level_example_1.elf
+' '
+05:26:17 **** Auto Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_low_level_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_low_level_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_low_level_example.d" -MT"src/xtmrctr_low_level_example.o" -o "src/xtmrctr_low_level_example.o" "../src/xtmrctr_low_level_example.c"
+'Finished building: ../src/xtmrctr_low_level_example.c'
+' '
+'Building target: Hello_world_bsp_xtmrctr_low_level_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world_bsp_xtmrctr_low_level_example_1.elf"  ./src/xtmrctr_low_level_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world_bsp_xtmrctr_low_level_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world_bsp_xtmrctr_low_level_example_1.elf  |tee "Hello_world_bsp_xtmrctr_low_level_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  22760	   1152	  22568	  46480	   b590	Hello_world_bsp_xtmrctr_low_level_example_1.elf
+'Finished building: Hello_world_bsp_xtmrctr_low_level_example_1.elf.size'
+' '
+05:26:19 **** Incremental Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:10: warning: "/*" within comment [-Wcomment]
+  *   uart/***************************** Include Files *********************************/
+           
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:239:31: error: 'input' undeclared (first use in this function); did you mean 'ino_t'?
+             xil_printf("%d ", input[i][j]);
+                               ^~~~~
+                               ino_t
+../src/helloworld.c:239:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:83:29: error: 'ARRAY_LENGTH' undeclared (first use in this function)
+ #define BYTES_TO_TRANSFER 4*ARRAY_LENGTH
+                             ^
+../src/helloworld.c:255:38: note: in expansion of macro 'BYTES_TO_TRANSFER'
+  Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
+                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:598:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Configurable'
+  *   lite    Configurable only in HW design
+              ^~~~~~~~~~~~
+../src/helloworld.c:598:14: error: unknown type name 'Configurable'
+make: *** [src/helloworld.o] 오류 1
+05:26:20 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:26:21 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:26:22 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:26:23 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:26:24 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_polled_example.o  ./src/xtmrctr_polled_example.d  Hello_world_bsp_xtmrctr_polled_example_1.elf.size  Hello_world_bsp_xtmrctr_polled_example_1.elf
+' '
+05:26:24 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_polled_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_polled_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_polled_example.d" -MT"src/xtmrctr_polled_example.o" -o "src/xtmrctr_polled_example.o" "../src/xtmrctr_polled_example.c"
+'Finished building: ../src/xtmrctr_polled_example.c'
+' '
+'Building target: Hello_world_bsp_xtmrctr_polled_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world_bsp_xtmrctr_polled_example_1.elf"  ./src/xtmrctr_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world_bsp_xtmrctr_polled_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world_bsp_xtmrctr_polled_example_1.elf  |tee "Hello_world_bsp_xtmrctr_polled_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25360	   1168	  22616	  49144	   bff8	Hello_world_bsp_xtmrctr_polled_example_1.elf
+'Finished building: Hello_world_bsp_xtmrctr_polled_example_1.elf.size'
+' '
+05:26:25 **** Clean-only build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make clean 
+rm -rf  ./src/xtmrctr_selftest_example.o  ./src/xtmrctr_selftest_example.d  Hello_world_bsp_xtmrctr_selftest_example_1.elf.size  Hello_world_bsp_xtmrctr_selftest_example_1.elf
+' '
+05:26:25 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_selftest_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_selftest_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_selftest_example.d" -MT"src/xtmrctr_selftest_example.o" -o "src/xtmrctr_selftest_example.o" "../src/xtmrctr_selftest_example.c"
+'Finished building: ../src/xtmrctr_selftest_example.c'
+' '
+'Building target: Hello_world_bsp_xtmrctr_selftest_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world_bsp_xtmrctr_selftest_example_1.elf"  ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world_bsp_xtmrctr_selftest_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world_bsp_xtmrctr_selftest_example_1.elf  |tee "Hello_world_bsp_xtmrctr_selftest_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24712	   1168	  22616	  48496	   bd70	Hello_world_bsp_xtmrctr_selftest_example_1.elf
+'Finished building: Hello_world_bsp_xtmrctr_selftest_example_1.elf.size'
+' '
+05:26:27 **** Clean-only build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make clean 
+rm -rf  ./src/xuartps_hello_world_example.o  ./src/xuartps_hello_world_example.d  Hello_world_bsp_xuartps_hello_world_example_1.elf.size  Hello_world_bsp_xuartps_hello_world_example_1.elf
+' '
+05:26:27 **** Incremental Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xuartps_hello_world_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xuartps_hello_world_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xuartps_hello_world_example.d" -MT"src/xuartps_hello_world_example.o" -o "src/xuartps_hello_world_example.o" "../src/xuartps_hello_world_example.c"
+'Finished building: ../src/xuartps_hello_world_example.c'
+' '
+'Building target: Hello_world_bsp_xuartps_hello_world_example_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world_bsp_xuartps_hello_world_example_1.elf"  ./src/xuartps_hello_world_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world_bsp_xuartps_hello_world_example_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world_bsp_xuartps_hello_world_example_1.elf  |tee "Hello_world_bsp_xuartps_hello_world_example_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23940	   1168	  22648	  47756	   ba8c	Hello_world_bsp_xuartps_hello_world_example_1.elf
+'Finished building: Hello_world_bsp_xuartps_hello_world_example_1.elf.size'
+' '
+05:28:54 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:10: warning: "/*" within comment [-Wcomment]
+  *   uart/***************************** Include Files *********************************/
+           
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:239:31: error: 'input' undeclared (first use in this function); did you mean 'ino_t'?
+             xil_printf("%d ", input[i][j]);
+                               ^~~~~
+                               ino_t
+../src/helloworld.c:239:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:255:38: error: 'BYTES_TO_TRANSFER' undeclared (first use in this function)
+  Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
+                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:598:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Configurable'
+  *   lite    Configurable only in HW design
+              ^~~~~~~~~~~~
+../src/helloworld.c:598:14: error: unknown type name 'Configurable'
+make: *** [src/helloworld.o] 오류 1
+05:29:00 **** Incremental Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:10: warning: "/*" within comment [-Wcomment]
+  *   uart/***************************** Include Files *********************************/
+           
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:239:31: error: 'input' undeclared (first use in this function); did you mean 'ino_t'?
+             xil_printf("%d ", input[i][j]);
+                               ^~~~~
+                               ino_t
+../src/helloworld.c:239:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:255:38: error: 'BYTES_TO_TRANSFER' undeclared (first use in this function)
+  Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
+                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:598:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Configurable'
+  *   lite    Configurable only in HW design
+              ^~~~~~~~~~~~
+../src/helloworld.c:598:14: error: unknown type name 'Configurable'
+make: *** [src/helloworld.o] 오류 1
+05:29:01 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:29:02 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:29:02 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:29:03 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:29:04 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:29:04 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:29:05 **** Incremental Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:32:55 **** Incremental Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:44:10: warning: "/*" within comment [-Wcomment]
+  *   uart/***************************** Include Files *********************************/
+           
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:239:31: error: 'input' undeclared (first use in this function); did you mean 'ino_t'?
+             xil_printf("%d ", input[i][j]);
+                               ^~~~~
+                               ino_t
+../src/helloworld.c:239:31: note: each undeclared identifier is reported only once for each function it appears in
+../src/helloworld.c:255:38: error: 'BYTES_TO_TRANSFER' undeclared (first use in this function)
+  Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
+                                      ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:159:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+../src/helloworld.c: At top level:
+../src/helloworld.c:598:14: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'Configurable'
+  *   lite    Configurable only in HW design
+              ^~~~~~~~~~~~
+../src/helloworld.c:598:14: error: unknown type name 'Configurable'
+make: *** [src/helloworld.o] 오류 1
+05:32:56 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:32:57 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:32:57 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:32:58 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:32:59 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:32:59 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:00 **** Incremental Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:09 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Hello_world.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20600	   1152	  22584	  44336	   ad30	Hello_world.elf
+'Finished building: Hello_world.elf.size'
+' '
+05:33:13 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Hello_world.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  20600	   1152	  22584	  44336	   ad30	Hello_world.elf
+'Finished building: Hello_world.elf.size'
+' '
+05:33:18 **** Incremental Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:19 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:33:19 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:33:20 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:33:21 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:21 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:22 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:22 **** Incremental Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:43 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Hello_world.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24068	   1168	  22648	  47884	   bb0c	Hello_world.elf
+'Finished building: Hello_world.elf.size'
+' '
+05:33:44 **** Incremental Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:45 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_fast_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_fast_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_fast_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_fast_intr_example.d" -MT"src/xtmrctr_fast_intr_example.o" -o "src/xtmrctr_fast_intr_example.o" "../src/xtmrctr_fast_intr_example.c"
+../src/xtmrctr_fast_intr_example.c:59:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_fast_intr_example.o] 오류 1
+05:33:45 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_64bit_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_64bit_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_64bit_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_64bit_example.d" -MT"src/xtmrctr_intr_64bit_example.o" -o "src/xtmrctr_intr_64bit_example.o" "../src/xtmrctr_intr_64bit_example.c"
+../src/xtmrctr_intr_64bit_example.c:68:10: fatal error: xintc.h: No such file or directory
+ #include "xintc.h"
+          ^~~~~~~~~
+compilation terminated.
+make: *** [src/xtmrctr_intr_64bit_example.o] 오류 1
+05:33:46 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/xtmrctr_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+../src/xtmrctr_intr_example.c: In function 'main':
+../src/xtmrctr_intr_example.c:88:29: error: 'XPAR_INTC_0_TMRCTR_0_VEC_ID' undeclared (first use in this function); did you mean 'XPAR_TMRCTR_0_DEVICE_ID'?
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+../src/xtmrctr_intr_example.c:88:29: note: each undeclared identifier is reported only once for each function it appears in
+ #define TMRCTR_INTERRUPT_ID XPAR_INTC_0_TMRCTR_0_VEC_ID
+                             ^
+../src/xtmrctr_intr_example.c:185:7: note: in expansion of macro 'TMRCTR_INTERRUPT_ID'
+       TMRCTR_INTERRUPT_ID,
+       ^~~~~~~~~~~~~~~~~~~
+make: *** [src/xtmrctr_intr_example.o] 오류 1
+05:33:47 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_low_level_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:47 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_polled_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:48 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_selftest_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:33:49 **** Incremental Build of configuration Debug for project Hello_world_bsp_xuartps_hello_world_example_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: `main-build'를 위해 할 일이 없습니다
+05:34:45 **** Auto Build of configuration Debug for project Hello_world ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Hello_world.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24068	   1168	  22648	  47884	   bb0c	Hello_world.elf
+'Finished building: Hello_world.elf.size'
+' '

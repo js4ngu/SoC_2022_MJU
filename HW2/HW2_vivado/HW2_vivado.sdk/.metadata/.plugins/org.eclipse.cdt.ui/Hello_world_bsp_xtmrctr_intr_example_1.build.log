@@ -1,4 +1,4 @@
-02:51:16 **** Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
+05:33:46 **** Incremental Build of configuration Debug for project Hello_world_bsp_xtmrctr_intr_example_1 ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
@@ -20,5 +20,5 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_examp
        ^~~~~~~~~~~~~~~~~~~
 make: *** [src/xtmrctr_intr_example.o] ¿À·ù 1
 
-02:51:17 Build Finished (took 359ms)
+05:33:46 Build Finished (took 481ms)
 

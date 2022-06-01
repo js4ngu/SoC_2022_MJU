@@ -1,0 +1,36 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 non-TLS
+#  -string -flagsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 6 -y 490 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 2 -y 470 -defaultsOSRD
+preplace inst axi_timer_0 -pg 1 -lvl 5 -y 770 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -y 130 -defaultsOSRD
+preplace inst matrixMul_0 -pg 1 -lvl 5 -y 510 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y 200 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -y 540 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 3 -y 100 -defaultsOSRD
+preplace netloc ps7_0_axi_periph_M02_AXI 1 4 1 1410
+preplace netloc matrixMul_0_c 1 5 1 1720
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 N
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 5 330 360 NJ 360 1050 410 1450 390 1710
+preplace netloc axi_smc_M00_AXI 1 2 1 640
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 -40 340 NJ 340 NJ 340 1060
+preplace netloc ps7_0_axi_periph_M01_AXI 1 4 1 1440
+preplace netloc axi_dma_0_s2mm_introut 1 1 6 360 330 NJ 330 1080J 390 1420J 350 NJ 350 2130
+preplace netloc axi_dma_0_M_AXI_MM2S 1 1 6 360 370 NJ 370 1060J 360 1390J 340 NJ 340 2120
+preplace netloc xlconcat_0_dout 1 2 1 N
+preplace netloc xlconstant_0_dout 1 4 1 1390
+preplace netloc axi_dma_0_mm2s_introut 1 1 6 340 380 NJ 380 NJ 380 1430J 370 NJ 370 2110
+preplace netloc axi_dma_0_M_AXI_S2MM 1 1 6 350 350 NJ 350 1070J 370 1400J 360 NJ 360 2100
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -30 440 320 200 650 200 1090 400 1430 400 1700
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 4 3 1460 330 NJ 330 2140
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 2 NJ 180 1720
+preplace netloc rst_ps7_0_100M_interconnect_aresetn 1 1 3 310J 320 NJ 320 1080
+levelinfo -pg 1 -60 140 500 850 1240 1580 1930 2160 -top 0 -bot 1220
+",
+}
+{
+   da_axi4_cnt: "9",
+}
