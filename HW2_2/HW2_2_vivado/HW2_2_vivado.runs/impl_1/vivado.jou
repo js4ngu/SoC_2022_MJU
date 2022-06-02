@@ -9,3 +9,4 @@
 # Log file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/impl_1/design_1_wrapper.vdi
 # Journal file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace

@@ -21,3 +21,84 @@
 20:06:45 INFO  : Closing and re-opening the MSS file of ther project Hello_world_bsp
 20:06:46 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 20:07:01 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+20:37:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:37:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:37:48 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:38:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:38:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:38:25 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:38:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:38:51 INFO  : 'fpga -state' command is executed.
+20:38:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:38:52 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988368' is selected.
+20:38:52 INFO  : 'jtag frequency' command is executed.
+20:38:52 INFO  : Context for 'APU' is selected.
+20:38:52 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:38:52 INFO  : 'configparams force-mem-access 1' command is executed.
+20:38:52 INFO  : 'configparams force-mem-access 0' command is executed.
+20:38:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:38:52 INFO  : Disconnected from the channel tcfchan#1.
+20:39:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:39:34 INFO  : 'fpga -state' command is executed.
+20:39:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:39:34 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988368' is selected.
+20:39:34 INFO  : 'jtag frequency' command is executed.
+20:39:34 INFO  : Context for 'APU' is selected.
+20:39:36 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:39:36 INFO  : 'configparams force-mem-access 1' command is executed.
+20:39:36 INFO  : 'configparams force-mem-access 0' command is executed.
+20:39:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:39:45 INFO  : Disconnected from the channel tcfchan#2.
+20:41:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:41:20 INFO  : 'fpga -state' command is executed.
+20:41:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:41:20 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988368' is selected.
+20:41:20 INFO  : 'jtag frequency' command is executed.
+20:41:20 INFO  : Context for 'APU' is selected.
+20:41:20 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:41:20 INFO  : 'configparams force-mem-access 1' command is executed.
+20:41:20 INFO  : 'configparams force-mem-access 0' command is executed.
+20:41:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:41:20 INFO  : Disconnected from the channel tcfchan#3.
+20:47:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:47:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:47:21 INFO  : FPGA configured successfully with bitstream "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+20:47:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+20:47:34 INFO  : 'fpga -state' command is executed.
+20:47:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:47:34 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988368' is selected.
+20:47:34 INFO  : 'jtag frequency' command is executed.
+20:47:34 INFO  : Context for 'APU' is selected.
+20:47:34 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+20:47:34 INFO  : 'configparams force-mem-access 1' command is executed.
+20:47:34 INFO  : 'configparams force-mem-access 0' command is executed.
+20:47:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:47:34 INFO  : Disconnected from the channel tcfchan#4.
