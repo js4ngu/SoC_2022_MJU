@@ -196,8 +196,8 @@ int main(void) {
    // AXI stream to DMA	
    
    u32 TxBuffer1D[32768] = {0,};
-   Xil_DCacheFlushRange((u32)TxBuffer1D, 4*32768);
-   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer1D, 4*32768, XAXIDMA_DMA_TO_DEVICE);
+   Xil_DCacheFlushRange((u32)TxBuffer1D, BYTES_TO_TRANSFER);
+   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer1D, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
    
    /*
    Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);

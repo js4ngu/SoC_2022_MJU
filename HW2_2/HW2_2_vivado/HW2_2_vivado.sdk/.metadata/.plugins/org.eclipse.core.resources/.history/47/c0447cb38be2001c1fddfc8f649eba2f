@@ -67,7 +67,8 @@ volatile int TxDone;
 volatile int RxDone;
 volatile int Error;
 
-u8 TxBuffer[256][128] = {0,};
+//u8 TxBuffer[256][128] = {0,};
+u8 TxBuffer[256 * 128] = {0,};
 u32 RxBuffer[128][128] = {0,};
 
 /*****************************************************************************/
@@ -168,7 +169,7 @@ int main(void) {
    int ln = LN;
    int lp = LP;
 
-   //Send data check
+   /*Send data check*/
    xil_printf("INPUT Data CHK!\r\n");
    xil_printf("A\r\n");
     for (int i = 0; i < lm; i++) {
@@ -193,16 +194,10 @@ int main(void) {
    xil_printf("LM LN LP set DONE!\n\r");
 
    /* Flush the SrcBuffer before the DMA transfer, in case the Data Cache is enabled */
-   // AXI stream to DMA	
-   
-   u32 TxBuffer1D[32768] = {0,};
-   Xil_DCacheFlushRange((u32)TxBuffer1D, 4*32768);
-   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer1D, 4*32768, XAXIDMA_DMA_TO_DEVICE);
-   
-   /*
+   // AXI stream to DMA
+   /*~~~~~~~~~~~~~~~~~~마방인들아 여기가 문제야~~~~~개 빡쳐~~~~~~~~~~~~~~~~~~~~*/
    Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
    Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
-   */
    if (Status != XST_SUCCESS){
 	  xil_printf("TX ERR : %d\r\n", Status);
 	  return XST_FAILURE;	

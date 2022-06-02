@@ -194,15 +194,9 @@ int main(void) {
 
    /* Flush the SrcBuffer before the DMA transfer, in case the Data Cache is enabled */
    // AXI stream to DMA	
-   
-   u32 TxBuffer1D[32768] = {0,};
-   Xil_DCacheFlushRange((u32)TxBuffer1D, 4*32768);
-   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer1D, 4*32768, XAXIDMA_DMA_TO_DEVICE);
-   
-   /*
-   Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
-   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
-   */
+   u8 TxBuffer1D[32,768] = {0,};
+   Xil_DCacheFlushRange((u32)TxBuffer1D, BYTES_TO_TRANSFER);
+   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer1D, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
    if (Status != XST_SUCCESS){
 	  xil_printf("TX ERR : %d\r\n", Status);
 	  return XST_FAILURE;	
