@@ -1593,3 +1593,46 @@ con
 ----------------End of Script----------------
 
 01:06:29 INFO  : Disconnected from the channel tcfchan#26.
+01:13:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368" && level==0} -index 1' command is executed.
+01:13:36 INFO  : 'fpga -state' command is executed.
+01:13:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:13:36 INFO  : Jtag cable 'Digilent JTAG-SMT2 210251988368' is selected.
+01:13:36 INFO  : 'jtag frequency' command is executed.
+01:13:36 INFO  : Sourcing of 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:13:36 INFO  : Context for 'APU' is selected.
+01:13:38 INFO  : Hardware design information is loaded from 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+01:13:38 INFO  : 'configparams force-mem-access 1' command is executed.
+01:13:38 INFO  : Context for 'APU' is selected.
+01:13:38 INFO  : 'stop' command is executed.
+01:13:38 INFO  : 'ps7_init' command is executed.
+01:13:38 INFO  : 'ps7_post_config' command is executed.
+01:13:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:13:38 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+01:13:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:13:38 INFO  : The application 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/Hello_world/Debug/Hello_world.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:13:38 INFO  : 'configparams force-mem-access 0' command is executed.
+01:13:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+loadhw -hw C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+dow C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.sdk/Hello_world/Debug/Hello_world.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:13:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:13:38 INFO  : 'con' command is executed.
+01:13:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-SMT2 210251988368"} -index 0
+con
+----------------End of Script----------------
+
+01:13:38 INFO  : Disconnected from the channel tcfchan#27.
