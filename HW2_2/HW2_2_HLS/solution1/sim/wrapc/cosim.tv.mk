@@ -60,10 +60,10 @@ include ./Makefile.rules
 
 all : $(TARGET)
 
-$(ObjDir)/TB_matrixMull.cpp_pre.cpp.tb.o : TB_matrixMull.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling TB_matrixMull.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/TB_1DmatrixMul.cpp_pre.cpp.tb.o : TB_1DmatrixMul.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling TB_1DmatrixMul.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
-$(ObjDir)/matrixMull.cpp_pre.cpp.tb.o : matrixMull.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling matrixMull.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
+$(ObjDir)/1DmatrixMul.cpp_pre.cpp.tb.o : 1DmatrixMul.cpp_pre.cpp.tb.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling 1DmatrixMul.cpp_pre.cpp.tb.cpp" $(AVE_DIR_DLOG)
 	$(Verb) $(CC) ${CCFLAG} ${TOOLCHAIN}  -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \

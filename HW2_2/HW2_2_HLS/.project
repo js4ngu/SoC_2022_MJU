@@ -29,42 +29,42 @@
 		<link>
 			<name>source</name>
 			<type>2</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/.apc/.src</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/.apc/.src</location>
 		</link>
 		<link>
 			<name>testbench</name>
 			<type>2</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/.apc/.tb</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/.apc/.tb</location>
 		</link>
 		<link>
 			<name>solution1/constraints</name>
 			<type>2</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.tcls</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.tcls</location>
 		</link>
 		<link>
-			<name>source/matrixMull.cpp</name>
+			<name>source/1DmatrixMul.cpp</name>
 			<type>1</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/matrixMull.cpp</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/1DmatrixMul.cpp</location>
 		</link>
 		<link>
-			<name>testbench/TB_matrixMull.cpp</name>
+			<name>testbench/TB_1DmatrixMul.cpp</name>
 			<type>1</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_matrixMull.cpp</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul.cpp</location>
 		</link>
 		<link>
 			<name>solution1/constraints/.xml.directive</name>
 			<type>1</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive</location>
 		</link>
 		<link>
 			<name>solution1/constraints/directives.tcl</name>
 			<type>1</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/directives.tcl</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/directives.tcl</location>
 		</link>
 		<link>
 			<name>solution1/constraints/script.tcl</name>
 			<type>1</type>
-			<location>C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/script.tcl</location>
+			<location>C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

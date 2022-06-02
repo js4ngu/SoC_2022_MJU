@@ -1,5 +1,5 @@
 
-set TopModule "matrixmul"
+set TopModule "matrixmul_1D"
 set ClockPeriod "10.000000"
 set ClockList {ap_clk}
 set multiClockList {}
@@ -15,7 +15,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 1
-set ResetLevelFlag 0
+set ResetLevelFlag 1
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -41,10 +41,10 @@ set SCTraceFileName "mytrace"
 set SCTraceFileFormat "vcd"
 set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
-set SourceFiles {sc {} c ../matrixMull.cpp}
+set SourceFiles {sc {} c ../1DmatrixMul.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive}
-set TBFiles {verilog ../TB_matrixMull.cpp bc ../TB_matrixMull.cpp vhdl ../TB_matrixMull.cpp sc ../TB_matrixMull.cpp cas ../TB_matrixMull.cpp c {}}
+set DirectiveFile {C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive}
+set TBFiles {verilog ../TB_1DmatrixMul.cpp bc ../TB_1DmatrixMul.cpp vhdl ../TB_1DmatrixMul.cpp sc ../TB_1DmatrixMul.cpp cas ../TB_1DmatrixMul.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

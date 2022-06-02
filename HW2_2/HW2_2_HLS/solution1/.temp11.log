@@ -1,0 +1,146 @@
+Success HW and SW results match  22805968  0
+Success HW and SW results match  22806480  0
+Success HW and SW results match  22806992  0
+Success HW and SW results match  22807504  0
+Success HW and SW results match  22808016  0
+Success HW and SW results match  22808528  0
+Success HW and SW results match  22809040  0
+Success HW and SW results match  22809552  0
+Success HW and SW results match  22871504  0
+Success HW and SW results match  22872016  0
+Success HW and SW results match  22872528  0
+Success HW and SW results match  22873040  0
+Success HW and SW results match  22873552  0
+Success HW and SW results match  22874064  0
+Success HW and SW results match  22874576  0
+Success HW and SW results match  22875088  0
+Success HW and SW results match  22937040  0
+Success HW and SW results match  22937552  0
+Success HW and SW results match  22938064  0
+Success HW and SW results match  22938576  0
+Success HW and SW results match  22939088  0
+Success HW and SW results match  22939600  0
+Success HW and SW results match  22940112  0
+Success HW and SW results match  22940624  0
+Success HW and SW results match  23002576  0
+Success HW and SW results match  23003088  0
+Success HW and SW results match  23003600  0
+Success HW and SW results match  23004112  0
+Success HW and SW results match  23004624  0
+Success HW and SW results match  23005136  0
+Success HW and SW results match  23005648  0
+Success HW and SW results match  23006160  0
+Success HW and SW results match  23068112  0
+Success HW and SW results match  23068624  0
+Success HW and SW results match  23069136  0
+Success HW and SW results match  23069648  0
+Success HW and SW results match  23070160  0
+Success HW and SW results match  23070672  0
+Success HW and SW results match  23071184  0
+Success HW and SW results match  23071696  0
+Success HW and SW results match  23133648  0
+Success HW and SW results match  23134160  0
+Success HW and SW results match  23134672  0
+Success HW and SW results match  23135184  0
+Success HW and SW results match  23135696  0
+Success HW and SW results match  23136208  0
+Success HW and SW results match  23136720  0
+Success HW and SW results match  23137232  0
+Success HW and SW results match  23199184  0
+Success HW and SW results match  23199696  0
+Success HW and SW results match  23200208  0
+Success HW and SW results match  23200720  0
+Success HW and SW results match  23201232  0
+Success HW and SW results match  23201744  0
+Success HW and SW results match  23202256  0
+Success HW and SW results match  23202768  0
+Success HW and SW results match  23264720  0
+Success HW and SW results match  23265232  0
+Success HW and SW results match  23265744  0
+Success HW and SW results match  23266256  0
+Success HW and SW results match  23266768  0
+Success HW and SW results match  23267280  0
+Success HW and SW results match  23267792  0
+Success HW and SW results match  23268304  0
+
+C:\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>set PATH= 
+
+C:\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>call C:/Xilinx/Vivado/2018.2/bin/xelab xil_defaultlib.apatb_matrixmul_1D_top glbl -prj matrixmul_1D.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s matrixmul_1D  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_1D_top glbl -prj matrixmul_1D.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrixmul_1D 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_AB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_Input_orign.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Input_orign
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_1D_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_A_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_AB_2D.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_AB_2D_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_AB_2D
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_Input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_Input_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_Input
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_mac_bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_mac_bkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_mac_bkb
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_1D_Input_ram
+Compiling module xil_defaultlib.matrixmul_1D_Input(DataWidth=8,A...
+Compiling module xil_defaultlib.matrixmul_1D_A_ram
+Compiling module xil_defaultlib.matrixmul_1D_A(DataWidth=8,Addre...
+Compiling module xil_defaultlib.matrixmul_1D_AB_2D_ram
+Compiling module xil_defaultlib.matrixmul_1D_AB_2D(DataWidth=19,...
+Compiling module xil_defaultlib.matrixmul_1D_mac_bkb_DSP48_0
+Compiling module xil_defaultlib.matrixmul_1D_mac_bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrixmul_1D
+Compiling module xil_defaultlib.AESL_automem_Input_orign
+Compiling module xil_defaultlib.AESL_automem_AB
+Compiling module xil_defaultlib.apatb_matrixmul_1D_top
+Compiling module work.glbl
+Built simulation snapshot matrixmul_1D
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/xsim.dir/matrixmul_1D/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  3 03:30:26 2022...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul_1D/xsim_script.tcl
+# xsim {matrixmul_1D} -autoloadwcfg -tclbatch {matrixmul_1D.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source matrixmul_1D.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "1008195000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 1008235 ns : File "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D.autotb.v" Line 268
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jun  3 03:30:32 2022...

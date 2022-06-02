@@ -1,0 +1,10 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado/2018.2/msys64/mingw64/bin/g++"
+   Compiling 1DmatrixMul.cpp_pre.cpp.tb.cpp
+   Compiling TB_1DmatrixMul.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul_1D.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+ERROR: [COSIM-360] Aborting co-simulation: C TB simulation failed.
+ERROR: [COSIM-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.

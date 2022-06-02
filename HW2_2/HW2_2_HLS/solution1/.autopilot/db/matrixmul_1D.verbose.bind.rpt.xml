@@ -1,0 +1,56 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'matrixmul_1D'" level="0">
+<item name = "Date">Fri Jun  3 03:45:14 2022
+</item>
+<item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
+<item name = "Project">HW2_2_HLS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.508, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">100805, 100805, 100805, 100805, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">66048, 66048, 258, -, -, 256, no</column>
+<column name=" + Loop 1.1">256, 256, 2, -, -, 128, no</column>
+<column name="- Loop 2">24, 24, 8, -, -, 3, no</column>
+<column name=" + Loop 2.1">6, 6, 2, -, -, 3, no</column>
+<column name="- Loop 3">24, 24, 8, -, -, 3, no</column>
+<column name=" + Loop 3.1">6, 6, 2, -, -, 3, no</column>
+<column name="- Loop 4">1680, 1680, 210, -, -, 8, no</column>
+<column name=" + Loop 4.1">208, 208, 26, -, -, 8, no</column>
+<column name="  ++ Loop 4.1.1">24, 24, 3, -, -, 8, no</column>
+<column name="- Loop 5">33024, 33024, 258, -, -, 128, no</column>
+<column name=" + Loop 5.1">256, 256, 2, -, -, 128, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
