@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Wed Jun 02 13:12:08 UTC 2021
+VLNV: xilinx.com:ip:smartconnect:1.0
+SynthRuntime: 111

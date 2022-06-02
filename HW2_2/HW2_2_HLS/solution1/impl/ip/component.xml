@@ -1252,8 +1252,8 @@ tatype {name {attribs {resolve_type immediate dependency {} format string minimu
       </xilinx:taxonomies>
       <xilinx:displayName>Matrixmul</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2106011728</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-06-01T08:28:44Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2106022154</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-06-02T12:54:48Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2018.2</xilinx:xilinxVersion>

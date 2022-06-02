@@ -4,7 +4,7 @@ Implementation tool: Xilinx Vivado v.2018.2
 Project:             HW2_2_HLS
 Solution:            solution1
 Device target:       xc7z020clg484-1
-Report date:         Tue Jun 01 17:30:49 +0900 2021
+Report date:         Wed Jun 02 21:56:58 +0900 2021
 
 #=== Post-Implementation Resource usage ===
 SLICE:          289

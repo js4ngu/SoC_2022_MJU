@@ -21,7 +21,13 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.c \
  ../../Hello_world_bsp/ps7_cortexa9_0/include/xdebug.h \
  ../../Hello_world_bsp/ps7_cortexa9_0/include/xscugic.h \
  ../../Hello_world_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
- ../../Hello_world_bsp/ps7_cortexa9_0/include/xil_exception.h
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xil_exception.h \
+ ../src/platform.h ../src/platform_config.h \
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xil_types.h \
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xil_printf.h \
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul_hw.h \
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul.h \
+ ../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul_hw.h
 
 ../../Hello_world_bsp/ps7_cortexa9_0/include/xaxidma.h:
 
@@ -68,3 +74,17 @@ src/helloworld.o src/helloworld.o: ../src/helloworld.c \
 ../../Hello_world_bsp/ps7_cortexa9_0/include/xscugic_hw.h:
 
 ../../Hello_world_bsp/ps7_cortexa9_0/include/xil_exception.h:
+
+../src/platform.h:
+
+../src/platform_config.h:
+
+../../Hello_world_bsp/ps7_cortexa9_0/include/xil_types.h:
+
+../../Hello_world_bsp/ps7_cortexa9_0/include/xil_printf.h:
+
+../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul_hw.h:
+
+../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul.h:
+
+../../Hello_world_bsp/ps7_cortexa9_0/include/xmatrixmul_hw.h:

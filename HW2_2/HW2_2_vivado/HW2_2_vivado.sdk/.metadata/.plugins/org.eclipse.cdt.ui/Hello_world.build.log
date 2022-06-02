@@ -1,25 +1,23 @@
-20:37:29 **** Auto Build of configuration Debug for project Hello_world ****
+22:32:09 **** Auto Build of configuration Debug for project Hello_world ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 'Building file: ../src/helloworld.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c:70:25: warning: missing braces around initializer [-Wmissing-braces]
- u8 TxBuffer[256][128] = {2,};
-                         ^
-                          { }
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:183:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:191:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:115:6: warning: unused variable 'i' [-Wunused-variable]
-  u32 i;
-      ^
-make: *** [src/helloworld.o] ¿À·ù 1
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: Hello_world.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../Hello_world_bsp/ps7_cortexa9_0/lib -o "Hello_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Hello_world.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size Hello_world.elf  |tee "Hello_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  41576	   3840	  73704	 119120	  1d150	Hello_world.elf
+'Finished building: Hello_world.elf.size'
+' '
 
-20:37:29 Build Finished (took 294ms)
+22:32:10 Build Finished (took 663ms)
 

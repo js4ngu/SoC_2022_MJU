@@ -4,6 +4,8 @@
         "xmatrixmul_hw.h": "c",
         "xmatrixmul.h": "c",
         "xtmrctr.h": "c",
-        "xdebug.h": "c"
+        "xdebug.h": "c",
+        "xaxidma.h": "c",
+        "xparameters.h": "c"
     }
 }

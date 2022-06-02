@@ -67,8 +67,7 @@ volatile int TxDone;
 volatile int RxDone;
 volatile int Error;
 
-
-u8 TxBuffer[256][128];
+u8 TxBuffer[256][128] = {0,};
 u8 RxBuffer[128][128] = {0,};
 
 /*****************************************************************************/
@@ -106,14 +105,13 @@ int main(void) {
 
    // AXI-Lite init
    static XMatrixmul MatrixMulInstance_Ptr;
-    init_platform();
-    XMatrixmul_Initialize(&MatrixMulInstance_Ptr, XPAR_MATRIXMUL_0_DEVICE_ID);
+   init_platform();
+   XMatrixmul_Initialize(&MatrixMulInstance_Ptr, XPAR_MATRIXMUL_0_DEVICE_ID);
    xil_printf("\r\n--- Init_AXI-Lite 4 Custom IP Done--- \r\n");
 
    // DMA init
    int Status;
    XAxiDma_Config *Config;
-   u32 i;
 
    Config = XAxiDma_LookupConfig(DMA_DEV_ID);
    if (!Config) {
@@ -171,39 +169,12 @@ int main(void) {
    int ln = LN;
    int lp = LP;
 
-   xil_printf("Put data in A-----------------\r\n");
-    for (int i = 0; i < lm; i++) {
-        for (int j = 0; j < ln; j++) {
-           TxBuffer[i][j] = 3;
-           xil_printf("A_initial[%d][%d] = %d\r\n",i,j, TxBuffer[i][j]);
-        }
-      xil_printf("\n\r");
-    }
-
-   xil_printf("Put data in B----------------------\r\n");
-    for (int i = 128; i < 128+ln; i++) {
-        for (int j = 0; j < ln; j++) {
-           TxBuffer[i][j] = 3;
-           xil_printf("B_send[%d][%d] = %d\r\n",i,j, TxBuffer[i][j]);
-        }
-      xil_printf("\n\r");
-    }
-
-
-   /*Set CustomIP LM, LN, LP by axi-Lite*/
-    XMatrixmul_Set_lm(&MatrixMulInstance_Ptr, LM);
-    XMatrixmul_Set_ln(&MatrixMulInstance_Ptr, LN);
-    XMatrixmul_Set_lp(&MatrixMulInstance_Ptr, LP);
-
-
-
-
    /*Send data check*/
    xil_printf("Send Data to DMA\r\n");
    xil_printf("A\r\n");
     for (int i = 0; i < lm; i++) {
         for (int j = 0; j < ln; j++) {
-           xil_printf("A_send[%d][%d] = %d\r\n",i,j, TxBuffer[i][j]);
+           xil_printf("%d ", TxBuffer[i][j]);
         }
       xil_printf("\n\r");
     }
@@ -211,10 +182,15 @@ int main(void) {
    xil_printf("B\r\n");
     for (int i = 128; i < 128+ln; i++) {
         for (int j = 0; j < ln; j++) {
-           xil_printf("B_send[%d][%d] = %d\r\n",i,j, TxBuffer[i][j]);
+           xil_printf("%d ", TxBuffer[i][j]);
         }
       xil_printf("\n\r");
     }
+   /*Set CustomIP LM, LN, LP by axi-Lite*/
+   XMatrixmul_Set_lm(&MatrixMulInstance_Ptr, LM);
+   XMatrixmul_Set_ln(&MatrixMulInstance_Ptr, LN);
+   XMatrixmul_Set_lp(&MatrixMulInstance_Ptr, LP);
+   xil_printf("LM LN LP set DONE!\n\r");
 
    /* Flush the SrcBuffer before the DMA transfer, in case the Data Cache is enabled */
    // AXI stream to DMA
@@ -249,7 +225,7 @@ int main(void) {
    // check received data
     for(int i=0; i < lm; i++){
         for(int j=0; j < lp; j++){
-            xil_printf("AB_received[%d][%d] : %d\r\n",lm ,lp , RxBuffer[i][j]);
+            xil_printf("[%d][%d] : %d\n",lm ,lp , RxBuffer[i][j]);
         }
     }
    xil_printf("=========================================================\n");
