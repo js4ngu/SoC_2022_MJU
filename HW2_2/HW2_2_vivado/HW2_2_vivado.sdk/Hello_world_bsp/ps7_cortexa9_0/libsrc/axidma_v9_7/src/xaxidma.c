@@ -845,7 +845,7 @@ int XAxiDma_SelectCyclicMode(XAxiDma *InstancePtr, int Direction, int Select)
  *
  *****************************************************************************/
 u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
-	int Direction)
+	int Direction) //UINTPTR은 uintptr_t 입니다
 {
 	u32 WordBits;
 	int RingIndex = 0;
