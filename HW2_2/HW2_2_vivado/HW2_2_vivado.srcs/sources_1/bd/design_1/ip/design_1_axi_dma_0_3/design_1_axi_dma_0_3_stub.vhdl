@@ -1,11 +1,11 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Wed Jun  1 18:02:57 2022
+-- Date        : Thu Jun  2 23:03:24 2022
 -- Host        : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_axi_dma_0_3 -prefix
---               design_1_axi_dma_0_3_ design_1_axi_dma_0_0_stub.vhdl
--- Design      : design_1_axi_dma_0_0
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3_stub.vhdl
+-- Design      : design_1_axi_dma_0_3
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg484-1
 -- --------------------------------------------------------------------------------

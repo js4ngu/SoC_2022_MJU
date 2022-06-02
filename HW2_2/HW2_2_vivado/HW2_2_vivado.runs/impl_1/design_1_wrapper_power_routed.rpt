@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Thu Jun  2 22:22:19 2022
+| Date             : Thu Jun  2 23:06:11 2022
 | Host             : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -53,15 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.021 |        3 |       --- |             --- |
-| Slice Logic              |     0.008 |    13017 |       --- |             --- |
-|   LUT as Logic           |     0.007 |     3709 |     53200 |            6.97 |
+| Slice Logic              |     0.008 |    13178 |       --- |             --- |
+|   LUT as Logic           |     0.007 |     3730 |     53200 |            7.01 |
 |   LUT as Distributed RAM |    <0.001 |      410 |     17400 |            2.36 |
-|   Register               |    <0.001 |     6433 |    106400 |            6.05 |
+|   Register               |    <0.001 |     6547 |    106400 |            6.15 |
 |   CARRY4                 |    <0.001 |      204 |     13300 |            1.53 |
-|   LUT as Shift Register  |    <0.001 |      183 |     17400 |            1.05 |
-|   F7/F8 Muxes            |    <0.001 |        6 |     53200 |            0.01 |
-|   Others                 |     0.000 |      576 |       --- |             --- |
-| Signals                  |     0.009 |     8821 |       --- |             --- |
+|   LUT as Shift Register  |    <0.001 |      185 |     17400 |            1.06 |
+|   Others                 |     0.000 |      578 |       --- |             --- |
+| Signals                  |     0.009 |     8938 |       --- |             --- |
 | Block RAM                |     0.001 |       10 |       140 |            7.14 |
 | DSPs                     |     0.000 |        1 |       220 |            0.45 |
 | PS7                      |     1.529 |        1 |       --- |             --- |
@@ -154,8 +153,8 @@ Table of Contents
 +---------------------------------------------------------------------------------------------------+-----------+
 | design_1_wrapper                                                                                  |     1.568 |
 |   design_1_i                                                                                      |     1.568 |
-|     axi_dma_0                                                                                     |     0.009 |
-|       U0                                                                                          |     0.009 |
+|     axi_dma_0                                                                                     |     0.008 |
+|       U0                                                                                          |     0.008 |
 |         INCLUDE_MM2S_SOF_EOF_GENERATOR.I_MM2S_DMA_MNGR                                            |    <0.001 |
 |           GEN_MM2S_DMA_CONTROL.GEN_SIMPLE_DMA_MODE.I_MM2S_SMPL_SM                                 |    <0.001 |
 |           GEN_MM2S_DMA_CONTROL.I_MM2S_CMDSTS                                                      |    <0.001 |
@@ -237,7 +236,8 @@ Table of Contents
 |                       wrpp1_inst                                                                  |    <0.001 |
 |                       xpm_fifo_rst_inst                                                           |    <0.001 |
 |             GEN_INCLUDE_IBTTCC.I_S2MM_MSTR_IBTTCC                                                 |    <0.001 |
-|             GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                                                |    <0.001 |
+|             GEN_INCLUDE_REALIGNER.I_S2MM_REALIGNER                                                |     0.001 |
+|               GEN_INCLUDE_DRE.I_S2MM_DRE_BLOCK                                                    |    <0.001 |
 |               GEN_INCLUDE_SCATTER.I_S2MM_SCATTER                                                  |    <0.001 |
 |                 I_MSSAI_SKID_BUF                                                                  |    <0.001 |
 |                 I_TSTRB_FIFO                                                                      |    <0.001 |
@@ -403,8 +403,8 @@ Table of Contents
 |                   gen_srls[1].srl_nx1                                                             |    <0.001 |
 |                 gen_si_handler.gen_arbiter_rr_normal_area.inst_arbiter                            |    <0.001 |
 |                 gen_si_handler.gen_request_counters.gen_req_counter[1].inst_req_counter           |    <0.001 |
-|           m00_b_node                                                                              |    <0.001 |
-|             inst                                                                                  |    <0.001 |
+|           m00_b_node                                                                              |     0.001 |
+|             inst                                                                                  |     0.001 |
 |               inst_mi_handler                                                                     |    <0.001 |
 |                 gen_normal_area.gen_fifo_req.inst_fifo_req                                        |    <0.001 |
 |                   gen_xpm_memory_fifo.inst_fifo                                                   |    <0.001 |
@@ -703,12 +703,12 @@ Table of Contents
 |         matrixmul_AXILiteS_s_axi_U                                                                |    <0.001 |
 |     processing_system7_0                                                                          |     1.530 |
 |       inst                                                                                        |     1.530 |
-|     ps7_0_axi_periph                                                                              |     0.005 |
+|     ps7_0_axi_periph                                                                              |     0.006 |
 |       s00_couplers                                                                                |     0.004 |
 |         auto_pc                                                                                   |     0.004 |
 |           inst                                                                                    |     0.004 |
 |             gen_axilite.gen_b2s_conv.axilite_b2s                                                  |     0.004 |
-|               RD.ar_channel_0                                                                     |    <0.001 |
+|               RD.ar_channel_0                                                                     |     0.001 |
 |                 ar_cmd_fsm_0                                                                      |    <0.001 |
 |                 cmd_translator_0                                                                  |    <0.001 |
 |                   incr_cmd_0                                                                      |    <0.001 |

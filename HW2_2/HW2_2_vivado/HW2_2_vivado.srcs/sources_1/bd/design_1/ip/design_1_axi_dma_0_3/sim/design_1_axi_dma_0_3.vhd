@@ -1,4 +1,4 @@
--- (c) Copyright 1995-2021 Xilinx, Inc. All rights reserved.
+-- (c) Copyright 1995-2022 Xilinx, Inc. All rights reserved.
 -- 
 -- This file contains confidential and proprietary information
 -- of Xilinx, Inc. and is protected under U.S. and
@@ -397,7 +397,7 @@ BEGIN
       C_M_AXI_S2MM_ADDR_WIDTH => 32,
       C_M_AXI_S2MM_DATA_WIDTH => 32,
       C_S_AXIS_S2MM_TDATA_WIDTH => 32,
-      C_INCLUDE_S2MM_DRE => 0,
+      C_INCLUDE_S2MM_DRE => 1,
       C_INCREASE_THROUGHPUT => 0,
       C_FAMILY => "zynq"
     )

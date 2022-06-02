@@ -170,7 +170,7 @@ int main(void) {
    int lp = LP;
 
    /*Send data check*/
-   xil_printf("Send Data to DMA\r\n");
+   xil_printf("INPUT Data CHK!\r\n");
    xil_printf("A\r\n");
     for (int i = 0; i < lm; i++) {
         for (int j = 0; j < ln; j++) {
@@ -197,8 +197,9 @@ int main(void) {
    Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
 
    Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
-   if (Status != XST_SUCCESS) {
-      return XST_FAILURE;
+   if (Status != XST_SUCCESS){
+	  xil_printf("TX ERR : %d\r\n", Status);
+	  return XST_FAILURE;
    }
    xil_printf("TX DONE\r\n");
 
@@ -206,6 +207,7 @@ int main(void) {
 
    Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) RxBuffer, BYTES_TO_RECIVE, XAXIDMA_DEVICE_TO_DMA);
    if (Status != XST_SUCCESS) {
+	  xil_printf("RX ERR : %d\r\n", Status);
       return XST_FAILURE;
    }
    xil_printf("RX DONE\r\n");
@@ -233,9 +235,8 @@ int main(void) {
 
 
    /* Disable TX and RX Ring interrupts and return success */
-    cleanup_platform();
    DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
-
+   cleanup_platform();
    return XST_SUCCESS;
 }
 

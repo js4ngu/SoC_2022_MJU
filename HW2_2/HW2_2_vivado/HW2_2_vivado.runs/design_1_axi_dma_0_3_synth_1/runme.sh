@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/design_1_xlconstant_0_1_synth_1'
+HD_PWD='C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/design_1_axi_dma_0_3_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log design_1_xlconstant_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xlconstant_0_1.tcl
+EAStep vivado -log design_1_axi_dma_0_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_dma_0_3.tcl

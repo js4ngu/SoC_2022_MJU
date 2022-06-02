@@ -16,27 +16,28 @@ WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.b
 List of locked IPs:
 design_1_matrixmul_0_1
 
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 313.426 ; gain = 69.148
 Command: synth_design -top design_1_wrapper -part xc7z020clg484-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2648 
+INFO: Helper process launched with PID 5848 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 421.453 ; gain = 101.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 422.234 ; gain = 101.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 INFO: [Synth 8-6157] synthesizing module 'design_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:13]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_3' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_axi_dma_0_3_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_3' (1#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_axi_dma_0_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_dma_0_3' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_axi_dma_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_dma_0_3' (1#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_axi_dma_0_3_stub.v:6]
 WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'design_1_axi_dma_0_3' requires 64 connections, but only 59 given [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:181]
-INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_axi_smc_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_2' (2#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_axi_smc_2_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_matrixmul_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_matrixmul_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_matrixmul_0_1' (3#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_matrixmul_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_2' (2#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_axi_smc_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_matrixmul_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_matrixmul_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_matrixmul_0_1' (3#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_matrixmul_0_1_stub.v:6]
 WARNING: [Synth 8-350] instance 'matrixmul_0' of module 'design_1_matrixmul_0_1' requires 29 connections, but only 26 given [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:310]
-INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_processing_system7_0_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_2' (4#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_processing_system7_0_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_processing_system7_0_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_processing_system7_0_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_processing_system7_0_2' (4#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_processing_system7_0_2_stub.v:6]
 WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'design_1_processing_system7_0_2' requires 104 connections, but only 87 given [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:337]
 INFO: [Synth 8-6157] synthesizing module 'design_1_ps7_0_axi_periph_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:521]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_15SPJYW' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1072]
@@ -44,20 +45,20 @@ INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_15SPJYW' (5#1) [
 INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_XU9C55' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1197]
 INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_XU9C55' (6#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1197]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_UYSKKA' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1329]
-INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (7#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_UYSKKA' (8#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1329]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xbar_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (9#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xbar_0_stub.v:6]
 WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 40 connections, but only 38 given [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:1031]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_ps7_0_axi_periph_2' (10#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:521]
-INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_2' (11#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps7_0_100M_2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps7_0_100M_2' (11#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_rst_ps7_0_100M_2_stub.v:6]
 WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'design_1_rst_ps7_0_100M_2' requires 10 connections, but only 7 given [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:505]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xlconcat_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_1' (12#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xlconcat_0_1_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xlconstant_0_1_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (13#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-5456-DESKTOP-437TBDQ/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xlconcat_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_1' (12#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xlconcat_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xlconstant_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (13#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/.Xil/Vivado-8548-DESKTOP-437TBDQ/realtime/design_1_xlconstant_0_1_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'design_1' (14#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/synth/design_1.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (15#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 WARNING: [Synth 8-3331] design s00_couplers_imp_UYSKKA has unconnected port M_ACLK
@@ -71,7 +72,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port M_A
 WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_15SPJYW has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 475.277 ; gain = 155.383
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 476.406 ; gain = 156.102
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -84,10 +85,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.277 ; gain = 155.383
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 476.406 ; gain = 156.102
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 475.277 ; gain = 155.383
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 476.406 ; gain = 156.102
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -96,8 +97,8 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2/design_1_processing_system7_0_2_in_context.xdc] for cell 'design_1_i/processing_system7_0'
 Finished Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_2/design_1_processing_system7_0_2/design_1_processing_system7_0_2_in_context.xdc] for cell 'design_1_i/processing_system7_0'
-Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
-Finished Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_0_3_in_context.xdc] for cell 'design_1_i/axi_dma_0'
+Finished Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_dma_0_3/design_1_axi_dma_0_3/design_1_axi_dma_0_3_in_context.xdc] for cell 'design_1_i/axi_dma_0'
 Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/design_1_axi_smc_2/design_1_axi_smc_2_in_context.xdc] for cell 'design_1_i/axi_smc'
 Finished Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_2/design_1_axi_smc_2/design_1_axi_smc_2_in_context.xdc] for cell 'design_1_i/axi_smc'
 Parsing XDC File [c:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_2/design_1_rst_ps7_0_100M_0_in_context.xdc] for cell 'design_1_i/rst_ps7_0_100M'
@@ -119,16 +120,16 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 780.414 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 780.676 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 780.414 ; gain = 460.520
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.676 ; gain = 460.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 780.414 ; gain = 460.520
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.676 ; gain = 460.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -263,10 +264,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint 
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 780.414 ; gain = 460.520
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.676 ; gain = 460.371
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 780.414 ; gain = 460.520
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.676 ; gain = 460.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -306,7 +307,7 @@ WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_2 has unconnected port 
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_2 has unconnected port M01_ACLK
 WARNING: [Synth 8-3331] design design_1_ps7_0_axi_periph_2 has unconnected port M01_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 780.414 ; gain = 460.520
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 780.676 ; gain = 460.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -320,13 +321,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/processing_system7_0/FCLK_CLK0' to pin 'design_1_i/processing_system7_0/bbstub_FCLK_CLK0/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 816.695 ; gain = 496.801
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 821.602 ; gain = 501.297
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 816.918 ; gain = 497.023
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 821.676 ; gain = 501.371
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -338,7 +339,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 822.504 ; gain = 502.199
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -362,7 +363,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -375,7 +376,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -387,25 +388,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -451,11 +452,11 @@ Report Instance Areas:
 |4     |      s00_couplers   |s00_couplers_imp_UYSKKA     |   177|
 +------+---------------------+----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.348 ; gain = 498.453
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.879 ; gain = 502.574
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 818.402 ; gain = 193.371
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 818.402 ; gain = 498.508
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 822.914 ; gain = 198.340
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 822.914 ; gain = 502.609
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -465,9 +466,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 848.355 ; gain = 535.398
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 851.391 ; gain = 537.965
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_vivado/HW2_2_vivado.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 848.355 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  2 22:19:54 2022...
+report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.022 . Memory (MB): peak = 851.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Jun  2 23:04:00 2022...
