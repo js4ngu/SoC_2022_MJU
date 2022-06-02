@@ -1,8 +1,25 @@
-18:09:00 **** Auto Build of configuration Debug for project Hello_world ****
+20:37:29 **** Auto Build of configuration Debug for project Hello_world ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
-make: `main-build'를 위해 할 일이 없습니다
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../Hello_world_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:70:25: warning: missing braces around initializer [-Wmissing-braces]
+ u8 TxBuffer[256][128] = {2,};
+                         ^
+                          { }
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:183:9: error: expected ';' before '}' token
+         }
+         ^
+../src/helloworld.c:191:9: error: expected ';' before '}' token
+         }
+         ^
+../src/helloworld.c:115:6: warning: unused variable 'i' [-Wunused-variable]
+  u32 i;
+      ^
+make: *** [src/helloworld.o] 오류 1
 
-18:09:00 Build Finished (took 167ms)
+20:37:29 Build Finished (took 294ms)
 
