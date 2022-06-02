@@ -95,7 +95,6 @@ u8 RxBuffer[128][128] = {0,};
 * @note      None.
 *
 ******************************************************************************/
-
 void delay(void) {
    for(int i = 0 ; i < 1000 ; i++)
    {}
@@ -186,6 +185,7 @@ int main(void) {
         }
       xil_printf("\n\r");
     }
+
    /*Set CustomIP LM, LN, LP by axi-Lite*/
    XMatrixmul_Set_lm(&MatrixMulInstance_Ptr, LM);
    XMatrixmul_Set_ln(&MatrixMulInstance_Ptr, LN);
@@ -194,22 +194,23 @@ int main(void) {
 
    /* Flush the SrcBuffer before the DMA transfer, in case the Data Cache is enabled */
    // AXI stream to DMA
-   Xil_DCacheFlushRange((u32)TxBuffer, BYTES_TO_TRANSFER);
-
-   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
+   /*~~~~~~~~~~~~~~~~~~마방인들아 여기가 문제야~~~~~개 빡쳐~~~~~~~~~~~~~~~~~~~~*/
+   Xil_DCacheFlushRange((u8)TxBuffer, BYTES_TO_TRANSFER);
+   Status = XAxiDma_SimpleTransfer(&AxiDma,(u8) TxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
    if (Status != XST_SUCCESS){
 	  xil_printf("TX ERR : %d\r\n", Status);
-	  return XST_FAILURE;
+	  return XST_FAILURE;	
    }
+
    xil_printf("TX DONE\r\n");
 
    delay();
-
    Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) RxBuffer, BYTES_TO_RECIVE, XAXIDMA_DEVICE_TO_DMA);
    if (Status != XST_SUCCESS) {
 	  xil_printf("RX ERR : %d\r\n", Status);
       return XST_FAILURE;
    }
+
    xil_printf("RX DONE\r\n");
 
    /* Wait TX done and RX done */
@@ -232,7 +233,6 @@ int main(void) {
     }
    xil_printf("=========================================================\n");
    xil_printf("AXI DMA interrupt example test passed\r\n");
-
 
    /* Disable TX and RX Ring interrupts and return success */
    DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
