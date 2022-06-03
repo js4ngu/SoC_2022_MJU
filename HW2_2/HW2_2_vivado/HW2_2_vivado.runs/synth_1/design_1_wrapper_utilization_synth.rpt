@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Jun  2 23:04:00 2022
-| Host         : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
+| Date         : Fri Jun  3 15:18:52 2022
+| Host         : DESKTOP-8PEBONS running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
 | Device       : 7z020clg484-1
@@ -173,15 +173,15 @@ Table of Contents
 +---------------------------------+------+
 |             Ref Name            | Used |
 +---------------------------------+------+
-| design_1_xlconstant_0_1         |    1 |
-| design_1_xlconcat_0_1           |    1 |
-| design_1_xbar_0                 |    1 |
-| design_1_rst_ps7_0_100M_2       |    1 |
+| design_1_xlconstant_0_0         |    1 |
+| design_1_xlconcat_0_0           |    1 |
+| design_1_xbar_1                 |    1 |
+| design_1_rst_ps7_0_100M_3       |    1 |
 | design_1_processing_system7_0_2 |    1 |
-| design_1_matrixmul_0_1          |    1 |
-| design_1_axi_smc_2              |    1 |
+| design_1_matrixmul_1D_rev2_0_1  |    1 |
+| design_1_axi_smc_3              |    1 |
 | design_1_axi_dma_0_3            |    1 |
-| design_1_auto_pc_0              |    1 |
+| design_1_auto_pc_1              |    1 |
 +---------------------------------+------+
 
 

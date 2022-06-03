@@ -300,39 +300,38 @@ extern "C" {
 
 
 
-void matrixmul_1D_rev2( unsigned char Input[256*128], unsigned int AB[128*128]){_ssdm_SpecArrayDimSize(Input, 32768);_ssdm_SpecArrayDimSize(AB, 16384);
+void matrixmul_1D_rev2(int lm, int ln, int lp,unsigned char Input[256*128], unsigned int AB[128*128]){_ssdm_SpecArrayDimSize(Input, 32768);_ssdm_SpecArrayDimSize(AB, 16384);
+_ssdm_op_SpecInterface(Input, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(AB, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(lm, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(ln, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(lp, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 
-
-
-
-
-
-
-   int m=1, n=1, p=1;
+ int m=1, n=1, p=1;
    unsigned char A[128*128] = {0,};
    unsigned char B[128*128] = {0,};
 
-   for (int i = 0; i < 7; i++) {
-      for (int j = 0; j < 7; j++) {
+   for (int i = 0; i < lm; i++) {
+      for (int j = 0; j < ln; j++) {
          A[128*i+j] = Input[128*i+j];
       }
    }
-   for (int i = 0; i < 7; i++) {
-      for (int j = 0; j < 7; j++) {
+   for (int i = 0; i < ln; i++) {
+      for (int j = 0; j < lp; j++) {
          B[128*i+j] = Input[(i+1)*128+j];
       }
    }
 
 
-   for(int i=0; i<7; i++){
+   for(int i=0; i<lm; i++){
       m *= 2;
    }
 
-   for(int i=0; i<7; i++){
+   for(int i=0; i<ln; i++){
       n *= 2;
    }
 
-   for(int i=0; i<7; i++){
+   for(int i=0; i<lp; i++){
       p *= 2;
    }
 

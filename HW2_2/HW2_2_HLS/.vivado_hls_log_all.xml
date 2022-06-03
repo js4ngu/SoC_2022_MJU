@@ -2,22 +2,17 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog/>
-      <simLog/>
-      <mgLog/>
       <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [SYN 201-107] Renaming port name 'matrixmul_1D_rev2/Input' to 'matrixmul_1D_rev2/Input_r' to avoid the conflict with HDL keywords or other object names." projectName="HW2_2_HLS" solutionName="solution1" date="2022-06-03T14:51:23.798+0900" type="Warning"/>
-      </synLog>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
+      <packageLog>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design&#xD;&#xA;report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.171 . Memory (MB): peak = 1267.043 ; gain = 0.000&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Implementation tool: Xilinx Vivado v.2018.2&#xD;&#xA;Project:             HW2_2_HLS&#xD;&#xA;Solution:            solution1&#xD;&#xA;Device target:       xc7z020clg484-1&#xD;&#xA;Report date:         Thu Jun 03 15:01:20 +0900 2021&#xD;&#xA;&#xD;&#xA;#=== Post-Implementation Resource usage ===&#xD;&#xA;SLICE:          277&#xD;&#xA;LUT:            437&#xD;&#xA;FF:            1055&#xD;&#xA;DSP:              1&#xD;&#xA;BRAM:            16&#xD;&#xA;SRL:              0&#xD;&#xA;#=== Final timing ===&#xD;&#xA;CP required:    10.000&#xD;&#xA;CP achieved post-synthesis:    5.076&#xD;&#xA;CP achieved post-implementation:    6.008&#xD;&#xA;Timing met" projectName="HW2_2_HLS" solutionName="solution1" date="2021-06-03T15:01:20.268+0900" type="Warning"/>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="HW2_2_HLS" solutionName="solution1" date="2021-06-03T15:01:18.071+0900" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;s_axi_AXILiteS_AWVALID&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;s_axi_AXILiteS_AWVALID&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.&#xD;&#xA;Phase 1 Build RT Design | Checksum: 5ca871b7&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1301.730 ; gain = 65.195&#xD;&#xA;Post Restoration Checksum: NetGraph: 1d799f68 NumContArr: 3f2ed24f Constraints: 0 Timing: 0&#xD;&#xA;&#xD;&#xA;Phase 2 Router Initialization&#xD;&#xA;&#xD;&#xA;Phase 2.1 Create Timer&#xD;&#xA;Phase 2.1 Create Timer | Checksum: 5ca871b7&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1301.730 ; gain = 65.195&#xD;&#xA;&#xD;&#xA;Phase 2.2 Fix Topology Constraints&#xD;&#xA;Phase 2.2 Fix Topology Constraints | Checksum: 5ca871b7&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1307.520 ; gain = 70.984&#xD;&#xA;&#xD;&#xA;Phase 2.3 Pre Route Cleanup&#xD;&#xA;Phase 2.3 Pre Route Cleanup | Checksum: 5ca871b7&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:26 ; elapsed = 00:00:23 . Memory (MB): peak = 1307.520 ; gain = 70.984&#xD;&#xA; Number of Nodes with overlaps = 0&#xD;&#xA;&#xD;&#xA;Phase 2.4 Update Timing&#xD;&#xA;Phase 2.4 Update Timing | Checksum: 1b4c65ad3&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:27 ; elapsed = 00:00:23 . Memory (MB): peak = 1312.168 ; gain = 75.633" projectName="HW2_2_HLS" solutionName="solution1" date="2021-06-03T15:01:13.024+0900" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;s_axi_AXILiteS_BREADY&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;s_axi_AXILiteS_BREADY&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported." projectName="HW2_2_HLS" solutionName="solution1" date="2021-06-03T15:00:48.355+0900" type="Warning"/>
+      </packageLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

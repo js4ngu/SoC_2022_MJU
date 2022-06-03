@@ -1,17 +1,16 @@
-
+/*
 #define lm 7
 #define ln 7
 #define lp 7
+*/
 
-
-void matrixmul_1D_rev2(/*int lm, int ln, int lp,*/unsigned char Input[256*128], unsigned int AB[128*128]){
-/*
+void matrixmul_1D_rev2(int lm, int ln, int lp,unsigned char Input[256*128], unsigned int AB[128*128]){
 #pragma HLS INTERFACE axis register both port=Input
 #pragma HLS INTERFACE axis register both port=AB
-#pragma HLS INTERFACE s_axilite register port=lp
-#pragma HLS INTERFACE s_axilite register port=ln
-#pragma HLS INTERFACE s_axilite register port=lm
-*/
+#pragma HLS INTERFACE s_axilite port=lm
+#pragma HLS INTERFACE s_axilite port=ln
+#pragma HLS INTERFACE s_axilite port=lp
+
    int m=1, n=1, p=1;
    unsigned char A[128*128] = {0,};
    unsigned char B[128*128] = {0,};
