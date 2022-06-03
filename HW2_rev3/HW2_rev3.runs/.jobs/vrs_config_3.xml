@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_xbar_0_synth_1" LaunchDir="C:/Users/SEP16/SoC_2022_MJU/HW2_rev3/HW2_rev3.runs/design_1_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_axi_timer_0_0_synth_1" LaunchDir="C:/Users/SEP16/SoC_2022_MJU/HW2_rev3/HW2_rev3.runs/design_1_axi_timer_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

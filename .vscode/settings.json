@@ -6,6 +6,7 @@
         "xtmrctr.h": "c",
         "xdebug.h": "c",
         "xaxidma.h": "c",
-        "xparameters.h": "c"
+        "xparameters.h": "c",
+        "xil_exception.h": "c"
     }
 }

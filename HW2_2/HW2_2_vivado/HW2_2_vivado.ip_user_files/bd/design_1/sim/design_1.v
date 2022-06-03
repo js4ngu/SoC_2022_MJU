@@ -1,17 +1,28 @@
 //Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-//Date        : Wed Jun  1 17:57:00 2022
-//Host        : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
+//Date        : Fri Jun  3 15:15:38 2022
+//Host        : DESKTOP-8PEBONS running 64-bit major release  (build 9200)
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=4,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
+(* CORE_GENERATION_INFO = "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=13,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=4,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=1,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=44,da_clkrst_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "design_1.hwdef" *) 
 module design_1
-   ();
+   (FIXED_IO_0_ddr_vrn,
+    FIXED_IO_0_ddr_vrp,
+    FIXED_IO_0_mio,
+    FIXED_IO_0_ps_clk,
+    FIXED_IO_0_ps_porb,
+    FIXED_IO_0_ps_srstb);
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 DDR_VRN" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME FIXED_IO_0, CAN_DEBUG false" *) inout FIXED_IO_0_ddr_vrn;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 DDR_VRP" *) inout FIXED_IO_0_ddr_vrp;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 MIO" *) inout [53:0]FIXED_IO_0_mio;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_CLK" *) inout FIXED_IO_0_ps_clk;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_PORB" *) inout FIXED_IO_0_ps_porb;
+  (* X_INTERFACE_INFO = "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO_0 PS_SRSTB" *) inout FIXED_IO_0_ps_srstb;
 
   wire [31:0]axi_dma_0_M_AXIS_MM2S_TDATA;
   wire axi_dma_0_M_AXIS_MM2S_TREADY;
@@ -80,11 +91,17 @@ module design_1
   wire axi_smc_M00_AXI_WREADY;
   wire [7:0]axi_smc_M00_AXI_WSTRB;
   wire axi_smc_M00_AXI_WVALID;
-  wire [31:0]matrixmul_0_AB_TDATA;
-  wire matrixmul_0_AB_TREADY;
-  wire matrixmul_0_AB_TVALID;
+  wire [31:0]matrixmul_1D_rev2_0_AB_TDATA;
+  wire matrixmul_1D_rev2_0_AB_TREADY;
+  wire matrixmul_1D_rev2_0_AB_TVALID;
   wire processing_system7_0_FCLK_CLK0;
   wire processing_system7_0_FCLK_RESET0_N;
+  wire processing_system7_0_FIXED_IO_DDR_VRN;
+  wire processing_system7_0_FIXED_IO_DDR_VRP;
+  wire [53:0]processing_system7_0_FIXED_IO_MIO;
+  wire processing_system7_0_FIXED_IO_PS_CLK;
+  wire processing_system7_0_FIXED_IO_PS_PORB;
+  wire processing_system7_0_FIXED_IO_PS_SRSTB;
   wire [31:0]processing_system7_0_M_AXI_GP0_ARADDR;
   wire [1:0]processing_system7_0_M_AXI_GP0_ARBURST;
   wire [3:0]processing_system7_0_M_AXI_GP0_ARCACHE;
@@ -161,7 +178,7 @@ module design_1
   wire [1:0]xlconcat_0_dout;
   wire [0:0]xlconstant_0_dout;
 
-  design_1_axi_dma_0_0 axi_dma_0
+  design_1_axi_dma_0_3 axi_dma_0
        (.axi_resetn(rst_ps7_0_100M_peripheral_aresetn),
         .m_axi_mm2s_aclk(processing_system7_0_FCLK_CLK0),
         .m_axi_mm2s_araddr(axi_dma_0_M_AXI_MM2S_ARADDR),
@@ -216,12 +233,12 @@ module design_1
         .s_axi_lite_wdata(ps7_0_axi_periph_M00_AXI_WDATA),
         .s_axi_lite_wready(ps7_0_axi_periph_M00_AXI_WREADY),
         .s_axi_lite_wvalid(ps7_0_axi_periph_M00_AXI_WVALID),
-        .s_axis_s2mm_tdata(matrixmul_0_AB_TDATA),
+        .s_axis_s2mm_tdata(matrixmul_1D_rev2_0_AB_TDATA),
         .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1,1'b1}),
         .s_axis_s2mm_tlast(1'b0),
-        .s_axis_s2mm_tready(matrixmul_0_AB_TREADY),
-        .s_axis_s2mm_tvalid(matrixmul_0_AB_TVALID));
-  design_1_axi_smc_0 axi_smc
+        .s_axis_s2mm_tready(matrixmul_1D_rev2_0_AB_TREADY),
+        .s_axis_s2mm_tvalid(matrixmul_1D_rev2_0_AB_TVALID));
+  design_1_axi_smc_3 axi_smc
        (.M00_AXI_araddr(axi_smc_M00_AXI_ARADDR),
         .M00_AXI_arburst(axi_smc_M00_AXI_ARBURST),
         .M00_AXI_arcache(axi_smc_M00_AXI_ARCACHE),
@@ -290,10 +307,10 @@ module design_1
         .S01_AXI_wvalid(axi_dma_0_M_AXI_S2MM_WVALID),
         .aclk(processing_system7_0_FCLK_CLK0),
         .aresetn(rst_ps7_0_100M_peripheral_aresetn));
-  design_1_matrixmul_0_0 matrixmul_0
-       (.AB_TDATA(matrixmul_0_AB_TDATA),
-        .AB_TREADY(matrixmul_0_AB_TREADY),
-        .AB_TVALID(matrixmul_0_AB_TVALID),
+  design_1_matrixmul_1D_rev2_0_1 matrixmul_1D_rev2_0
+       (.AB_TDATA(matrixmul_1D_rev2_0_AB_TDATA),
+        .AB_TREADY(matrixmul_1D_rev2_0_AB_TREADY),
+        .AB_TVALID(matrixmul_1D_rev2_0_AB_TVALID),
         .Input_r_TDATA(axi_dma_0_M_AXIS_MM2S_TDATA[7:0]),
         .Input_r_TREADY(axi_dma_0_M_AXIS_MM2S_TREADY),
         .Input_r_TVALID(axi_dma_0_M_AXIS_MM2S_TVALID),
@@ -317,10 +334,13 @@ module design_1
         .s_axi_AXILiteS_WREADY(ps7_0_axi_periph_M01_AXI_WREADY),
         .s_axi_AXILiteS_WSTRB(ps7_0_axi_periph_M01_AXI_WSTRB),
         .s_axi_AXILiteS_WVALID(ps7_0_axi_periph_M01_AXI_WVALID));
-  design_1_processing_system7_0_0 processing_system7_0
-       (.FCLK_CLK0(processing_system7_0_FCLK_CLK0),
+  design_1_processing_system7_0_2 processing_system7_0
+       (.DDR_VRN(FIXED_IO_0_ddr_vrn),
+        .DDR_VRP(FIXED_IO_0_ddr_vrp),
+        .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
         .IRQ_F2P(xlconcat_0_dout),
+        .MIO(FIXED_IO_0_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
         .M_AXI_GP0_ARBURST(processing_system7_0_M_AXI_GP0_ARBURST),
@@ -360,6 +380,9 @@ module design_1
         .M_AXI_GP0_WREADY(processing_system7_0_M_AXI_GP0_WREADY),
         .M_AXI_GP0_WSTRB(processing_system7_0_M_AXI_GP0_WSTRB),
         .M_AXI_GP0_WVALID(processing_system7_0_M_AXI_GP0_WVALID),
+        .PS_CLK(FIXED_IO_0_ps_clk),
+        .PS_PORB(FIXED_IO_0_ps_porb),
+        .PS_SRSTB(FIXED_IO_0_ps_srstb),
         .S_AXI_ACP_ACLK(processing_system7_0_FCLK_CLK0),
         .S_AXI_ACP_ARADDR(axi_smc_M00_AXI_ARADDR),
         .S_AXI_ACP_ARBURST(axi_smc_M00_AXI_ARBURST),
@@ -399,7 +422,7 @@ module design_1
         .S_AXI_ACP_WREADY(axi_smc_M00_AXI_WREADY),
         .S_AXI_ACP_WSTRB(axi_smc_M00_AXI_WSTRB),
         .S_AXI_ACP_WVALID(axi_smc_M00_AXI_WVALID));
-  design_1_ps7_0_axi_periph_0 ps7_0_axi_periph
+  design_1_ps7_0_axi_periph_3 ps7_0_axi_periph
        (.ACLK(processing_system7_0_FCLK_CLK0),
         .ARESETN(rst_ps7_0_100M_interconnect_aresetn),
         .M00_ACLK(processing_system7_0_FCLK_CLK0),
@@ -479,7 +502,7 @@ module design_1
         .S00_AXI_wready(processing_system7_0_M_AXI_GP0_WREADY),
         .S00_AXI_wstrb(processing_system7_0_M_AXI_GP0_WSTRB),
         .S00_AXI_wvalid(processing_system7_0_M_AXI_GP0_WVALID));
-  design_1_rst_ps7_0_100M_0 rst_ps7_0_100M
+  design_1_rst_ps7_0_100M_3 rst_ps7_0_100M
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
         .ext_reset_in(processing_system7_0_FCLK_RESET0_N),
@@ -495,7 +518,7 @@ module design_1
        (.dout(xlconstant_0_dout));
 endmodule
 
-module design_1_ps7_0_axi_periph_0
+module design_1_ps7_0_axi_periph_3
    (ACLK,
     ARESETN,
     M00_ACLK,
@@ -1005,7 +1028,7 @@ module design_1_ps7_0_axi_periph_0
         .S_AXI_wready(ps7_0_axi_periph_to_s00_couplers_WREADY),
         .S_AXI_wstrb(ps7_0_axi_periph_to_s00_couplers_WSTRB),
         .S_AXI_wvalid(ps7_0_axi_periph_to_s00_couplers_WVALID));
-  design_1_xbar_0 xbar
+  design_1_xbar_1 xbar
        (.aclk(ps7_0_axi_periph_ACLK_net),
         .aresetn(ps7_0_axi_periph_ARESETN_net),
         .m_axi_araddr({xbar_to_m01_couplers_ARADDR,xbar_to_m00_couplers_ARADDR}),
@@ -1546,7 +1569,7 @@ module s00_couplers_imp_UYSKKA
   assign s00_couplers_to_auto_pc_WLAST = S_AXI_wlast;
   assign s00_couplers_to_auto_pc_WSTRB = S_AXI_wstrb[3:0];
   assign s00_couplers_to_auto_pc_WVALID = S_AXI_wvalid;
-  design_1_auto_pc_0 auto_pc
+  design_1_auto_pc_1 auto_pc
        (.aclk(S_ACLK_1),
         .aresetn(S_ARESETN_1),
         .m_axi_araddr(auto_pc_to_s00_couplers_ARADDR),
