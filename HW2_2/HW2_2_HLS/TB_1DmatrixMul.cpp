@@ -5,7 +5,7 @@
 #define ln 3
 #define lp 3
 
-void matrixmul_1D(/*int lm, int ln, int lp,*/unsigned char Input_Origin[256*128], unsigned int AB[128*128]);
+void matrixmul_1D_rev2(/*int lm, int ln, int lp,*/unsigned char Input_Origin[256*128], unsigned int AB[128*128]);
 
 int main(){
     int i, j;
@@ -79,7 +79,7 @@ int main(){
     //end = (((double)clock()) / CLOCKS_PER_SEC);
 
     //Call the hardware function
-    matrixmul_1D(/*lm,ln,lp,*/Input_Origin, AB);
+    matrixmul_1D_rev2(/*lm,ln,lp,*/Input_Origin, AB);
 
     //Compare results
     for(i=0; i < m; i++){
