@@ -1,0 +1,36 @@
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_1D_rev2_top glbl -prj matrixmul_1D_rev2.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrixmul_1D_rev2 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_AB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_Input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_1D_rev2_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2bkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2_A_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2_A
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_1D_rev2_A_ram
+Compiling module xil_defaultlib.matrixmul_1D_rev2_A(DataWidth=8,...
+Compiling module xil_defaultlib.matrixmul_1D_rev2bkb_DSP48_0
+Compiling module xil_defaultlib.matrixmul_1D_rev2bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrixmul_1D_rev2
+Compiling module xil_defaultlib.AESL_automem_Input_r
+Compiling module xil_defaultlib.AESL_automem_AB
+Compiling module xil_defaultlib.apatb_matrixmul_1D_rev2_top
+Compiling module work.glbl
+Built simulation snapshot matrixmul_1D_rev2

@@ -3,10 +3,7 @@
   <errorLogs>
     <logs>
       <synLog/>
-      <simLog>
-        <logs message="ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/cosim.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/cosim.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="HW2_2_HLS" solutionName="solution1" date="2022-06-03T03:45:29.389+0900"/>
-        <logs message="ERROR: [COSIM 212-360] Aborting co-simulation: C TB simulation failed." projectName="HW2_2_HLS" solutionName="solution1" date="2022-06-03T03:45:29.215+0900"/>
-      </simLog>
+      <simLog/>
       <mgLog/>
       <packageLog/>
       <csimLog/>
@@ -14,7 +11,9 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'matrixmul_1D_rev2/Input' to 'matrixmul_1D_rev2/Input_r' to avoid the conflict with HDL keywords or other object names." projectName="HW2_2_HLS" solutionName="solution1" date="2022-06-03T14:46:41.316+0900" type="Warning"/>
+      </synLog>
       <simLog/>
       <mgLog/>
       <packageLog/>

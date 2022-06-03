@@ -1,12 +1,12 @@
-<project xmlns="com.autoesl.autopilot.project" name="HW2_2_HLS" top="matrixmul_1D">
+<project xmlns="com.autoesl.autopilot.project" name="HW2_2_HLS" top="matrixmul_1D_rev2">
     <includePaths/>
     <libraryPaths/>
     <Simulation>
         <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
-        <file name="../TB_1DmatrixMul.cpp" sc="0" tb="1" cflags="  -Wno-unknown-pragmas"/>
-        <file name="HW2_2_HLS/1DmatrixMul.cpp" sc="0" tb="false" cflags=""/>
+        <file name="../TB_1DmatrixMul_rev2.cpp" sc="0" tb="1" cflags="  -Wno-unknown-pragmas"/>
+        <file name="HW2_2_HLS/1DmatrixMul_rev2.cpp" sc="0" tb="false" cflags=""/>
     </files>
     <solutions xmlns="">
         <solution name="solution1" status="active"/>

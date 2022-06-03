@@ -9,7 +9,7 @@
         <clock name="default" period="10"/>
     </clockList>
     <config>
-        <schedule model="matrixmul_1D"/>
+        <schedule model="matrixmul_1D_rev2"/>
     </config>
     <UIConfigurations>
         <UIAutosynConf boardInfo="ZedBoard Zynq Evaluation and Development Kit (xc7z020clg484-1) " hideTrivialOp="true" isBasedOnBoard="true" isSolutionDirty="false" isStopAskAgain="false" showDetailDesignViewer="false">

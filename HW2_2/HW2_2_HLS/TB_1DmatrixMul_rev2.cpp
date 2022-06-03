@@ -3,7 +3,7 @@
 #define ln 3
 #define lp 3
 
-void matrixmul(/*int lm, int ln, int lp,*/unsigned char Input[256*128], unsigned int AB[128*128]);
+void matrixmul_1D_rev2(/*int lm, int ln, int lp,*/unsigned char Input[256*128], unsigned int AB[128*128]);
 
 int main(){
     int i, j;
@@ -52,7 +52,7 @@ int main(){
    }
 
     //Call the hardware function
-    matrixmul(/*lm,ln,lp,*/Input, AB);
+    matrixmul_1D_rev2(/*lm,ln,lp,*/Input, AB);
 
     //Run a software version of the hardware function to validate results
     for (int i = 0; i < m; i++) { //a*b

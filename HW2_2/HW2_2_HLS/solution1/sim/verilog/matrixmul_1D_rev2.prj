@@ -1,0 +1,8 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_AB.v"
+sv xil_defaultlib "AESL_automem_Input_r.v"
+sv xil_defaultlib "matrixmul_1D_rev2.autotb.v"
+sv xil_defaultlib "matrixmul_1D_rev2.v"
+sv xil_defaultlib "matrixmul_1D_rev2bkb.v"
+sv xil_defaultlib "matrixmul_1D_rev2_A.v"
+

@@ -21,7 +21,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../TB_1DmatrixMul.cpp ../../../1DmatrixMul.cpp
+HLS_SOURCES = ../../../TB_1DmatrixMul_rev2.cpp ../../../1DmatrixMul_rev2.cpp
 
 TARGET := csim.exe
 
@@ -73,14 +73,14 @@ all: $(TARGET)
 
 
 
-$(ObjDir)/TB_1DmatrixMul.o: ../../../TB_1DmatrixMul.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../TB_1DmatrixMul.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/TB_1DmatrixMul_rev2.o: ../../../TB_1DmatrixMul_rev2.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../TB_1DmatrixMul_rev2.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/TB_1DmatrixMul.d
+-include $(ObjDir)/TB_1DmatrixMul_rev2.d
 
-$(ObjDir)/1DmatrixMul.o: ../../../1DmatrixMul.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../1DmatrixMul.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/1DmatrixMul_rev2.o: ../../../1DmatrixMul_rev2.cpp $(ObjDir)/.dir
+	$(Echo) "   Compiling ../../../1DmatrixMul_rev2.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/1DmatrixMul.d
+-include $(ObjDir)/1DmatrixMul_rev2.d

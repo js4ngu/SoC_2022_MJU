@@ -1,1 +1,1 @@
-set ::AESL_AUTOSIM::gTopFileName 1DmatrixMul.cpp_pre.cpp.tb.cpp
+set ::AESL_AUTOSIM::gTopFileName 1DmatrixMul_rev2.cpp_pre.cpp.tb.cpp

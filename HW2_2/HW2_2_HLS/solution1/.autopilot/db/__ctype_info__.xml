@@ -1,6 +1,6 @@
 <InterfaceSummary>
 <RtlPorts>
-<name>Input_orign</name>
+<name>Input_r</name>
 <CType>
 <TypeName>unsigned char</TypeName>
 <TypeWidth>8</TypeWidth>

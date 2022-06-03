@@ -1,0 +1,217 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado/2018.2/msys64/mingw64/bin/g++"
+   Compiling 1DmatrixMul_rev2.cpp_pre.cpp.tb.cpp
+   Compiling TB_1DmatrixMul_rev2.cpp_pre.cpp.tb.cpp
+   Compiling apatb_matrixmul_1D_rev2.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+HLS Flow with Adder example
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+
+C:\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>set PATH= 
+
+C:\SoC_2022_MJU\HW2_2\HW2_2_HLS\solution1\sim\verilog>call C:/Xilinx/Vivado/2018.2/bin/xelab xil_defaultlib.apatb_matrixmul_1D_rev2_top glbl -prj matrixmul_1D_rev2.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s matrixmul_1D_rev2  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_matrixmul_1D_rev2_top glbl -prj matrixmul_1D_rev2.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm --initfile C:/Xilinx/Vivado/2018.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s matrixmul_1D_rev2 
+Multi-threading is on. Using 10 slave threads.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_AB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_AB
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/AESL_automem_Input_r.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_automem_Input_r
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_matrixmul_1D_rev2_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2bkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2bkb_DSP48_0
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2bkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2_A_ram
+INFO: [VRFC 10-311] analyzing module matrixmul_1D_rev2_A
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.matrixmul_1D_rev2_A_ram
+Compiling module xil_defaultlib.matrixmul_1D_rev2_A(DataWidth=8,...
+Compiling module xil_defaultlib.matrixmul_1D_rev2bkb_DSP48_0
+Compiling module xil_defaultlib.matrixmul_1D_rev2bkb(ID=1,NUM_ST...
+Compiling module xil_defaultlib.matrixmul_1D_rev2
+Compiling module xil_defaultlib.AESL_automem_Input_r
+Compiling module xil_defaultlib.AESL_automem_AB
+Compiling module xil_defaultlib.apatb_matrixmul_1D_rev2_top
+Compiling module work.glbl
+Built simulation snapshot matrixmul_1D_rev2
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/xsim.dir/matrixmul_1D_rev2/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jun  3 14:46:59 2022...
+
+****** xsim v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/matrixmul_1D_rev2/xsim_script.tcl
+# xsim {matrixmul_1D_rev2} -autoloadwcfg -tclbatch {matrixmul_1D_rev2.tcl}
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source matrixmul_1D_rev2.tcl
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+// RTL Simulation : 1 / 1 [100.00%] @ "345135000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 345175 ns : File "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.autotb.v" Line 268
+## quit
+INFO: [Common 17-206] Exiting xsim at Fri Jun  3 14:47:04 2022...
+HLS Flow with Adder example
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  8  8
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+Success HW and SW results match  0  0
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.

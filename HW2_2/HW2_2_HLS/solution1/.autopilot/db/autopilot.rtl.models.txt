@@ -1,5 +1,3 @@
-matrixmul_1D_mac_bkb
-matrixmul_1D_Input
-matrixmul_1D_A
-matrixmul_1D_AB_2D
-matrixmul_1D
+matrixmul_1D_rev2bkb
+matrixmul_1D_rev2_A
+matrixmul_1D_rev2
