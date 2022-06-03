@@ -113,7 +113,7 @@ typedef struct {
 	int HasDRE;
 	int DataWidth;
 	int Addr_ext;
-	u32 MaxTransferLen; //I THINK TX ERR 15'S REASONS IS HERE!!!!!!!!!!!!!!1
+	u32 MaxTransferLen;
 
 	UINTPTR FirstBdPhysAddr;	/**< Physical address of 1st BD in list */
 	UINTPTR FirstBdAddr;	/**< Virtual address of 1st BD in list */

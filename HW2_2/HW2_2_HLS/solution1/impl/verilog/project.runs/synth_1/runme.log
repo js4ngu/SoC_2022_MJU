@@ -14,80 +14,65 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11300 
+INFO: Helper process launched with PID 4024 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 341.578 ; gain = 101.641
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 358.105 ; gain = 101.371
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:12]
-	Parameter ap_ST_fsm_state1 bound to: 18'b000000000000000001 
-	Parameter ap_ST_fsm_state2 bound to: 18'b000000000000000010 
-	Parameter ap_ST_fsm_state3 bound to: 18'b000000000000000100 
-	Parameter ap_ST_fsm_state4 bound to: 18'b000000000000001000 
-	Parameter ap_ST_fsm_state5 bound to: 18'b000000000000010000 
-	Parameter ap_ST_fsm_state6 bound to: 18'b000000000000100000 
-	Parameter ap_ST_fsm_state7 bound to: 18'b000000000001000000 
-	Parameter ap_ST_fsm_state8 bound to: 18'b000000000010000000 
-	Parameter ap_ST_fsm_state9 bound to: 18'b000000000100000000 
-	Parameter ap_ST_fsm_state10 bound to: 18'b000000001000000000 
-	Parameter ap_ST_fsm_state11 bound to: 18'b000000010000000000 
-	Parameter ap_ST_fsm_state12 bound to: 18'b000000100000000000 
-	Parameter ap_ST_fsm_state13 bound to: 18'b000001000000000000 
-	Parameter ap_ST_fsm_state14 bound to: 18'b000010000000000000 
-	Parameter ap_ST_fsm_state15 bound to: 18'b000100000000000000 
-	Parameter ap_ST_fsm_state16 bound to: 18'b001000000000000000 
-	Parameter ap_ST_fsm_state17 bound to: 18'b010000000000000000 
-	Parameter ap_ST_fsm_state18 bound to: 18'b100000000000000000 
-	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 6 - type: integer 
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter C_S_AXI_AXILITES_WSTRB_WIDTH bound to: 4 - type: integer 
-	Parameter C_S_AXI_WSTRB_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:104]
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2_AXILiteS_s_axi' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_AXILiteS_s_axi.v:9]
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
-	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter ADDR_LM_DATA_0 bound to: 6'b010000 
-	Parameter ADDR_LM_CTRL bound to: 6'b010100 
-	Parameter ADDR_LN_DATA_0 bound to: 6'b011000 
-	Parameter ADDR_LN_CTRL bound to: 6'b011100 
-	Parameter ADDR_LP_DATA_0 bound to: 6'b100000 
-	Parameter ADDR_LP_CTRL bound to: 6'b100100 
-	Parameter WRIDLE bound to: 2'b00 
-	Parameter WRDATA bound to: 2'b01 
-	Parameter WRRESP bound to: 2'b10 
-	Parameter WRRESET bound to: 2'b11 
-	Parameter RDIDLE bound to: 2'b00 
-	Parameter RDDATA bound to: 2'b01 
-	Parameter RDRESET bound to: 2'b10 
-	Parameter ADDR_BITS bound to: 6 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_AXILiteS_s_axi.v:179]
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2_AXILiteS_s_axi' (1#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_AXILiteS_s_axi.v:9]
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2_A' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:46]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 14'b00000000000001 
+	Parameter ap_ST_fsm_state2 bound to: 14'b00000000000010 
+	Parameter ap_ST_fsm_state3 bound to: 14'b00000000000100 
+	Parameter ap_ST_fsm_state4 bound to: 14'b00000000001000 
+	Parameter ap_ST_fsm_state5 bound to: 14'b00000000010000 
+	Parameter ap_ST_fsm_state6 bound to: 14'b00000000100000 
+	Parameter ap_ST_fsm_state7 bound to: 14'b00000001000000 
+	Parameter ap_ST_fsm_state8 bound to: 14'b00000010000000 
+	Parameter ap_ST_fsm_state9 bound to: 14'b00000100000000 
+	Parameter ap_ST_fsm_state10 bound to: 14'b00001000000000 
+	Parameter ap_ST_fsm_state11 bound to: 14'b00010000000000 
+	Parameter ap_ST_fsm_state12 bound to: 14'b00100000000000 
+	Parameter ap_ST_fsm_state13 bound to: 14'b01000000000000 
+	Parameter ap_ST_fsm_state14 bound to: 14'b10000000000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:65]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2_A' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:46]
 	Parameter DataWidth bound to: 8 - type: integer 
-	Parameter AddressRange bound to: 16384 - type: integer 
-	Parameter AddressWidth bound to: 14 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2_A_ram' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:9]
+	Parameter AddressRange bound to: 1024 - type: integer 
+	Parameter AddressWidth bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2_A_ram' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:9]
 	Parameter DWIDTH bound to: 8 - type: integer 
-	Parameter AWIDTH bound to: 14 - type: integer 
-	Parameter MEM_SIZE bound to: 16384 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2_A_ram' (2#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2_A' (3#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:46]
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2bkb' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:34]
+	Parameter AWIDTH bound to: 10 - type: integer 
+	Parameter MEM_SIZE bound to: 1024 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2_A_ram' (1#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2_A' (2#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2_A.v:46]
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2bkb' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:34]
 	Parameter ID bound to: 1 - type: integer 
 	Parameter NUM_STAGE bound to: 1 - type: integer 
 	Parameter din0_WIDTH bound to: 8 - type: integer 
 	Parameter din1_WIDTH bound to: 8 - type: integer 
-	Parameter din2_WIDTH bound to: 32 - type: integer 
-	Parameter dout_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2bkb_DSP48_0' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:10]
+	Parameter din2_WIDTH bound to: 20 - type: integer 
+	Parameter dout_WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'matrixmul_1D_rev2bkb_DSP48_0' [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:10]
 WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2bkb_DSP48_0' (4#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2bkb' (5#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2' (6#1) [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2bkb_DSP48_0' (3#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2bkb' (4#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2bkb.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'matrixmul_1D_rev2' (5#1) [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:12]
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_address0[9] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[31] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[30] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[29] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[28] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[27] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[26] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[25] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[24] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[23] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[22] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[21] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[20] driven by constant 0
 WARNING: [Synth 8-3331] design matrixmul_1D_rev2_A has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 398.246 ; gain = 158.309
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 413.594 ; gain = 156.859
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -100,76 +85,52 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 398.246 ; gain = 158.309
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 413.594 ; gain = 156.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 398.246 ; gain = 158.309
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 413.594 ; gain = 156.859
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z020clg484-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.xdc]
-Finished Parsing XDC File [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.xdc]
+Parsing XDC File [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.xdc]
+Finished Parsing XDC File [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 766.621 ; gain = 1.102
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 776.742 ; gain = 1.105
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 766.621 ; gain = 526.684
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 776.742 ; gain = 520.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 766.621 ; gain = 526.684
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 776.742 ; gain = 520.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 766.621 ; gain = 526.684
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 776.742 ; gain = 520.008
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'matrixmul_1D_rev2_AXILiteS_s_axi'
-INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'matrixmul_1D_rev2_AXILiteS_s_axi'
-INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "wnext" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-4471] merging register 'tmp_s_reg_717_reg[6:0]' into 'tmp_5_reg_691_reg[6:0]' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:1085]
-INFO: [Synth 8-4471] merging register 'tmp_17_reg_782_reg[6:0]' into 'tmp_5_reg_691_reg[6:0]' [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:1103]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_17_reg_782_reg' and it is trimmed from '25' to '7' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:645]
-WARNING: [Synth 8-3936] Found unconnected internal register 'j7_cast_reg_787_reg' and it is trimmed from '31' to '14' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:606]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_12_reg_730_reg' and it is trimmed from '32' to '14' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:639]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_s_reg_717_reg' and it is trimmed from '25' to '7' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:663]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_8_reg_704_reg' and it is trimmed from '32' to '14' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:657]
-WARNING: [Synth 8-3936] Found unconnected internal register 'tmp_5_reg_691_reg' and it is trimmed from '25' to '7' bits. [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:651]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-5546] ROM "tmp_1_fu_354_p2" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tmp_3_fu_371_p2" won't be mapped to RAM because it is too sparse
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                             0001 |                               11
-*
-                  WRIDLE |                             0010 |                               00
-                  WRDATA |                             0100 |                               01
-                  WRRESP |                             1000 |                               10
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'matrixmul_1D_rev2_AXILiteS_s_axi'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                              001 |                               10
-*
-                  RDIDLE |                              010 |                               00
-                  RDDATA |                              100 |                               01
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'matrixmul_1D_rev2_AXILiteS_s_axi'
+INFO: [Synth 8-5546] ROM "exitcond_fu_426_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exitcond7_fu_450_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_1_fu_284_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_301_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "exitcond6_fu_307_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond5_fu_319_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond4_fu_350_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "exitcond3_fu_378_p2" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exitcond9_fu_438_p2" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 766.621 ; gain = 526.684
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 776.742 ; gain = 520.008
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -182,43 +143,33 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     31 Bit       Adders := 7     
-	   2 Input     14 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
 +---Registers : 
-	               32 Bit    Registers := 13    
-	               31 Bit    Registers := 14    
-	               18 Bit    Registers := 1     
-	               14 Bit    Registers := 3     
-	                8 Bit    Registers := 6     
-	                7 Bit    Registers := 4     
-	                6 Bit    Registers := 1     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
 +---RAMs : 
-	             128K Bit         RAMs := 2     
+	               8K Bit         RAMs := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   4 Input     32 Bit        Muxes := 1     
-	   2 Input     18 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     15 Bit        Muxes := 1     
-	   3 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 4     
 	   2 Input     13 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
-	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 4     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
-	   2 Input      2 Bit        Muxes := 3     
-	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -229,55 +180,37 @@ Hierarchical RTL Component report
 Module matrixmul_1D_rev2 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     31 Bit       Adders := 7     
-	   2 Input     14 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
 +---Registers : 
-	               32 Bit    Registers := 9     
-	               31 Bit    Registers := 14    
-	               18 Bit    Registers := 1     
-	               14 Bit    Registers := 3     
-	                8 Bit    Registers := 4     
-	                7 Bit    Registers := 4     
-	                2 Bit    Registers := 2     
-	                1 Bit    Registers := 4     
+	               20 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 6     
+	                3 Bit    Registers := 8     
+	                2 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     18 Bit        Muxes := 2     
-	   2 Input     16 Bit        Muxes := 1     
-	   2 Input     15 Bit        Muxes := 1     
-	   3 Input     14 Bit        Muxes := 1     
-	   2 Input     14 Bit        Muxes := 4     
 	   2 Input     13 Bit        Muxes := 1     
 	   2 Input     12 Bit        Muxes := 1     
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      9 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 5     
+	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 3     
 	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      6 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
-	   4 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-Module matrixmul_1D_rev2_AXILiteS_s_axi 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 4     
-	                6 Bit    Registers := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 3     
-	   4 Input     32 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 3     
-	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
 Module matrixmul_1D_rev2_A_ram 
 Detailed RTL Component Info : 
 +---Registers : 
 	                8 Bit    Registers := 1     
 +---RAMs : 
-	             128K Bit         RAMs := 1     
+	               8K Bit         RAMs := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -294,27 +227,105 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-5546] ROM "tmp_1_fu_354_p2" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5546] ROM "tmp_3_fu_371_p2" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element A_load_reg_818_reg was removed.  [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:569]
-WARNING: [Synth 8-6014] Unused sequential element B_load_reg_823_reg was removed.  [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:570]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:341]
-WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:341]
-DSP Report: Generating DSP sum_reg_318_reg, operation Mode is: (P+A2*B2)'.
-DSP Report: register B is absorbed into DSP sum_reg_318_reg.
-DSP Report: register A is absorbed into DSP sum_reg_318_reg.
-DSP Report: register sum_reg_318_reg is absorbed into DSP sum_reg_318_reg.
-DSP Report: operator matrixmul_1D_rev2bkb_U1/matrixmul_1D_rev2bkb_DSP48_0_U/p is absorbed into DSP sum_reg_318_reg.
-DSP Report: operator matrixmul_1D_rev2bkb_U1/matrixmul_1D_rev2bkb_DSP48_0_U/m is absorbed into DSP sum_reg_318_reg.
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[0]' (FD) to 'tmp_5_reg_691_reg[1]'
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[1]' (FD) to 'tmp_5_reg_691_reg[2]'
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[2]' (FD) to 'tmp_5_reg_691_reg[3]'
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[3]' (FD) to 'tmp_5_reg_691_reg[4]'
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[4]' (FD) to 'tmp_5_reg_691_reg[5]'
-INFO: [Synth 8-3886] merging instance 'tmp_5_reg_691_reg[5]' (FD) to 'tmp_5_reg_691_reg[6]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tmp_5_reg_691_reg[6] )
+INFO: [Synth 8-5546] ROM "tmp_1_fu_284_p2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "tmp_3_fu_301_p2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element A_load_reg_639_reg was removed.  [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:297]
+WARNING: [Synth 8-6014] Unused sequential element B_load_reg_644_reg was removed.  [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:298]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:203]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/matrixmul_1D_rev2.v:203]
+DSP Report: Generating DSP sum_reg_250_reg, operation Mode is: (P+A2*B2)'.
+DSP Report: register B is absorbed into DSP sum_reg_250_reg.
+DSP Report: register A is absorbed into DSP sum_reg_250_reg.
+DSP Report: register sum_reg_250_reg is absorbed into DSP sum_reg_250_reg.
+DSP Report: operator matrixmul_1D_rev2bkb_U1/matrixmul_1D_rev2bkb_DSP48_0_U/p is absorbed into DSP sum_reg_250_reg.
+DSP Report: operator matrixmul_1D_rev2bkb_U1/matrixmul_1D_rev2bkb_DSP48_0_U/m is absorbed into DSP sum_reg_250_reg.
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port Input_r_address0[10] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port Input_r_address0[9] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port Input_r_address0[8] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_address0[9] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[31] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[30] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[29] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[28] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[27] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[26] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[25] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[24] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[23] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[22] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[21] driven by constant 0
+WARNING: [Synth 8-3917] design matrixmul_1D_rev2 has port AB_d0[20] driven by constant 0
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[3]' (FDR) to 'tmp_5_cast_reg_587_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[4]' (FDR) to 'tmp_5_cast_reg_587_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[7]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[10]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[11]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[12]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[13]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[14]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[15]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[16]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[17]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[18]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[19]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[20]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[21]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[22]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[23]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[24]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[25]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[26]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[27]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[28]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[29]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[30]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[31]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[32]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[33]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[34]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[35]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[36]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[37]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[38]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[39]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[40]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[41]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[42]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[43]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[44]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[45]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[46]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[47]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[48]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[49]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[50]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[51]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[52]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[53]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[54]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[55]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[56]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[57]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[58]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[59]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[60]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[61]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[62]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[63]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[8]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_8_reg_564_reg[9]' (FDR) to 'tmp_5_cast_reg_587_reg[7]'
+INFO: [Synth 8-3886] merging instance 'tmp_4_reg_582_reg[0]' (FDE) to 'tmp_5_cast_reg_587_reg[5]'
+INFO: [Synth 8-3886] merging instance 'tmp_4_reg_582_reg[1]' (FDE) to 'tmp_5_cast_reg_587_reg[6]'
+INFO: [Synth 8-3886] merging instance 'tmp_5_cast_reg_587_reg[4]' (FDR) to 'tmp_5_cast_reg_587_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_5_cast_reg_587_reg[3]' (FDR) to 'tmp_5_cast_reg_587_reg[0]'
+INFO: [Synth 8-3886] merging instance 'tmp_5_cast_reg_587_reg[0]' (FDR) to 'tmp_5_cast_reg_587_reg[1]'
+INFO: [Synth 8-3886] merging instance 'tmp_5_cast_reg_587_reg[1]' (FDR) to 'tmp_5_cast_reg_587_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tmp_5_cast_reg_587_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\tmp_5_cast_reg_587_reg[7] )
+WARNING: [Synth 8-3332] Sequential element (tmp_5_cast_reg_587_reg[7]) is unused and will be removed from module matrixmul_1D_rev2.
+WARNING: [Synth 8-3332] Sequential element (tmp_5_cast_reg_587_reg[2]) is unused and will be removed from module matrixmul_1D_rev2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 766.621 ; gain = 526.684
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 776.742 ; gain = 520.008
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -324,8 +335,8 @@ Block RAM: Preliminary Mapping  Report (see note below)
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name              | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|matrixmul_1D_rev2_A_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
-|matrixmul_1D_rev2_A_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|matrixmul_1D_rev2_A_ram: | ram_reg    | 1 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|matrixmul_1D_rev2_A_ram: | ram_reg    | 1 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
@@ -334,21 +345,15 @@ DSP: Preliminary Mapping  Report (see note below)
 +------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 |Module Name       | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
 +------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
-|matrixmul_1D_rev2 | (P+A2*B2)'  | 9      | 9      | -      | -      | 32     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|matrixmul_1D_rev2 | (P+A2*B2)'  | 9      | 9      | -      | -      | 20     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 +------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4480] The timing for the instance i_7_8/A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_8/A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_8/A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_8/A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_9/B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_9/B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_9/B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance i_7_9/B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_4_1/A_U/matrixmul_1D_rev2_A_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance i_4_2/B_U/matrixmul_1D_rev2_A_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -359,13 +364,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 803.418 ; gain = 563.480
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 809.539 ; gain = 552.805
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 844.090 ; gain = 604.152
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 809.984 ; gain = 553.250
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -375,8 +380,8 @@ Block RAM: Final Mapping  Report
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 |Module Name              | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
-|matrixmul_1D_rev2_A_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
-|matrixmul_1D_rev2_A_ram: | ram_reg    | 16 K x 8(WRITE_FIRST)  | W | R |                        |   |   | Port A           | 0      | 4      | 
+|matrixmul_1D_rev2_A_ram: | ram_reg    | 1 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|matrixmul_1D_rev2_A_ram: | ram_reg    | 1 K x 8(WRITE_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
 +-------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
 
 ---------------------------------------------------------------------------------
@@ -391,16 +396,10 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-4480] The timing for the instance A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-4480] The timing for the instance B_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance A_U/matrixmul_1D_rev2_A_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance B_U/matrixmul_1D_rev2_A_ram_U/ram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -424,7 +423,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -437,7 +436,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -449,25 +448,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -483,38 +482,36 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |CARRY4   |   136|
-|2     |DSP48E1  |     1|
-|3     |LUT1     |    13|
-|4     |LUT2     |    56|
-|5     |LUT3     |   160|
-|6     |LUT4     |   343|
-|7     |LUT5     |    33|
-|8     |LUT6     |    47|
-|9     |RAMB36E1 |     8|
-|10    |FDRE     |  1051|
-|11    |FDSE     |     6|
+|1     |DSP48E1  |     1|
+|2     |LUT1     |     5|
+|3     |LUT2     |    27|
+|4     |LUT3     |    21|
+|5     |LUT4     |    42|
+|6     |LUT5     |    28|
+|7     |LUT6     |    21|
+|8     |RAMB18E1 |     2|
+|9     |FDRE     |    94|
+|10    |FDSE     |     1|
 +------+---------+------+
 
 Report Instance Areas: 
-+------+-------------------------------------+---------------------------------+------+
-|      |Instance                             |Module                           |Cells |
-+------+-------------------------------------+---------------------------------+------+
-|1     |top                                  |                                 |  1854|
-|2     |  A_U                                |matrixmul_1D_rev2_A              |    73|
-|3     |    matrixmul_1D_rev2_A_ram_U        |matrixmul_1D_rev2_A_ram_1        |    73|
-|4     |  B_U                                |matrixmul_1D_rev2_A_0            |    37|
-|5     |    matrixmul_1D_rev2_A_ram_U        |matrixmul_1D_rev2_A_ram          |    37|
-|6     |  matrixmul_1D_rev2_AXILiteS_s_axi_U |matrixmul_1D_rev2_AXILiteS_s_axi |   285|
-+------+-------------------------------------+---------------------------------+------+
++------+------------------------------+--------------------------+------+
+|      |Instance                      |Module                    |Cells |
++------+------------------------------+--------------------------+------+
+|1     |top                           |                          |   242|
+|2     |  A_U                         |matrixmul_1D_rev2_A       |    21|
+|3     |    matrixmul_1D_rev2_A_ram_U |matrixmul_1D_rev2_A_ram_1 |    21|
+|4     |  B_U                         |matrixmul_1D_rev2_A_0     |    21|
+|5     |    matrixmul_1D_rev2_A_ram_U |matrixmul_1D_rev2_A_ram   |    21|
++------+------------------------------+--------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 848.477 ; gain = 240.164
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 848.477 ; gain = 608.539
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 829.793 ; gain = 209.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 829.793 ; gain = 573.059
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 145 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -522,11 +519,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-62 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+106 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:36 . Memory (MB): peak = 848.477 ; gain = 621.875
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 829.793 ; gain = 586.227
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.runs/synth_1/matrixmul_1D_rev2.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.runs/synth_1/matrixmul_1D_rev2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file matrixmul_1D_rev2_utilization_synth.rpt -pb matrixmul_1D_rev2_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 848.477 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  3 14:59:39 2021...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 829.793 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jun  4 03:57:54 2021...

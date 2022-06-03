@@ -1,5 +1,5 @@
-# 1 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp"
-# 1 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp" 1
+# 1 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp"
+# 1 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp" 1
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 152 "<built-in>" 3
@@ -145,7 +145,7 @@ extern "C" {
 }
 # 9 "<command line>" 2
 # 1 "<built-in>" 2
-# 1 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp" 2
+# 1 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/.autopilot/db/1DmatrixMul_rev2.pragma.1.cpp" 2
 # 1 "HW2_2_HLS/1DmatrixMul_rev2.cpp"
 # 1 "HW2_2_HLS/1DmatrixMul_rev2.cpp" 1
 # 1 "<built-in>" 1
@@ -300,38 +300,39 @@ extern "C" {
 
 
 
-void matrixmul_1D_rev2(int lm, int ln, int lp,unsigned char Input[256*128], unsigned int AB[128*128]){_ssdm_SpecArrayDimSize(Input, 32768);_ssdm_SpecArrayDimSize(AB, 16384);
-_ssdm_op_SpecInterface(Input, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(AB, "axis", 1, 1, "both", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(lm, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(ln, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(lp, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+void matrixmul_1D_rev2( unsigned char Input[64*32], unsigned int AB[32*32]){_ssdm_SpecArrayDimSize(Input, 2048);_ssdm_SpecArrayDimSize(AB, 1024);
 
- int m=1, n=1, p=1;
-   unsigned char A[128*128] = {0,};
-   unsigned char B[128*128] = {0,};
 
-   for (int i = 0; i < lm; i++) {
-      for (int j = 0; j < ln; j++) {
-         A[128*i+j] = Input[128*i+j];
+
+
+
+
+
+   int m=1, n=1, p=1;
+   unsigned char A[32*32] = {0,};
+   unsigned char B[32*32] = {0,};
+
+   for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 4; j++) {
+         A[32*i+j] = Input[32*i+j];
       }
    }
-   for (int i = 0; i < ln; i++) {
-      for (int j = 0; j < lp; j++) {
-         B[128*i+j] = Input[(i+1)*128+j];
+   for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 4; j++) {
+         B[32*i+j] = Input[(i+1)*32+j];
       }
    }
 
 
-   for(int i=0; i<lm; i++){
+   for(int i=0; i<4; i++){
       m *= 2;
    }
 
-   for(int i=0; i<ln; i++){
+   for(int i=0; i<4; i++){
       n *= 2;
    }
 
-   for(int i=0; i<lp; i++){
+   for(int i=0; i<4; i++){
       p *= 2;
    }
 
@@ -341,11 +342,11 @@ _ssdm_op_SpecInterface(lp, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, 
 
          unsigned sum = 0;
          for (int k = 0; k < n; k++) {
-            sum = sum + A[128*i+k] * B[128*k+j];
+            sum = sum + A[32*i+k] * B[32*k+j];
 
 
          }
-         AB[128*i+j] = sum;
+         AB[32*i+j] = sum;
       }
    }
 }

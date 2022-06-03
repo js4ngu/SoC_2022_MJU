@@ -1,128 +1,564 @@
-/******************************************************************************
-*
-* Copyright (C) 2002 - 2014 Xilinx, Inc.  All rights reserved.
-*
-* Permission is hereby granted, free of charge, to any person obtaining a copy
-* of this software and associated documentation files (the "Software"), to deal
-* in the Software without restriction, including without limitation the rights
-* to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-* copies of the Software, and to permit persons to whom the Software is
-* furnished to do so, subject to the following conditions:
-*
-* The above copyright notice and this permission notice shall be included in
-* all copies or substantial portions of the Software.
-*
-* Use of the Software is limited solely to applications:
-* (a) running on a Xilinx device, or
-* (b) that interact with a Xilinx device through a bus or interconnect.
-*
-* THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-* FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
-* XILINX  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
-* WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF
-* OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-* SOFTWARE.
-*
-* Except as contained in this notice, the name of the Xilinx shall not be used
-* in advertising or otherwise to promote the sale, use or other dealings in
-* this Software without prior written authorization from Xilinx.
-*
-******************************************************************************/
-/*****************************************************************************/
-/**
-* @file  xtmrctr_polled_example.c
-*
-* This file contains a design example using the Timer Counter driver (XTmrCtr)
-* and hardware device in a polled mode.
-*
-* @note
-*
-* None.
-*
-* <pre>
-* MODIFICATION HISTORY:
-*
-* Ver   Who  Date	 Changes
-* ----- ---- -------- -----------------------------------------------
-* 1.00b jhl  02/13/02 First release
-* 1.00b sv   04/26/05 Minor changes to comply to Doxygen and coding guidelines.
-* 2.00a ktn  11/26/09 Minor changes as per coding guidelines.
-* 4.2   ms   01/23/17 Added xil_printf statement in main function to
-*                     ensure that "Successfully ran" and "Failed" strings
-*                     are available in all examples. This is a fix for
-*                     CR-965028.
-*
-*</pre>
-******************************************************************************/
-
 /***************************** Include Files *********************************/
 
+#include "xaxidma.h"
 #include "xparameters.h"
-#include "xtmrctr.h"
+#include "xil_exception.h"
+#include "xdebug.h"
+#include "xscugic.h"
+
+//Matrixmul Lib. about AXI-lite
+#include "platform.h"
+#include "xil_types.h"
 #include "xil_printf.h"
+#include "xmatrixmul_1d_rev2_hw.h"   
+#include "xmatrixmul_1d_rev2.h"      
 
-/************************** Constant Definitions *****************************/
+//Timer
+#include "xtmrctr.h"
 
-/*
- * The following constants map to the XPAR parameters created in the
- * xparameters.h file. They are only defined here such that a user can easily
- * change all the needed parameters in one place.
- */
-#define TMRCTR_DEVICE_ID	XPAR_TMRCTR_0_DEVICE_ID
+#define TMRCTR_DEVICE_ID   XPAR_TMRCTR_0_DEVICE_ID
+#define TIMER_COUNTER_0    0
 
-
-/*
- * This example only uses the 1st of the 2 timer counters contained in a
- * single timer counter hardware device
- */
-#define TIMER_COUNTER_0	 0
-
-
-/**************************** Type Definitions *******************************/
-
-
-/***************** Macros (Inline Functions) Definitions *********************/
-
-
-/************************** Function Prototypes ******************************/
-
-int TmrCtrPolledExample(u16 DeviceId, u8 TmrCtrNumber);
-
-/************************** Variable Definitions *****************************/
-
+int TmrCtr_init(u16 DeviceId, u8 TmrCtrNumber);
 XTmrCtr TimerCounter; /* The instance of the Tmrctr Device */
 
 
+/************************** Constant Definitions *****************************/
+
+/*  Device hardware build related constants. */
+
+#define DMA_DEV_ID      XPAR_AXIDMA_0_DEVICE_ID
+
+#define RX_INTR_ID      XPAR_FABRIC_AXI_DMA_0_S2MM_INTROUT_INTR
+#define TX_INTR_ID      XPAR_FABRIC_AXI_DMA_0_MM2S_INTROUT_INTR
+
+#define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+
+#define INTC      XScuGic
+#define INTC_HANDLER   XScuGic_InterruptHandler
+
+
+/* Timeout loop counter for reset */
+#define RESET_TIMEOUT_COUNTER   10000
+
+/*LM, LN, LP Set */
+#define LM 4
+#define LN 4
+#define LP 4
+
+/* Array length and the number of bytes to transfer */
+#define ARRAY_LENGTH      32*32 //Test
+#define BYTES_TO_TRANSFER   4*ARRAY_LENGTH
+
+/************************** Function Prototypes ******************************/
+#ifndef DEBUG
+extern void xil_printf(const char *format, ...);
+#endif
+
+static void TxIntrHandler(void *Callback);
+static void RxIntrHandler(void *Callback);
+
+static int SetupIntrSystem(INTC * IntcInstancePtr,
+            XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId);
+static void DisableIntrSystem(INTC * IntcInstancePtr,
+               u16 TxIntrId, u16 RxIntrId);
+
+/************************** Variable Definitions *****************************/
+/*
+ * Device instance definitions
+ */
+
+static XAxiDma AxiDma;      /* Instance of the XAxiDma */
+static INTC Intc;   /* Instance of the Interrupt Controller */
+
+/*
+ * Flags interrupt handlers use to notify the application context the events.
+ */
+volatile int TxDone;
+volatile int RxDone;
+volatile int Error;
+
+u32 TxBuffer[32*64] = {2,};
+u32 RxBuffer[32*32] = {0,}; 
+
 /*****************************************************************************/
 /**
-* Main function to call the polled example.
 *
-* @param	None.
+* Main function
 *
-* @return	XST_SUCCESS to indicate success, else XST_FAILURE to indicate
-*		a Failure.
+* This function is the main entry of the interrupt test. It does the following:
+*   Set up the output terminal if UART16550 is in the hardware build
+*   Initialize the DMA engine
+*   Set up Tx and Rx channels
+*   Set up the interrupt system for the Tx and Rx interrupts
+*   Submit a transfer
+*   Wait for the transfer to finish
+*   Check transfer status
+*   Disable Tx and Rx interrupts
+*   Print test status and exit
 *
-* @note		None.
+* @param   None
+*
+* @return
+*      - XST_SUCCESS if example finishes successfully
+*      - XST_FAILURE if example fails.
+*
+* @note      None.
 *
 ******************************************************************************/
+
+void delay(void)
+{
+   for(int i = 0 ; i < 1000 ; i++)
+   {}
+}
+
 int main(void)
 {
+   int Status;
+   XAxiDma_Config *Config;
+   u32 i;
 
-	int tim_status;
+   //Timer
+   XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
+   u8 TmrCtrNum =TIMER_COUNTER_0;
+   int Value;
 
-	/*
-	 * Run the Timer Counter - Polled Example
-	 */
-	Status = TmrCtrPolledExample(TMRCTR_DEVICE_ID, TIMER_COUNTER_0);
-	if (Status != XST_SUCCESS) {
-		xil_printf("Tmrctr polled Example Failed\r\n");
-		return XST_FAILURE;
-	}
+   TmrCtr_init(TMRCTR_DEVICE_ID, TIMER_COUNTER_0);
+   XTmrCtr_Start(TmrCtrInstancePtr, TmrCtrNum);
 
-	xil_printf("Successfully ran Tmrctr polled Example\r\n");
-	return XST_SUCCESS;
+   XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNum, 0);
 
+   xil_printf("\r\n--- Entering main() --- \r\n");
+
+   static XMatrixmul_1d_rev2 matrixmul_1D_rev2_Ptr; //matrix mul Id占쏙옙占쏙옙
+   init_platform();
+
+   xil_printf("Start\n\r");
+
+   XMatrixmul_1d_rev2_Initialize(&matrixmul_1D_rev2_Ptr, XPAR_MATRIXMUL_1D_REV2_0_DEVICE_ID); //matrixmul initialize
+
+   Config = XAxiDma_LookupConfig(DMA_DEV_ID);
+   if (!Config) {
+      xil_printf("No config found for %d\r\n", DMA_DEV_ID);
+
+      return XST_FAILURE;
+   }
+
+   /* Initialize DMA engine */
+   Status = XAxiDma_CfgInitialize(&AxiDma, Config);
+
+   if (Status != XST_SUCCESS) {
+      xil_printf("Initialization failed %d\r\n", Status);
+      return XST_FAILURE;
+   }
+
+   if(XAxiDma_HasSg(&AxiDma)){
+      xil_printf("Device configured as SG mode \r\n");
+      return XST_FAILURE;
+   }
+
+   /* Set up Interrupt system  */
+   Status = SetupIntrSystem(&Intc, &AxiDma, TX_INTR_ID, RX_INTR_ID);
+   if (Status != XST_SUCCESS) {
+
+      xil_printf("Failed intr setup!\r\n");
+      return XST_FAILURE;
+   }
+
+   /* Disable all interrupts before setup */
+
+   XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+                  XAXIDMA_DMA_TO_DEVICE);
+
+   XAxiDma_IntrDisable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+            XAXIDMA_DEVICE_TO_DMA);
+
+   /* Enable all interrupts */
+   XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+                     XAXIDMA_DMA_TO_DEVICE);
+
+
+   XAxiDma_IntrEnable(&AxiDma, XAXIDMA_IRQ_ALL_MASK,
+                     XAXIDMA_DEVICE_TO_DMA);
+
+   /* Initialize flags before start transfer test  */
+   TxDone = 0;
+   RxDone = 0;
+   Error = 0;
+
+   //Input Data Init
+   for(i = 0; i < ARRAY_LENGTH; i ++) {
+      TxBuffer[i] = 2;   // initialize TxBuffer
+      RxBuffer[i] = 0;   // initialize RxBuffer with 0's
+   }
+
+   xil_printf("=========================================================\r\n");
+   //Tx Data plot
+   /*
+   for(i = 0; i < ARRAY_LENGTH; i++) {
+      xil_printf("initial_TxBuffer[%d] = %d \r\n", i, TxBuffer[i]);
+   }
+   xil_printf("   \r\n");
+   */
+   int lm = LM;
+   int ln = LN;
+   int lp = LP;
+
+   //lm, ln, lp AXI-LITE Set`
+   XMatrixmul_1d_rev2_Set_lm(&matrixmul_1D_rev2_Ptr, lm);
+   XMatrixmul_1d_rev2_Set_ln(&matrixmul_1D_rev2_Ptr, ln);
+   XMatrixmul_1d_rev2_Set_lp(&matrixmul_1D_rev2_Ptr, lp);
+   xil_printf("Lm LN Lp Set by AXI-LITE DONE!\r\n");
+
+   /* Flush the SrcBuffer before the DMA transfer, in case the Data Cache is enabled */
+   Xil_DCacheFlushRange((u32)TxBuffer, 2*BYTES_TO_TRANSFER);
+   xil_printf("TxBuffer FLUSH DONE!\r\n");
+
+   //Streaming
+   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) TxBuffer, 2*BYTES_TO_TRANSFER, XAXIDMA_DMA_TO_DEVICE);
+   xil_printf("Try Tx...\r\n");
+
+   if (Status != XST_SUCCESS) {
+      xil_printf("Tx FAIL\r\n");
+      xil_printf("Err Status = %d\r\n", Status);
+      return XST_FAILURE;
+   }
+   xil_printf("Tx DONE!\r\n");
+   delay();
+
+   Status = XAxiDma_SimpleTransfer(&AxiDma,(u32) RxBuffer, BYTES_TO_TRANSFER, XAXIDMA_DEVICE_TO_DMA);
+   xil_printf("Try Rx...\r\n");
+   if (Status != XST_SUCCESS) {
+      xil_printf("Rx FAIL\r\n");
+      xil_printf("Err Status = %d\r\n", Status);
+      return XST_FAILURE;
+   }
+
+   /* Wait TX done and RX done */
+   while (!TxDone && !RxDone && !Error) { /* NOP */ }
+
+
+   if (Error) {
+      xil_printf("Failed test transmit %s done, receive %s done\r\n", TxDone? "":" not", RxDone? "":" not");
+   }
+
+   /* Invalidate the DestBuffer before checking the data, in case the Data Cache is enabled */
+   Xil_DCacheInvalidateRange((u32)RxBuffer, BYTES_TO_TRANSFER);
+
+   xil_printf("=========================================================\n\r");
+   // check received data
+   for(i = 0; i < ARRAY_LENGTH; i++) {
+//      if(RxBuffer[i] != i+5){
+//         xil_printf("Error : RxBuffer[%d] = %d \r\n", i, RxBuffer[i]);}
+//      else
+         xil_printf("RxBuffer[%d] = %d \r\n", i, RxBuffer[i]);
+   }
+   xil_printf("=========================================================\n");
+   xil_printf("AXI DMA interrupt example test passed\r\n");
+
+   Value = XTmrCtr_GetValue(TmrCtrInstancePtr, TmrCtrNum);
+
+   /* Disable TX and RX Ring interrupts and return success */
+
+   DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
+   xil_printf("Run time : %d", Value);
+
+   return XST_SUCCESS;
+}
+
+/*****************************************************************************/
+/*
+*
+* This is the DMA TX Interrupt handler function.
+*
+* It gets the interrupt status from the hardware, acknowledges it, and if any
+* error happens, it resets the hardware. Otherwise, if a completion interrupt
+* is present, then sets the TxDone.flag
+*
+* @param   Callback is a pointer to TX channel of the DMA engine.
+*
+* @return   None.
+*
+* @note      None.
+*
+******************************************************************************/
+static void TxIntrHandler(void *Callback)
+{
+
+   u32 IrqStatus;
+   int TimeOut;
+   XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+
+   /* Read pending interrupts */
+   IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DMA_TO_DEVICE);
+
+   /* Acknowledge pending interrupts */
+
+
+   XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DMA_TO_DEVICE);
+
+   /*
+    * If no interrupt is asserted, we do not do anything
+    */
+   if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) {
+
+      return;
+   }
+
+   /*
+    * If error interrupt is asserted, raise error flag, reset the
+    * hardware to recover from the error, and return with no further
+    * processing.
+    */
+   if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
+
+      Error = 1;
+
+      /*
+       * Reset should never fail for transmit channel
+       */
+      XAxiDma_Reset(AxiDmaInst);
+
+      TimeOut = RESET_TIMEOUT_COUNTER;
+
+      while (TimeOut) {
+         if (XAxiDma_ResetIsDone(AxiDmaInst)) {
+            break;
+         }
+
+         TimeOut -= 1;
+      }
+
+      return;
+   }
+
+   /*
+    * If Completion interrupt is asserted, then set the TxDone flag
+    */
+   if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+
+      TxDone = 1;
+   }
+}
+
+/*****************************************************************************/
+/*
+*
+* This is the DMA RX interrupt handler function
+*
+* It gets the interrupt status from the hardware, acknowledges it, and if any
+* error happens, it resets the hardware. Otherwise, if a completion interrupt
+* is present, then it sets the RxDone flag.
+*
+* @param   Callback is a pointer to RX channel of the DMA engine.
+*
+* @return   None.
+*
+* @note      None.
+*
+******************************************************************************/
+static void RxIntrHandler(void *Callback)
+{
+   u32 IrqStatus;
+   int TimeOut;
+   XAxiDma *AxiDmaInst = (XAxiDma *)Callback;
+
+   /* Read pending interrupts */
+   IrqStatus = XAxiDma_IntrGetIrq(AxiDmaInst, XAXIDMA_DEVICE_TO_DMA);
+
+   /* Acknowledge pending interrupts */
+   XAxiDma_IntrAckIrq(AxiDmaInst, IrqStatus, XAXIDMA_DEVICE_TO_DMA);
+
+   /*
+    * If no interrupt is asserted, we do not do anything
+    */
+   if (!(IrqStatus & XAXIDMA_IRQ_ALL_MASK)) {
+      return;
+   }
+
+   /*
+    * If error interrupt is asserted, raise error flag, reset the
+    * hardware to recover from the error, and return with no further
+    * processing.
+    */
+   if ((IrqStatus & XAXIDMA_IRQ_ERROR_MASK)) {
+
+      Error = 1;
+
+      /* Reset could fail and hang
+       * NEED a way to handle this or do not call it??
+       */
+      XAxiDma_Reset(AxiDmaInst);
+
+      TimeOut = RESET_TIMEOUT_COUNTER;
+
+      while (TimeOut) {
+         if(XAxiDma_ResetIsDone(AxiDmaInst)) {
+            break;
+         }
+
+         TimeOut -= 1;
+      }
+
+      return;
+   }
+
+   /*
+    * If completion interrupt is asserted, then set RxDone flag
+    */
+   if ((IrqStatus & XAXIDMA_IRQ_IOC_MASK)) {
+
+      RxDone = 1;
+   }
+}
+
+/*****************************************************************************/
+/*
+*
+* This function setups the interrupt system so interrupts can occur for the
+* DMA, it assumes INTC component exists in the hardware system.
+*
+* @param   IntcInstancePtr is a pointer to the instance of the INTC.
+* @param   AxiDmaPtr is a pointer to the instance of the DMA engine
+* @param   TxIntrId is the TX channel Interrupt ID.
+* @param   RxIntrId is the RX channel Interrupt ID.
+*
+* @return
+*      - XST_SUCCESS if successful,
+*      - XST_FAILURE.if not succesful
+*
+* @note      None.
+*
+******************************************************************************/
+static int SetupIntrSystem(INTC * IntcInstancePtr,
+            XAxiDma * AxiDmaPtr, u16 TxIntrId, u16 RxIntrId)
+{
+   int Status;
+
+#ifdef XPAR_INTC_0_DEVICE_ID
+
+   /* Initialize the interrupt controller and connect the ISRs */
+   Status = XIntc_Initialize(IntcInstancePtr, INTC_DEVICE_ID);
+   if (Status != XST_SUCCESS) {
+
+      xil_printf("Failed init intc\r\n");
+      return XST_FAILURE;
+   }
+
+   Status = XIntc_Connect(IntcInstancePtr, TxIntrId,
+                (XInterruptHandler) TxIntrHandler, AxiDmaPtr);
+   if (Status != XST_SUCCESS) {
+
+      xil_printf("Failed tx connect intc\r\n");
+      return XST_FAILURE;
+   }
+
+   Status = XIntc_Connect(IntcInstancePtr, RxIntrId,
+                (XInterruptHandler) RxIntrHandler, AxiDmaPtr);
+   if (Status != XST_SUCCESS) {
+
+      xil_printf("Failed rx connect intc\r\n");
+      return XST_FAILURE;
+   }
+
+   /* Start the interrupt controller */
+   Status = XIntc_Start(IntcInstancePtr, XIN_REAL_MODE);
+   if (Status != XST_SUCCESS) {
+
+      xil_printf("Failed to start intc\r\n");
+      return XST_FAILURE;
+   }
+
+   XIntc_Enable(IntcInstancePtr, TxIntrId);
+   XIntc_Enable(IntcInstancePtr, RxIntrId);
+
+#else
+
+   XScuGic_Config *IntcConfig;
+
+
+   /*
+    * Initialize the interrupt controller driver so that it is ready to
+    * use.
+    */
+   IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+   if (NULL == IntcConfig) {
+      return XST_FAILURE;
+   }
+
+   Status = XScuGic_CfgInitialize(IntcInstancePtr, IntcConfig,
+               IntcConfig->CpuBaseAddress);
+   if (Status != XST_SUCCESS) {
+      return XST_FAILURE;
+   }
+
+
+   XScuGic_SetPriorityTriggerType(IntcInstancePtr, TxIntrId, 0xA0, 0x3);
+
+   XScuGic_SetPriorityTriggerType(IntcInstancePtr, RxIntrId, 0xA0, 0x3);
+   /*
+    * Connect the device driver handler that will be called when an
+    * interrupt for the device occurs, the handler defined above performs
+    * the specific interrupt processing for the device.
+    */
+   Status = XScuGic_Connect(IntcInstancePtr, TxIntrId,
+            (Xil_InterruptHandler)TxIntrHandler,
+            AxiDmaPtr);
+   if (Status != XST_SUCCESS) {
+      return Status;
+   }
+
+   Status = XScuGic_Connect(IntcInstancePtr, RxIntrId,
+            (Xil_InterruptHandler)RxIntrHandler,
+            AxiDmaPtr);
+   if (Status != XST_SUCCESS) {
+      return Status;
+   }
+
+   XScuGic_Enable(IntcInstancePtr, TxIntrId);
+   XScuGic_Enable(IntcInstancePtr, RxIntrId);
+
+
+#endif
+
+   /* Enable interrupts from the hardware */
+
+   Xil_ExceptionInit();
+   Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+         (Xil_ExceptionHandler)INTC_HANDLER,
+         (void *)IntcInstancePtr);
+
+   Xil_ExceptionEnable();
+
+   return XST_SUCCESS;
+}
+
+/*****************************************************************************/
+/**
+*
+* This function disables the interrupts for DMA engine.
+*
+* @param   IntcInstancePtr is the pointer to the INTC component instance
+* @param   TxIntrId is interrupt ID associated w/ DMA TX channel
+* @param   RxIntrId is interrupt ID associated w/ DMA RX channel
+*
+* @return   None.
+*
+* @note      None.
+*
+******************************************************************************/
+static void DisableIntrSystem(INTC * IntcInstancePtr,
+               u16 TxIntrId, u16 RxIntrId)
+{
+#ifdef XPAR_INTC_0_DEVICE_ID
+   /* Disconnect the interrupts for the DMA TX and RX channels */
+   XIntc_Disconnect(IntcInstancePtr, TxIntrId);
+   XIntc_Disconnect(IntcInstancePtr, RxIntrId);
+#else
+   XScuGic_Disconnect(IntcInstancePtr, TxIntrId);
+   XScuGic_Disconnect(IntcInstancePtr, RxIntrId);
+#endif
 }
 
 
@@ -133,15 +569,15 @@ int main(void)
 * how to use the XTmrCtr component in a polled mode.
 *
 *
-* @param	DeviceId is the XPAR_<TMRCTR_instance>_DEVICE_ID value from
-*		xparameters.h
-* @param	TmrCtrNumber is the timer counter of the device to operate on.
-*		 Each device may contain multiple timer counters.
-*		The timer number is a zero based number with a range of
-*		0 - (XTC_DEVICE_TIMER_COUNT - 1).
+* @param   DeviceId is the XPAR_<TMRCTR_instance>_DEVICE_ID value from
+*      xparameters.h
+* @param   TmrCtrNumber is the timer counter of the device to operate on.
+*       Each device may contain multiple timer counters.
+*      The timer number is a zero based number with a range of
+*      0 - (XTC_DEVICE_TIMER_COUNT - 1).
 *
-* @return	XST_SUCCESS to indicate success, else XST_FAILURE to indicate
-*		a Failure.
+* @return   XST_SUCCESS to indicate success, else XST_FAILURE to indicate
+*      a Failure.
 *
 * @note
 *
@@ -150,57 +586,42 @@ int main(void)
 * return.
 *
 ****************************************************************************/
-int TmrCtrPolledExample(u16 DeviceId, u8 TmrCtrNumber)
+int TmrCtr_init(u16 DeviceId, u8 TmrCtrNumber)
 {
-	int tim_status;
-	u32 Value1;
-	u32 Value2;
-	XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
+   int Status;
+   u32 Value1;
+   XTmrCtr *TmrCtrInstancePtr = &TimerCounter;
 
-	/*
-	 * Initialize the timer counter so that it's ready to use,
-	 * specify the device ID that is generated in xparameters.h
-	 */
-	tim_status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
-	if (tim_status != XST_SUCCESS) {
-		return XST_FAILURE;
-	}
+   /*
+    * Initialize the timer counter so that it's ready to use,
+    * specify the device ID that is generated in xparameters.h
+    */
+   Status = XTmrCtr_Initialize(TmrCtrInstancePtr, DeviceId);
+   if (Status != XST_SUCCESS) {
+      return XST_FAILURE;
+   }
 
-	/*
-	 * Enable the Autoreload mode of the timer counters.
-	 */
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber,
-				XTC_AUTO_RELOAD_OPTION);
+   /*
+    * Perform a self-test to ensure that the hardware was built
+    * correctly, use the 1st timer in the device (0)
+    */
+   Status = XTmrCtr_SelfTest(TmrCtrInstancePtr, TmrCtrNumber);
+   if (Status != XST_SUCCESS) {
+      return XST_FAILURE;
+   }
 
-	/*
-	 * Get a snapshot of the timer counter value before it's started
-	 * to compare against later
-	 */
-	Value1 = XTmrCtr_GetValue(TmrCtrInstancePtr, TmrCtrNumber);
 
-	/*
-	 * Start the timer counter such that it's incrementing by default
-	 */
-	XTmrCtr_Start(TmrCtrInstancePtr, TmrCtrNumber);
+   /*
+    * Enable the Autoreload mode of the timer counters.
+    */
+   XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber,
+            XTC_AUTO_RELOAD_OPTION);
 
-	/*
-	 * Read the value of the timer counter and wait for it to change,
-	 * since it's incrementing it should change, if the hardware is not
-	 * working for some reason, this loop could be infinite such that the
-	 * function does not return
-	 */
-	while (1) {
-		Value2 = XTmrCtr_GetValue(TmrCtrInstancePtr, TmrCtrNumber);
-		if (Value1 != Value2) {
-			break;
-		}
-	}
+   /*
+    * Get a snapshot of the timer counter value before it's started
+    * to compare against later
+    */
+   Value1 = XTmrCtr_GetValue(TmrCtrInstancePtr, TmrCtrNumber);
 
-	/*
-	 * Disable the Autoreload mode of the timer counters.
-	 */
-	XTmrCtr_SetOptions(TmrCtrInstancePtr, TmrCtrNumber, 0);
-
-	return XST_SUCCESS;
+   return Value1;
 }
-

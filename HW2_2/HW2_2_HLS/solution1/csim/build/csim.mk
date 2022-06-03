@@ -58,6 +58,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -75,7 +76,7 @@ all: $(TARGET)
 
 $(ObjDir)/TB_1DmatrixMul_rev2.o: ../../../TB_1DmatrixMul_rev2.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../TB_1DmatrixMul_rev2.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/TB_1DmatrixMul_rev2.d
 

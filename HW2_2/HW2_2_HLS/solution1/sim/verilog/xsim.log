@@ -2,12 +2,12 @@
 # xsim v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Fri Jun  3 14:51:44 2022
-# Process ID: 7816
-# Current directory: C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog
+# Start of session at: Sat Jun  4 03:55:13 2022
+# Process ID: 2808
+# Current directory: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog
 # Command line: xsim.exe -mode tcl -source {xsim.dir/matrixmul_1D_rev2/xsim_script.tcl}
-# Log file: C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/xsim.log
-# Journal file: C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog\xsim.jou
+# Log file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog\xsim.jou
 #-----------------------------------------------------------
 source xsim.dir/matrixmul_1D_rev2/xsim_script.tcl
 # xsim {matrixmul_1D_rev2} -autoloadwcfg -tclbatch {matrixmul_1D_rev2.tcl}
@@ -22,9 +22,8 @@ source matrixmul_1D_rev2.tcl
 // RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
 ////////////////////////////////////////////////////////////////////////////////////
 // RTL Simulation : 0 / 1 [0.00%] @ "125000"
-// RTL Simulation : 1 / 1 [100.00%] @ "63574895000"
+// RTL Simulation : 1 / 1 [100.00%] @ "149775000"
 ////////////////////////////////////////////////////////////////////////////////////
-$finish called at time : 63574935 ns : File "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.autotb.v" Line 268
-run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:33 . Memory (MB): peak = 212.121 ; gain = 0.000
+$finish called at time : 149815 ns : File "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/sim/verilog/matrixmul_1D_rev2.autotb.v" Line 268
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Jun  3 14:52:22 2022...
+INFO: [Common 17-206] Exiting xsim at Sat Jun  4 03:55:30 2022...

@@ -5,7 +5,7 @@
         <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
-        <file name="../TB_1DmatrixMul_rev2.cpp" sc="0" tb="1" cflags="  -Wno-unknown-pragmas"/>
+        <file name="../TB_1DmatrixMul_rev2.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas -Wno-unknown-pragmas"/>
         <file name="HW2_2_HLS/1DmatrixMul_rev2.cpp" sc="0" tb="false" cflags=""/>
     </files>
     <solutions xmlns="">

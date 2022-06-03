@@ -15,7 +15,7 @@ set NbRWValue 0
 set intNbAccess 0
 set NewDSPMapping 1
 set HasDSPModule 1
-set ResetLevelFlag 0
+set ResetLevelFlag 1
 set ResetStyle "control"
 set ResetSyncFlag 1
 set ResetRegisterFlag 0
@@ -43,7 +43,7 @@ set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../1DmatrixMul_rev2.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive}
+set DirectiveFile {C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/solution1.directive}
 set TBFiles {verilog ../TB_1DmatrixMul_rev2.cpp bc ../TB_1DmatrixMul_rev2.cpp vhdl ../TB_1DmatrixMul_rev2.cpp sc ../TB_1DmatrixMul_rev2.cpp cas ../TB_1DmatrixMul_rev2.cpp c {}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

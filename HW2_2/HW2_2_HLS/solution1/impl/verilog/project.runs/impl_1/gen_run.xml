@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622700002">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622746694">
   <File Type="OPT-HWDEF" Name="matrixmul_1D_rev2.hwdef"/>
   <File Type="ROUTE-BUS-SKEW" Name="matrixmul_1D_rev2_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="matrixmul_1D_rev2.dcp"/>
@@ -80,13 +80,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/matrixmul_1D_rev2_A.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/matrixmul_1D_rev2_AXILiteS_s_axi.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

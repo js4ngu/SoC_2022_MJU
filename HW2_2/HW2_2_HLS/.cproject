@@ -80,6 +80,21 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.exe.debug.1195327672.2026813487" name="TB_1DmatrixMul_rev2.cpp" rcbsApplicability="disable" resourcePath="testbench/TB_1DmatrixMul_rev2.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1861570487.1811388331">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1861570487.1811388331" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1861570487">
+							<option id="gnu.cpp.compiler.option.preprocessor.def.1473744835" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+							<option id="gnu.cpp.compiler.option.include.paths.835556681" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include/ap_sysc"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include/etc"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/win64/tools/auto_cc/include"/>
+								<listOptionValue builtIn="false" value="C:/Users/SEP16/SoC_2022_MJU/HW2_2"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/win64/tools/systemc/include"/>
+							</option>
+							<option id="gnu.cpp.compiler.option.other.other.245664201" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1461932892" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
 					<sourceEntries>
 						<entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
@@ -156,6 +171,21 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.exe.release.952766415.1077994624" name="TB_1DmatrixMul_rev2.cpp" rcbsApplicability="disable" resourcePath="testbench/TB_1DmatrixMul_rev2.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1302318067.259538858">
+						<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1302318067.259538858" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1302318067">
+							<option id="gnu.cpp.compiler.option.preprocessor.def.1721358966" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+							<option id="gnu.cpp.compiler.option.include.paths.539924049" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include/ap_sysc"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/include/etc"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/win64/tools/auto_cc/include"/>
+								<listOptionValue builtIn="false" value="C:/Users/SEP16/SoC_2022_MJU/HW2_2"/>
+								<listOptionValue builtIn="false" value="C:/Xilinx/Vivado/2018.2/win64/tools/systemc/include"/>
+							</option>
+							<option id="gnu.cpp.compiler.option.other.other.810948487" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+							<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1527904165" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+						</tool>
+					</fileInfo>
 					<sourceEntries>
 						<entry excluding="solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>

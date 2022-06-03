@@ -68,6 +68,9 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_dma_0_0/sim/design_1_axi_dma_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
+-endlib
 -makelib xcelium_lib/smartconnect_v1_0 -sv \
   "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/5160/hdl/sc_axi2sc_v1_0_vl_rfs.sv" \
 -endlib
@@ -146,18 +149,10 @@
   "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
   "../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
--endlib
--makelib xcelium_lib/xil_defaultlib \
-  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/b094/hdl/verilog/matrixmul_1D_rev2_A.v" \
-  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/b094/hdl/verilog/matrixmul_1D_rev2_AXILiteS_s_axi.v" \
-  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/b094/hdl/verilog/matrixmul_1D_rev2bkb.v" \
-  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/b094/hdl/verilog/matrixmul_1D_rev2.v" \
-  "../../../bd/design_1/ip/design_1_matrixmul_1D_rev2_0_0/sim/design_1_matrixmul_1D_rev2_0_0.v" \
 -endlib
 -makelib xcelium_lib/xlconcat_v2_1_1 \
   "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/2f66/hdl/xlconcat_v2_1_vl_rfs.v" \
@@ -190,12 +185,18 @@
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_axi_timer_0_0/sim/design_1_axi_timer_0_0.vhd" \
 -endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/design_1/sim/design_1.v" \
+  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/cd73/hdl/verilog/matrixmul_1D_rev2_A.v" \
+  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/cd73/hdl/verilog/matrixmul_1D_rev2bkb.v" \
+  "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/cd73/hdl/verilog/matrixmul_1D_rev2.v" \
+  "../../../bd/design_1/ip/design_1_matrixmul_1D_rev2_0_4/sim/design_1_matrixmul_1D_rev2_0_4.v" \
+-endlib
 -makelib xcelium_lib/axi_protocol_converter_v2_1_17 \
   "../../../../HW2_rev3.srcs/sources_1/bd/design_1/ipshared/ccfb/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_auto_pc_0/sim/design_1_auto_pc_0.v" \
-  "../../../bd/design_1/sim/design_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

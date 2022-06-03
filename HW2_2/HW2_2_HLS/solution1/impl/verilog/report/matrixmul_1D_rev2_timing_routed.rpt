@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Jun  3 15:01:19 2021
-| Host         : DESKTOP-8PEBONS running 64-bit major release  (build 9200)
+| Date         : Fri Jun  4 03:59:16 2021
+| Host         : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -file ./report/matrixmul_1D_rev2_timing_routed.rpt
 | Design       : matrixmul_1D_rev2
 | Device       : 7z020-clg484
@@ -74,14 +74,14 @@ Table of Contents
 
 5. checking no_input_delay
 --------------------------
- There are 65 input ports with no input delay specified. (HIGH)
+ There are 10 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 
 
 6. checking no_output_delay
 ---------------------------
- There are 74 ports with no output delay specified. (HIGH)
+ There are 41 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 
@@ -126,7 +126,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      3.992        0.000                      0                 2652        0.098        0.000                      0                 2652        4.500        0.000                       0                  1064  
+      6.020        0.000                      0                  247        0.132        0.000                      0                  247        4.500        0.000                       0                    98  
 
 
 All user specified timing constraints are met.
@@ -149,7 +149,7 @@ ap_clk  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-ap_clk              3.992        0.000                      0                 2652        0.098        0.000                      0                 2652        4.500        0.000                       0                  1064  
+ap_clk              6.020        0.000                      0                  247        0.132        0.000                      0                  247        4.500        0.000                       0                    98  
 
 
 ------------------------------------------------------------------------------------------------
@@ -180,24 +180,24 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  ap_clk
   To Clock:  ap_clk
 
-Setup :            0  Failing Endpoints,  Worst Slack        3.992ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.098ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        6.020ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.132ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             3.992ns  (required time - arrival time)
-  Source:                 ap_CS_fsm_reg[5]/C
-                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3/ADDRARDADDR[7]
-                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+Slack (MET) :             6.020ns  (required time - arrival time)
+  Source:                 B_U/matrixmul_1D_rev2_A_ram_U/ram_reg/CLKARDCLK
+                            (rising edge-triggered cell RAMB18E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum_reg_250_reg/B[3]
+                            (rising edge-triggered cell DSP48E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        5.358ns  (logic 0.580ns (10.824%)  route 4.778ns (89.176%))
-  Logic Levels:           1  (LUT5=1)
+  Data Path Delay:        3.446ns  (logic 2.454ns (71.219%)  route 0.992ns (28.781%))
+  Logic Levels:           0  
   Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
     Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
     Source Clock Delay      (SCD):    0.973ns
@@ -212,29 +212,28 @@ Slack (MET) :             3.992ns  (required time - arrival time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=1063, unset)         0.973     0.973    ap_clk
-    SLICE_X28Y21         FDRE                                         r  ap_CS_fsm_reg[5]/C
+                         net (fo=97, unset)           0.973     0.973    B_U/matrixmul_1D_rev2_A_ram_U/ap_clk
+    RAMB18_X2Y21         RAMB18E1                                     r  B_U/matrixmul_1D_rev2_A_ram_U/ram_reg/CLKARDCLK
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y21         FDRE (Prop_fdre_C_Q)         0.456     1.429 r  ap_CS_fsm_reg[5]/Q
-                         net (fo=30, routed)          3.037     4.466    A_U/matrixmul_1D_rev2_A_ram_U/Q[1]
-    SLICE_X23Y15         LUT5 (Prop_lut5_I0_O)        0.124     4.590 r  A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_0_i_9/O
-                         net (fo=4, routed)           1.742     6.331    A_U/matrixmul_1D_rev2_A_ram_U/A_address0[6]
-    RAMB36_X1Y6          RAMB36E1                                     r  A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3/ADDRARDADDR[7]
+    RAMB18_X2Y21         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOADO[3])
+                                                      2.454     3.427 r  B_U/matrixmul_1D_rev2_A_ram_U/ram_reg/DOADO[3]
+                         net (fo=1, routed)           0.992     4.419    B_q0[3]
+    DSP48_X2Y20          DSP48E1                                      r  sum_reg_250_reg/B[3]
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)    10.000    10.000 r  
                                                       0.000    10.000 r  ap_clk (IN)
-                         net (fo=1063, unset)         0.924    10.924    A_U/matrixmul_1D_rev2_A_ram_U/ap_clk
-    RAMB36_X1Y6          RAMB36E1                                     r  A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3/CLKARDCLK
+                         net (fo=97, unset)           0.924    10.924    ap_clk
+    DSP48_X2Y20          DSP48E1                                      r  sum_reg_250_reg/CLK
                          clock pessimism              0.000    10.924    
                          clock uncertainty           -0.035    10.889    
-    RAMB36_X1Y6          RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[7])
-                                                     -0.566    10.323    A_U/matrixmul_1D_rev2_A_ram_U/ram_reg_3
+    DSP48_X2Y20          DSP48E1 (Setup_dsp48e1_CLK_B[3])
+                                                     -0.450    10.439    sum_reg_250_reg
   -------------------------------------------------------------------
-                         required time                         10.323    
-                         arrival time                          -6.331    
+                         required time                         10.439    
+                         arrival time                          -4.419    
   -------------------------------------------------------------------
-                         slack                                  3.992    
+                         slack                                  6.020    
 
 
 
@@ -242,15 +241,15 @@ Slack (MET) :             3.992ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.098ns  (arrival time - required time)
-  Source:                 i_1_reg_686_reg[26]/C
+Slack (MET) :             0.132ns  (arrival time - required time)
+  Source:                 i_3_reg_608_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            i_reg_183_reg[26]/D
+  Destination:            i6_reg_226_reg[0]/D
                             (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             ap_clk
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (ap_clk rise@0.000ns - ap_clk rise@0.000ns)
-  Data Path Delay:        0.195ns  (logic 0.141ns (72.269%)  route 0.054ns (27.731%))
+  Data Path Delay:        0.199ns  (logic 0.141ns (70.682%)  route 0.058ns (29.318%))
   Logic Levels:           0  
   Clock Path Skew:        0.022ns (DCD - SCD - CPR)
     Destination Clock Delay (DCD):    0.432ns
@@ -261,25 +260,25 @@ Slack (MET) :             0.098ns  (arrival time - required time)
   -------------------------------------------------------------------    -------------------
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=1063, unset)         0.410     0.410    ap_clk
-    SLICE_X35Y22         FDRE                                         r  i_1_reg_686_reg[26]/C
+                         net (fo=97, unset)           0.410     0.410    ap_clk
+    SLICE_X29Y50         FDRE                                         r  i_3_reg_608_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X35Y22         FDRE (Prop_fdre_C_Q)         0.141     0.551 r  i_1_reg_686_reg[26]/Q
-                         net (fo=1, routed)           0.054     0.605    i_1_reg_686[26]
-    SLICE_X34Y22         FDRE                                         r  i_reg_183_reg[26]/D
+    SLICE_X29Y50         FDRE (Prop_fdre_C_Q)         0.141     0.551 r  i_3_reg_608_reg[0]/Q
+                         net (fo=1, routed)           0.058     0.610    i_3_reg_608[0]
+    SLICE_X28Y50         FDRE                                         r  i6_reg_226_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock ap_clk rise edge)     0.000     0.000 r  
                                                       0.000     0.000 r  ap_clk (IN)
-                         net (fo=1063, unset)         0.432     0.432    ap_clk
-    SLICE_X34Y22         FDRE                                         r  i_reg_183_reg[26]/C
+                         net (fo=97, unset)           0.432     0.432    ap_clk
+    SLICE_X28Y50         FDRE                                         r  i6_reg_226_reg[0]/C
                          clock pessimism              0.000     0.432    
-    SLICE_X34Y22         FDRE (Hold_fdre_C_D)         0.076     0.508    i_reg_183_reg[26]
+    SLICE_X28Y50         FDRE (Hold_fdre_C_D)         0.046     0.478    i6_reg_226_reg[0]
   -------------------------------------------------------------------
-                         required time                         -0.508    
-                         arrival time                           0.605    
+                         required time                         -0.478    
+                         arrival time                           0.610    
   -------------------------------------------------------------------
-                         slack                                  0.098    
+                         slack                                  0.132    
 
 
 
@@ -293,9 +292,9 @@ Period(ns):         10.000
 Sources:            { ap_clk }
 
 Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
-Min Period        n/a     DSP48E1/CLK  n/a            3.884         10.000      6.116      DSP48_X0Y12   sum_reg_318_reg/CLK
-Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X12Y31  AB_1_payload_A_reg[0]/C
-High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X12Y31  AB_1_payload_A_reg[0]/C
+Min Period        n/a     DSP48E1/CLK  n/a            3.884         10.000      6.116      DSP48_X2Y20   sum_reg_250_reg/CLK
+Low Pulse Width   Fast    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X29Y54  tmp_5_cast_reg_587_reg[5]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.500         5.000       4.500      SLICE_X29Y54  tmp_5_cast_reg_587_reg[5]/C
 
 
 

@@ -14,8 +14,8 @@ entity matrixmul_1D_rev2_A_ram is
     generic(
             MEM_TYPE    : string := "block"; 
             DWIDTH     : integer := 8; 
-            AWIDTH     : integer := 14; 
-            MEM_SIZE    : integer := 16384
+            AWIDTH     : integer := 10; 
+            MEM_SIZE    : integer := 1024
     ); 
     port (
           addr0     : in std_logic_vector(AWIDTH-1 downto 0); 
@@ -76,8 +76,8 @@ use IEEE.std_logic_1164.all;
 entity matrixmul_1D_rev2_A is
     generic (
         DataWidth : INTEGER := 8;
-        AddressRange : INTEGER := 16384;
-        AddressWidth : INTEGER := 14);
+        AddressRange : INTEGER := 1024;
+        AddressWidth : INTEGER := 10);
     port (
         reset : IN STD_LOGIC;
         clk : IN STD_LOGIC;

@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Jun  3 15:00:45 2021
-| Host         : DESKTOP-8PEBONS running 64-bit major release  (build 9200)
+| Date         : Fri Jun  4 03:58:50 2021
+| Host         : DESKTOP-437TBDQ running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file matrixmul_1D_rev2_control_sets_placed.rpt
 | Design       : matrixmul_1D_rev2
 | Device       : xc7z020
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    36 |
-| Unused register locations in slices containing registers |    74 |
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    58 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,10 +34,8 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      4 |            1 |
-|     12 |            1 |
-|     14 |            3 |
-|    16+ |           31 |
+|     10 |            7 |
+|    16+ |            4 |
 +--------+--------------+
 
 
@@ -47,57 +45,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               4 |            2 |
+| No           | No                    | No                     |              52 |            9 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              58 |           17 |
-| Yes          | No                    | No                     |             988 |          135 |
+| No           | Yes                   | No                     |              28 |            6 |
+| Yes          | No                    | No                     |              40 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1060 |          114 |
+| Yes          | Yes                   | No                     |              70 |           12 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------+------------------------------------------------------+-------------------------------------------------+------------------+----------------+
-| Clock Signal |                     Enable Signal                    |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
-+--------------+------------------------------------------------------+-------------------------------------------------+------------------+----------------+
-|  ap_clk      |                                                      |                                                 |                2 |              4 |
-|  ap_clk      | matrixmul_1D_rev2_AXILiteS_s_axi_U/waddr             |                                                 |                1 |             12 |
-|  ap_clk      | j_reg_1940                                           |                                                 |                1 |             14 |
-|  ap_clk      | j7_reg_307[30]_i_1_n_7                               |                                                 |                1 |             14 |
-|  ap_clk      | j2_reg_2160                                          |                                                 |                2 |             14 |
-|  ap_clk      | Input_r_0_load_A                                     |                                                 |                3 |             16 |
-|  ap_clk      | Input_r_0_load_B                                     |                                                 |                4 |             16 |
-|  ap_clk      | invdar1_reg_1720                                     | ap_NS_fsm120_out                                |                4 |             28 |
-|  ap_clk      | invdar_reg_1610                                      | invdar_reg_161                                  |                4 |             28 |
-|  ap_clk      | tmp_12_reg_7300                                      |                                                 |                5 |             28 |
-|  ap_clk      | tmp_8_reg_7040                                       |                                                 |                4 |             28 |
-|  ap_clk      |                                                      | matrixmul_1D_rev2_AXILiteS_s_axi_U/ap_rst_n_inv |               17 |             58 |
-|  ap_clk      | ap_NS_fsm112_out                                     | ap_NS_fsm118_out                                |                7 |             62 |
-|  ap_clk      | ap_NS_fsm11_out                                      | ap_NS_fsm16_out                                 |                7 |             62 |
-|  ap_clk      | ap_NS_fsm116_out                                     | ap_NS_fsm119_out                                |                6 |             62 |
-|  ap_clk      | ce02                                                 |                                                 |                9 |             62 |
-|  ap_clk      | ap_CS_fsm_state4                                     |                                                 |                9 |             62 |
-|  ap_clk      | ap_CS_fsm_state5                                     |                                                 |                9 |             62 |
-|  ap_clk      | ap_CS_fsm_state7                                     |                                                 |                9 |             62 |
-|  ap_clk      | ap_CS_fsm_state17                                    | k_reg_3320                                      |                6 |             62 |
-|  ap_clk      | ap_CS_fsm_state8                                     |                                                 |                9 |             62 |
-|  ap_clk      | Input_r_0_sel2                                       | j_reg_1940                                      |                8 |             62 |
-|  ap_clk      | j7_reg_307                                           | j7_reg_307[30]_i_1_n_7                          |                7 |             62 |
-|  ap_clk      | i_6_reg_7770                                         |                                                 |                9 |             62 |
-|  ap_clk      | Input_r_0_sel225_out                                 | j2_reg_2160                                     |                7 |             62 |
-|  ap_clk      | AB_1_load_B                                          |                                                 |                9 |             64 |
-|  ap_clk      | AB_1_load_A                                          |                                                 |                9 |             64 |
-|  ap_clk      | matrixmul_1D_rev2_AXILiteS_s_axi_U/rdata[31]_i_1_n_7 |                                                 |                8 |             64 |
-|  ap_clk      | matrixmul_1D_rev2_AXILiteS_s_axi_U/p_0_in3_out       | matrixmul_1D_rev2_AXILiteS_s_axi_U/ap_rst_n_inv |                5 |             64 |
-|  ap_clk      | matrixmul_1D_rev2_AXILiteS_s_axi_U/p_0_in5_out       | matrixmul_1D_rev2_AXILiteS_s_axi_U/ap_rst_n_inv |                5 |             64 |
-|  ap_clk      | matrixmul_1D_rev2_AXILiteS_s_axi_U/p_0_in1_out       | matrixmul_1D_rev2_AXILiteS_s_axi_U/ap_rst_n_inv |                5 |             64 |
-|  ap_clk      | ap_CS_fsm_state14                                    |                                                 |               11 |             90 |
-|  ap_clk      | i3_reg_2270                                          | ap_NS_fsm114_out                                |               16 |            126 |
-|  ap_clk      | i4_reg_2500                                          | ap_NS_fsm110_out                                |               12 |            126 |
-|  ap_clk      | i5_reg_2850                                          | ap_NS_fsm18_out                                 |               15 |            126 |
-|  ap_clk      | ap_NS_fsm121_out                                     |                                                 |               23 |            192 |
-+--------------+------------------------------------------------------+-------------------------------------------------+------------------+----------------+
++--------------+-------------------+------------------+------------------+----------------+
+| Clock Signal |   Enable Signal   | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------+-------------------+------------------+------------------+----------------+
+|  ap_clk      | AB_ce0            |                  |                2 |             10 |
+|  ap_clk      | AB_we0            | j7_reg_2380      |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state11 |                  |                1 |             10 |
+|  ap_clk      | ap_CS_fsm_state14 | k_reg_2620       |                2 |             10 |
+|  ap_clk      | ap_CS_fsm_state10 |                  |                1 |             10 |
+|  ap_clk      | ap_NS_fsm1        | ap_NS_fsm11_out  |                1 |             10 |
+|  ap_clk      | tmp_8_reg_5641    |                  |                1 |             10 |
+|  ap_clk      | invdar_reg_1580   | invdar_reg_158   |                4 |             20 |
+|  ap_clk      | invdar1_reg_1690  | ap_NS_fsm15_out  |                4 |             20 |
+|  ap_clk      |                   | ap_rst           |                6 |             28 |
+|  ap_clk      |                   |                  |                9 |             52 |
++--------------+-------------------+------------------+------------------+----------------+
 
 

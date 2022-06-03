@@ -1,7 +1,7 @@
-#pragma line 1 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+#pragma line 1 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
 #pragma line 1 "<built-in>"
 #pragma line 1 "<command-line>"
-#pragma line 1 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+#pragma line 1 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
 #pragma line 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 1 3
 #pragma line 9 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 3
 #pragma line 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/crtdefs.h" 1 3
@@ -932,7 +932,7 @@ extern "C" {
 #pragma empty_line
 #pragma line 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
 #pragma line 1037 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
-#pragma line 2 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
+#pragma line 2 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
 #pragma line 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 1 3
 #pragma line 24 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
 #pragma pack(push,_CRT_PACKING)
@@ -1194,81 +1194,81 @@ int __attribute__((__cdecl__)) clock_settime(clockid_t clock_id, const struct ti
 #pragma empty_line
 }
 #pragma line 302 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
-#pragma line 3 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
+#pragma line 3 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
 #pragma empty_line
-#pragma line 8 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
-void matrixmul_1D_rev2( unsigned char Input[256*128], unsigned int AB[128*128]);
+#pragma line 8 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+void matrixmul_1D_rev2( unsigned char Input[64*32], unsigned int AB[32*32]);
 #pragma empty_line
 int main(){
     int i, j;
     int m=1, n=1, p=1;
-    unsigned char Input[256*128];
-    unsigned char A[128*128];
-    unsigned char B[128*128];
-    unsigned int AB[128*128];
-    unsigned int AB_EX[128*128];
+    unsigned char Input[64*32];
+    unsigned char A[32*32];
+    unsigned char B[32*32];
+    unsigned int AB[32*32];
+    unsigned int AB_EX[32*32];
 #pragma empty_line
     printf("HLS Flow with Adder example\n");
     double start, end;
     start = (double)clock() / 
-#pragma line 21 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
+#pragma line 21 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
                              1000
-#pragma line 21 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+#pragma line 21 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
                                            ;
 #pragma empty_line
-    for(int i=0; i<7; i++){
+    for(int i=0; i<5; i++){
        m *= 2;
     }
-    for(int i=0; i<7; i++){
+    for(int i=0; i<5; i++){
        n *= 2;
     }
-    for(int i=0; i<7; i++){
+    for(int i=0; i<5; i++){
        p *= 2;
     }
 #pragma empty_line
 #pragma empty_line
-    for (int i = 0; i < 7; i++) {
-        for (int j = 0; j < 7; j++) {
-         Input[128*i+j] = 2;
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+         Input[32*i+j] = 2;
         }
     }
-    for (int i = 128; i < 128+7; i++) {
-        for (int j = 0; j < 7; j++) {
-         Input[128*i+j] = 2;
+    for (int i = 32; i < 32+5; i++) {
+        for (int j = 0; j < 5; j++) {
+         Input[32*i+j] = 2;
         }
     }
 #pragma empty_line
 #pragma empty_line
-   for (int i = 0; i < 7; i++) {
-      for (int j = 0; j < 7; j++) {
-         A[128*i+j] = Input[128*i+j];
+   for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 5; j++) {
+         A[32*i+j] = Input[32*i+j];
       }
    }
 #pragma empty_line
-   for (int i = 0; i < 7; i++) {
-      for (int j = 0; j < 7; j++) {
-         B[128*i+j] = Input[(i+1)*128+j];
+   for (int i = 0; i < 5; i++) {
+      for (int j = 0; j < 5; j++) {
+         B[32*i+j] = Input[(i+1)*32+j];
       }
    }
 #pragma empty_line
 #pragma empty_line
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < p; j++) {
-            AB_EX[128*i+j] = 0;
+            AB_EX[32*i+j] = 0;
             for (int k = 0; k < n; k++) {
-                AB_EX[128*i+j] += A[128*i+k] * B[128*k+j];
+                AB_EX[32*i+j] += A[32*i+k] * B[32*k+j];
             }
         }
     }
     end = (((double)clock()) / 
-#pragma line 67 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
+#pragma line 67 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
                               1000
-#pragma line 67 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+#pragma line 67 "C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
                                             );
 #pragma empty_line
 #pragma empty_line
@@ -1277,12 +1277,12 @@ int main(){
 #pragma empty_line
     for(i=0; i < m; i++){
         for(j=0; j < p; j++){
-            if(AB[128*i+j] != AB_EX[128*i+j]){
+            if(AB[32*i+j] != AB_EX[32*i+j]){
 #pragma empty_line
-             printf("[%d][%d] : %d  %d\n",m,p,AB[128*i+j], AB_EX[128*i+j]);
+             printf("[%d][%d] : %d  %d\n",m,p,AB[32*i+j], AB_EX[32*i+j]);
             }
             else{
-                printf("Success HW and SW results match  %d  %d\n",AB[128*i+j], AB_EX[128*i+j]);
+                printf("Success HW and SW results match  %d  %d\n",AB[32*i+j], AB_EX[32*i+j]);
             }
         }
     }

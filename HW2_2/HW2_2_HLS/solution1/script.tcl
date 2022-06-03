@@ -6,7 +6,7 @@
 open_project HW2_2_HLS
 set_top matrixmul_1D_rev2
 add_files HW2_2_HLS/1DmatrixMul_rev2.cpp
-add_files -tb HW2_2_HLS/TB_1DmatrixMul_rev2.cpp
+add_files -tb HW2_2_HLS/TB_1DmatrixMul_rev2.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020clg484-1} -tool vivado
 create_clock -period 10 -name default

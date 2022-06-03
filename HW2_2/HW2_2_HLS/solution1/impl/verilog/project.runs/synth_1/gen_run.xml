@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622699936">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1622746641">
   <File Type="PA-TCL" Name="matrixmul_1D_rev2.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="matrixmul_1D_rev2_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="matrixmul_1D_rev2_reports.tcl"/>
@@ -19,13 +19,6 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/matrixmul_1D_rev2_A.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/matrixmul_1D_rev2_AXILiteS_s_axi.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

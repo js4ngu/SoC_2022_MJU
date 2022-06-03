@@ -600,7 +600,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>DATA_WIDTH</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH">32</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH">1024</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -947,11 +947,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 03 16:13:21 UTC 2022</spirit:value>
+            <spirit:value>Fri Jun 03 19:01:03 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:e5dadfa7</spirit:value>
+            <spirit:value>8:2ab8bf8a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -967,11 +967,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 03 16:13:21 UTC 2022</spirit:value>
+            <spirit:value>Fri Jun 03 19:01:03 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:e5dadfa7</spirit:value>
+            <spirit:value>8:2ab8bf8a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -990,11 +990,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 03 16:13:21 UTC 2022</spirit:value>
+            <spirit:value>Fri Jun 03 19:01:03 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:d47b781f</spirit:value>
+            <spirit:value>8:30bd51eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1010,11 +1010,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Jun 03 16:13:21 UTC 2022</spirit:value>
+            <spirit:value>Fri Jun 03 19:01:03 UTC 2022</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>8:d47b781f</spirit:value>
+            <spirit:value>8:30bd51eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1106,7 +1106,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_RPAYLD_WIDTH&apos;)) - 1)">83</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_RPAYLD_WIDTH&apos;)) - 1)">1043</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1556,7 +1556,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_WPAYLD_WIDTH&apos;)) - 1)">87</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_WPAYLD_WIDTH&apos;)) - 1)">1167</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1842,7 +1842,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1853,7 +1853,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="{(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;))){0}}" spirit:bitStringLength="32">0x00000000</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="{(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;))){0}}" spirit:bitStringLength="32">0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -1869,7 +1869,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) / 8) - 1)">127</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -1880,7 +1880,7 @@
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
           <spirit:driver>
-            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="{((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) / 8)){1}}" spirit:bitStringLength="4">0xF</spirit:defaultValue>
+            <spirit:defaultValue spirit:format="bitString" spirit:resolve="dependent" spirit:dependency="{((spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_WDATA_WIDTH&apos;)) / 8)){1}}" spirit:bitStringLength="4">0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF</spirit:defaultValue>
           </spirit:driver>
         </spirit:wire>
         <spirit:vendorExtensions>
@@ -2387,7 +2387,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_RDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_AXI_RDATA_WIDTH&apos;)) - 1)">1023</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -2532,12 +2532,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_AXI_RDATA_WIDTH</spirit:name>
         <spirit:displayName>AXI_READ_DATA_WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_AXI_WDATA_WIDTH</spirit:name>
         <spirit:displayName>AXI_WRITE_DATA_WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">32</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_AXI_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SC_ADDR_WIDTH</spirit:name>
@@ -2552,12 +2552,12 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SC_RDATA_WIDTH</spirit:name>
         <spirit:displayName>SC_READ_DATA_WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SC_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SC_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_SC_WDATA_WIDTH</spirit:name>
         <spirit:displayName>SC_WRITE_DATA_WIDTH</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SC_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SC_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">1024</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_SC_RUSER_BITS_PER_BYTE</spirit:name>
@@ -2604,11 +2604,11 @@
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_WPAYLD_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_WPAYLD_WIDTH" spirit:dependency="((((15 + spirit:decode(id(&apos;MODELPARAM_VALUE.C_MSC_ROUTE_WIDTH&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WUSER_BITS_PER_BYTE&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;)) / 8))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;)) / 8))">88</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_WPAYLD_WIDTH" spirit:dependency="((((15 + spirit:decode(id(&apos;MODELPARAM_VALUE.C_MSC_ROUTE_WIDTH&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WUSER_BITS_PER_BYTE&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;)) / 8))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_WDATA_WIDTH&apos;)) / 8))">1168</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RPAYLD_WIDTH</spirit:name>
-        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_RPAYLD_WIDTH" spirit:dependency="((((17 + ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_ID_WIDTH&apos;)) = 0) ? 1 : spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_ID_WIDTH&apos;)))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SSC_ROUTE_WIDTH&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RDATA_WIDTH&apos;))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RUSER_BITS_PER_BYTE&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RDATA_WIDTH&apos;)) / 8)))">84</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="dependent" spirit:id="MODELPARAM_VALUE.C_RPAYLD_WIDTH" spirit:dependency="((((17 + ((spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_ID_WIDTH&apos;)) = 0) ? 1 : spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_ID_WIDTH&apos;)))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SSC_ROUTE_WIDTH&apos;))) + spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RDATA_WIDTH&apos;))) + (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RUSER_BITS_PER_BYTE&apos;)) * (spirit:decode(id(&apos;MODELPARAM_VALUE.C_SC_RDATA_WIDTH&apos;)) / 8)))">1044</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_BPAYLD_WIDTH</spirit:name>
@@ -2752,12 +2752,12 @@
     <spirit:parameter>
       <spirit:name>AXI_RDATA_WIDTH</spirit:name>
       <spirit:displayName>AXI_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="5">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="5">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>AXI_WDATA_WIDTH</spirit:name>
       <spirit:displayName>AXI_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="6">32</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="6">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SC_ADDR_WIDTH</spirit:name>
@@ -2772,12 +2772,12 @@
     <spirit:parameter>
       <spirit:name>SC_RDATA_WIDTH</spirit:name>
       <spirit:displayName>SC_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SC_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="9">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SC_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="9">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SC_WDATA_WIDTH</spirit:name>
       <spirit:displayName>SC_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SC_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="10">64</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SC_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835" spirit:order="10">1024</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SC_ARUSER_WIDTH</spirit:name>
@@ -2835,7 +2835,7 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.AWUSER_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.BUSER_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
-        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.DATA_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_BRESP" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.HAS_BURST" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>

@@ -5,5 +5,5 @@
 // ==============================================================
 
 extern void AESL_WRAP_matrixmul_1D_rev2 (
-unsigned char Input[32768],
-unsigned int AB[16384]);
+unsigned char Input[2048],
+unsigned int AB[1024]);

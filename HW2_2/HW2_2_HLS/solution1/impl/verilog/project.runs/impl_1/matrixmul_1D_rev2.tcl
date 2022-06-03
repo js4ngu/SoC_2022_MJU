@@ -66,10 +66,10 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   reset_param project.defaultXPMLibraries 
-  open_checkpoint C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.runs/impl_1/matrixmul_1D_rev2.dcp
-  set_property webtalk.parent_dir C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.cache/wt [current_project]
-  set_property parent.project_path C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.xpr [current_project]
-  set_property ip_output_repo C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.cache/ip [current_project]
+  open_checkpoint C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.runs/impl_1/matrixmul_1D_rev2.dcp
+  set_property webtalk.parent_dir C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.cache/wt [current_project]
+  set_property parent.project_path C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.xpr [current_project]
+  set_property ip_output_repo C:/Users/SEP16/SoC_2022_MJU/HW2_2/HW2_2_HLS/solution1/impl/verilog/project.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
   close_msg_db -file init_design.pb

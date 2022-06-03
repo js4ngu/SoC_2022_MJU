@@ -31,9 +31,9 @@ module `AUTOTB_TOP;
 
 parameter AUTOTB_TRANSACTION_NUM = 1;
 parameter PROGRESS_TIMEOUT = 10000000;
-parameter LATENCY_ESTIMATION = 6357475;
-parameter LENGTH_Input_r = 32768;
-parameter LENGTH_AB = 16384;
+parameter LATENCY_ESTIMATION = 14963;
+parameter LENGTH_Input_r = 2048;
+parameter LENGTH_AB = 1024;
 
 task read_token;
     input integer fp;
@@ -67,10 +67,10 @@ wire ap_start;
 wire ap_done;
 wire ap_idle;
 wire ap_ready;
-wire [14 : 0] Input_r_address0;
+wire [10 : 0] Input_r_address0;
 wire  Input_r_ce0;
 wire [7 : 0] Input_r_q0;
-wire [13 : 0] AB_address0;
+wire [9 : 0] AB_address0;
 wire  AB_ce0;
 wire  AB_we0;
 wire [31 : 0] AB_d0;
@@ -138,7 +138,7 @@ assign AESL_continue = tb_continue;
 // The input and output of arrayInput_r
 wire    arrayInput_r_ce0, arrayInput_r_ce1;
 wire    arrayInput_r_we0, arrayInput_r_we1;
-wire    [14 : 0]    arrayInput_r_address0, arrayInput_r_address1;
+wire    [10 : 0]    arrayInput_r_address0, arrayInput_r_address1;
 wire    [7 : 0]    arrayInput_r_din0, arrayInput_r_din1;
 wire    [7 : 0]    arrayInput_r_dout0, arrayInput_r_dout1;
 wire    arrayInput_r_ready;
@@ -178,7 +178,7 @@ assign arrayInput_r_done = 0;
 // The input and output of arrayAB
 wire    arrayAB_ce0, arrayAB_ce1;
 wire    arrayAB_we0, arrayAB_we1;
-wire    [13 : 0]    arrayAB_address0, arrayAB_address1;
+wire    [9 : 0]    arrayAB_address0, arrayAB_address1;
 wire    [31 : 0]    arrayAB_din0, arrayAB_din1;
 wire    [31 : 0]    arrayAB_dout0, arrayAB_dout1;
 wire    arrayAB_ready;

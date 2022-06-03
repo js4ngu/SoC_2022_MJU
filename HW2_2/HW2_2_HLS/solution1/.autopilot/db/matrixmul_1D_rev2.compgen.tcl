@@ -11,11 +11,11 @@ set in0_width 8
 set in0_signed 0
 set in1_width 8
 set in1_signed 0
-set in2_width 32
+set in2_width 20
 set in2_signed 0
-set out_width 32
+set out_width 20
 set exp i0*i1+i2
-set arg_lists {i0 {8 0 +} i1 {8 0 +} m {16 0 +} i2 {32 0 +} p {32 0 +} c_reg {1} rnd {0} acc {0} }
+set arg_lists {i0 {8 0 +} i1 {8 0 +} m {16 0 +} i2 {20 0 +} p {20 0 +} c_reg {1} rnd {0} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {
@@ -89,8 +89,8 @@ set MemName matrixmul_1D_rev2_A
 set CoreName ap_simcore_mem
 set PortList { 2 3 }
 set DataWd 8
-set AddrRange 16384
-set AddrWd 14
+set AddrRange 1024
+set AddrWd 10
 set impl_style block
 set TrueReset 0
 set HasInitializer 0
@@ -174,66 +174,18 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-set port_AXILiteS {
-lm { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 16
-	offset_end 23
-}
-ln { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 24
-	offset_end 31
-}
-lp { 
-	dir I
-	width 32
-	depth 1
-	mode ap_none
-	offset 32
-	offset_end 39
-}
-}
-
-
-# Native S_AXILite:
-if {${::AESL::PGuard_simmodel_gen}} {
-	if {[info proc ::AESL_LIB_XILADAPTER::s_axilite_gen] == "::AESL_LIB_XILADAPTER::s_axilite_gen"} {
-		eval "::AESL_LIB_XILADAPTER::s_axilite_gen { \
-			id 4 \
-			corename matrixmul_1D_rev2_AXILiteS_axilite \
-			name matrixmul_1D_rev2_AXILiteS_s_axi \
-			ports {$port_AXILiteS} \
-			op interface \
-			is_flushable 0 \ 
-		} "
-	} else {
-		puts "@W \[IMPL-110\] Cannot find AXI Lite interface model in the library. Ignored generation of AXI Lite  interface for 'AXILiteS'"
-	}
-}
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler matrixmul_1D_rev2_AXILiteS_s_axi
-}
-
-# Native AXIS:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 5 \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 4 \
     name Input_r \
-    reset_level 0 \
+    reset_level 1 \
     sync_rst true \
-    corename {} \
-    metadata {  } \
+    dir I \
+    corename Input_r \
     op interface \
-    ports { Input_r_TDATA { I 8 vector } Input_r_TVALID { I 1 bit } Input_r_TREADY { O 1 bit } } \
+    ports { Input_r_address0 { O 11 vector } Input_r_ce0 { O 1 bit } Input_r_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'Input_r'"
@@ -241,18 +193,18 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
-# Native AXIS:
+# XIL_BRAM:
 if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::native_axis_add] == "::AESL_LIB_XILADAPTER::native_axis_add"} {
-eval "::AESL_LIB_XILADAPTER::native_axis_add { \
-    id 6 \
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 5 \
     name AB \
-    reset_level 0 \
+    reset_level 1 \
     sync_rst true \
-    corename {} \
-    metadata {  } \
+    dir O \
+    corename AB \
     op interface \
-    ports { AB_TDATA { O 32 vector } AB_TVALID { O 1 bit } AB_TREADY { I 1 bit } } \
+    ports { AB_address0 { O 10 vector } AB_ce0 { O 1 bit } AB_we0 { O 1 bit } AB_d0 { O 32 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'AB'"
@@ -266,7 +218,7 @@ eval "cg_default_interface_gen_dc { \
     id -1 \
     name ap_ctrl \
     type ap_ctrl \
-    reset_level 0 \
+    reset_level 1 \
     sync_rst true \
     corename ap_ctrl \
     op interface \
@@ -283,7 +235,7 @@ if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_cloc
 eval "cg_default_interface_gen_clock { \
     id -2 \
     name ${PortName} \
-    reset_level 0 \
+    reset_level 1 \
     sync_rst true \
     corename apif_ap_clk \
     data_wd ${DataWd} \
@@ -296,16 +248,16 @@ puts "@W \[IMPL-113\] Cannot find bus interface model in the library. Ignored ge
 
 
 # Adapter definition:
-set PortName ap_rst_n
+set PortName ap_rst
 set DataWd 1 
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
     id -3 \
     name ${PortName} \
-    reset_level 0 \
+    reset_level 1 \
     sync_rst true \
-    corename apif_ap_rst_n \
+    corename apif_ap_rst \
     data_wd ${DataWd} \
     op interface \
 }"

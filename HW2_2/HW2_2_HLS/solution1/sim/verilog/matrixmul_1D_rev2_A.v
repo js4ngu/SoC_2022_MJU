@@ -9,8 +9,8 @@
 module matrixmul_1D_rev2_A_ram (addr0, ce0, d0, we0, q0,  clk);
 
 parameter DWIDTH = 8;
-parameter AWIDTH = 14;
-parameter MEM_SIZE = 16384;
+parameter AWIDTH = 10;
+parameter MEM_SIZE = 1024;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -53,8 +53,8 @@ module matrixmul_1D_rev2_A(
     q0);
 
 parameter DataWidth = 32'd8;
-parameter AddressRange = 32'd16384;
-parameter AddressWidth = 32'd14;
+parameter AddressRange = 32'd1024;
+parameter AddressWidth = 32'd10;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;
