@@ -11,11 +11,11 @@ set in0_width 8
 set in0_signed 0
 set in1_width 8
 set in1_signed 0
-set in2_width 19
+set in2_width 23
 set in2_signed 0
-set out_width 19
+set out_width 23
 set exp i0*i1+i2
-set arg_lists {i0 {8 0 +} i1 {8 0 +} m {16 0 +} i2 {19 0 +} p {19 0 +} c_reg {1} rnd {0} acc {0} }
+set arg_lists {i0 {8 0 +} i1 {8 0 +} m {16 0 +} i2 {23 0 +} p {23 0 +} c_reg {1} rnd {0} acc {0} }
 set TrueReset 0
 if {${::AESL::PGuard_simmodel_gen}} {
 if {[info proc ap_gen_simcore_mac] == "ap_gen_simcore_mac"} {

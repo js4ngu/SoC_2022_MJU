@@ -933,12 +933,275 @@ extern "C" {
 # 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/_mingw_print_pop.h" 1 3
 # 1037 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
 # 2 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 1 3
+# 24 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+#pragma pack(push,_CRT_PACKING)
+
+
+extern "C" {
+# 60 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+  typedef long clock_t;
+# 97 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+  struct tm {
+    int tm_sec;
+    int tm_min;
+    int tm_hour;
+    int tm_mday;
+    int tm_mon;
+    int tm_year;
+    int tm_wday;
+    int tm_yday;
+    int tm_isdst;
+  };
+
+
+
+
+  extern __attribute__ ((__dllimport__)) int _daylight;
+  extern __attribute__ ((__dllimport__)) long _dstbias;
+  extern __attribute__ ((__dllimport__)) long _timezone;
+  extern __attribute__ ((__dllimport__)) char * _tzname[2];
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_daylight(int *_Daylight);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_dstbias(long *_Daylight_savings_bias);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_timezone(long *_Timezone);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_tzname(size_t *_ReturnValue,char *_Buffer,size_t _SizeInBytes,int _Index);
+  char *__attribute__((__cdecl__)) asctime(const struct tm *_Tm) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) asctime_s (char *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  char *__attribute__((__cdecl__)) _ctime32(const __time32_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _ctime32_s (char *_Buf,size_t _SizeInBytes,const __time32_t *_Time);
+  clock_t __attribute__((__cdecl__)) clock(void);
+  double __attribute__((__cdecl__)) _difftime32(__time32_t _Time1,__time32_t _Time2);
+  struct tm *__attribute__((__cdecl__)) _gmtime32(const __time32_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _gmtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  struct tm *__attribute__((__cdecl__)) _localtime32(const __time32_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _localtime32_s (struct tm *_Tm,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) strftime(char * __restrict__ _Buf,size_t _SizeInBytes,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _strftime_l(char * __restrict__ _Buf,size_t _Max_size,const char * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strdate(char *_Buffer) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _strdate_s (char *_Buf,size_t _SizeInBytes);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _strtime(char *_Buffer) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _strtime_s (char *_Buf ,size_t _SizeInBytes);
+  __time32_t __attribute__((__cdecl__)) _time32(__time32_t *_Time);
+  __time32_t __attribute__((__cdecl__)) _mktime32(struct tm *_Tm);
+  __time32_t __attribute__((__cdecl__)) _mkgmtime32(struct tm *_Tm);
+
+
+  void __attribute__((__cdecl__)) tzset(void) ;
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _tzset(void);
+
+
+  double __attribute__((__cdecl__)) _difftime64(__time64_t _Time1,__time64_t _Time2);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ctime64(const __time64_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _ctime64_s (char *_Buf,size_t _SizeInBytes,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _gmtime64(const __time64_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _gmtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) struct tm *__attribute__((__cdecl__)) _localtime64(const __time64_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _localtime64_s (struct tm *_Tm,const __time64_t *_Time);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mktime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _mkgmtime64(struct tm *_Tm);
+  __attribute__ ((__dllimport__)) __time64_t __attribute__((__cdecl__)) _time64(__time64_t *_Time);
+  unsigned __attribute__((__cdecl__)) _getsystime(struct tm *_Tm);
+  unsigned __attribute__((__cdecl__)) _setsystime(struct tm *_Tm,unsigned _MilliSec);
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wasctime(const struct tm *_Tm);
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _wasctime_s (wchar_t *_Buf,size_t _SizeInWords,const struct tm *_Tm);
+  wchar_t *__attribute__((__cdecl__)) _wctime32(const __time32_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _wctime32_s (wchar_t *_Buf,size_t _SizeInWords,const __time32_t *_Time);
+  size_t __attribute__((__cdecl__)) wcsftime(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcsftime_l(wchar_t * __restrict__ _Buf,size_t _SizeInWords,const wchar_t * __restrict__ _Format,const struct tm * __restrict__ _Tm,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrdate(wchar_t *_Buffer) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _wstrdate_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wstrtime(wchar_t *_Buffer) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _wstrtime_s (wchar_t *_Buf,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wctime64(const __time64_t *_Time) ;
+  __attribute__((dllimport)) errno_t __attribute__((__cdecl__)) _wctime64_s (wchar_t *_Buf,size_t _SizeInWords,const __time64_t *_Time);
+
+
+
+  wchar_t *__attribute__((__cdecl__)) _wctime(const time_t *) ;
+# 189 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+  errno_t __attribute__((__cdecl__)) _wctime_s(wchar_t *, size_t, const time_t *);
+# 203 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+double __attribute__((__cdecl__)) difftime(time_t _Time1,time_t _Time2);
+char *__attribute__((__cdecl__)) ctime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) gmtime(const time_t *_Time) ;
+struct tm *__attribute__((__cdecl__)) localtime(const time_t *_Time) ;
+
+time_t __attribute__((__cdecl__)) mktime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) _mkgmtime(struct tm *_Tm);
+time_t __attribute__((__cdecl__)) time(time_t *_Time);
+# 240 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) localtime_s(struct tm *_Tm,const time_t *_Time) { return _localtime64_s(_Tm,_Time); }
+inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) gmtime_s(struct tm *_Tm, const time_t *_Time) { return _gmtime64_s(_Tm, _Time); }
+inline __attribute__((__always_inline__)) errno_t __attribute__((__cdecl__)) ctime_s(char *_Buf,size_t _SizeInBytes,const time_t *_Time) { return _ctime64_s(_Buf,_SizeInBytes,_Time); }
 
 
 
 
 
-# 6 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+
+  __attribute__ ((__dllimport__)) extern int daylight;
+  __attribute__ ((__dllimport__)) extern long timezone;
+  __attribute__ ((__dllimport__)) extern char *tzname[2];
+  void __attribute__((__cdecl__)) tzset(void) ;
+
+
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 1 3
+# 10 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/_timeval.h" 3
+struct timeval
+{
+ long tv_sec;
+ long tv_usec;
+};
+# 256 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+
+
+
+struct timezone {
+  int tz_minuteswest;
+  int tz_dsttime;
+};
+
+  extern int __attribute__((__cdecl__)) mingw_gettimeofday (struct timeval *p, struct timezone *z);
+
+
+
+}
+
+
+#pragma pack(pop)
+# 293 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 3
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
+# 15 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+#pragma pack(push,_CRT_PACKING)
+
+
+extern "C" {
+# 53 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+  struct __timeb32 {
+    __time32_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+
+
+  struct timeb {
+    time_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+
+
+  struct __timeb64 {
+    __time64_t time;
+    unsigned short millitm;
+    short timezone;
+    short dstflag;
+  };
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime64(struct __timeb64 *_Time);
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _ftime(struct __timeb64 *);
+
+
+
+
+
+
+
+struct timespec {
+  time_t tv_sec;
+  long tv_nsec;
+};
+
+struct itimerspec {
+  struct timespec it_interval;
+  struct timespec it_value;
+};
+
+
+
+  void __attribute__((__cdecl__)) ftime (struct timeb *);
+# 119 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 3
+}
+
+
+#pragma pack(pop)
+
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 1 3
+# 10 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 3
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 1 3
+# 11 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h" 2 3
+
+
+extern "C" {
+
+
+
+
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime_s(struct __timeb32 *_Time);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _ftime64_s(struct __timeb64 *_Time);
+
+
+
+
+
+
+
+}
+# 125 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/sys/timeb.h" 2 3
+# 294 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+
+
+
+
+
+
+
+# 1 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 1 3
+# 49 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
+typedef int clockid_t;
+# 74 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/pthread_time.h" 3
+extern "C" {
+
+
+
+       
+
+
+
+
+
+int __attribute__((__cdecl__)) nanosleep(const struct timespec *request, struct timespec *remain);
+
+int __attribute__((__cdecl__)) clock_nanosleep(clockid_t clock_id, int flags, const struct timespec *request, struct timespec *remain);
+int __attribute__((__cdecl__)) clock_getres(clockid_t clock_id, struct timespec *res);
+int __attribute__((__cdecl__)) clock_gettime(clockid_t clock_id, struct timespec *tp);
+int __attribute__((__cdecl__)) clock_settime(clockid_t clock_id, const struct timespec *tp);
+
+       
+
+
+}
+# 302 "C:/Xilinx/Vivado/2018.2/msys64/mingw64/x86_64-w64-mingw32/include/time.h" 2 3
+# 3 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 2
+
+
+
+
+
+
+# 8 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
 void matrixmul_1D_rev2( unsigned char Input[256*128], unsigned int AB[128*128]);
 
 int main(){
@@ -950,45 +1213,48 @@ int main(){
     unsigned int AB[128*128];
     unsigned int AB_EX[128*128];
 
-    for(int i=0; i<3; i++){
+    printf("HLS Flow with Adder example\n");
+    double start, end;
+    start = (double)clock() / 
+# 21 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
+                             1000
+# 21 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+                                           ;
+
+    for(int i=0; i<7; i++){
        m *= 2;
     }
-    for(int i=0; i<3; i++){
+    for(int i=0; i<7; i++){
        n *= 2;
     }
-    for(int i=0; i<3; i++){
+    for(int i=0; i<7; i++){
        p *= 2;
     }
 
-    printf("HLS Flow with Adder example\n");
 
-
-    for (int i = 0; i < 3; i++) {
-        for (int j = 0; j < 3; j++) {
+    for (int i = 0; i < 7; i++) {
+        for (int j = 0; j < 7; j++) {
          Input[128*i+j] = 2;
         }
     }
-    for (int i = 128; i < 128+3; i++) {
-        for (int j = 0; j < 3; j++) {
+    for (int i = 128; i < 128+7; i++) {
+        for (int j = 0; j < 7; j++) {
          Input[128*i+j] = 2;
         }
     }
 
 
-   for (int i = 0; i < 3; i++) {
-      for (int j = 0; j < 3; j++) {
+   for (int i = 0; i < 7; i++) {
+      for (int j = 0; j < 7; j++) {
          A[128*i+j] = Input[128*i+j];
       }
    }
 
-   for (int i = 0; i < 3; i++) {
-      for (int j = 0; j < 3; j++) {
+   for (int i = 0; i < 7; i++) {
+      for (int j = 0; j < 7; j++) {
          B[128*i+j] = Input[(i+1)*128+j];
       }
    }
-
-
-    matrixmul_1D_rev2( Input, AB);
 
 
     for (int i = 0; i < m; i++) {
@@ -999,6 +1265,14 @@ int main(){
             }
         }
     }
+    end = (((double)clock()) / 
+# 67 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp" 3
+                              1000
+# 67 "C:/SoC_2022_MJU/HW2_2/HW2_2_HLS/TB_1DmatrixMul_rev2.cpp"
+                                            );
+
+
+    matrixmul_1D_rev2( Input, AB);
 
 
     for(i=0; i < m; i++){
@@ -1012,5 +1286,7 @@ int main(){
             }
         }
     }
+    printf("SW Run time :%lf\n", (end-start));
+
     return 0;
 }

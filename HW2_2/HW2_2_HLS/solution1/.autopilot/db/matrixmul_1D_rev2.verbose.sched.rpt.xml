@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'matrixmul_1D_rev2'" level="0">
-<item name = "Date">Fri Jun  3 14:46:41 2022
+<item name = "Date">Fri Jun  3 14:51:23 2022
 </item>
 <item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
 <item name = "Project">HW2_2_HLS</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">34499, 34499, 34499, 34499, none</column>
+<column name="">6357475, 6357475, 6357475, 6357475, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -37,13 +37,13 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- memset_A">16383, 16383, 1, -, -, 16384, no</column>
 <column name="- memset_B">16383, 16383, 1, -, -, 16384, no</column>
-<column name="- Loop 3">24, 24, 8, -, -, 3, no</column>
-<column name=" + Loop 3.1">6, 6, 2, -, -, 3, no</column>
-<column name="- Loop 4">24, 24, 8, -, -, 3, no</column>
-<column name=" + Loop 4.1">6, 6, 2, -, -, 3, no</column>
-<column name="- Loop 5">1680, 1680, 210, -, -, 8, no</column>
-<column name=" + Loop 5.1">208, 208, 26, -, -, 8, no</column>
-<column name="  ++ Loop 5.1.1">24, 24, 3, -, -, 8, no</column>
+<column name="- Loop 3">112, 112, 16, -, -, 7, no</column>
+<column name=" + Loop 3.1">14, 14, 2, -, -, 7, no</column>
+<column name="- Loop 4">112, 112, 16, -, -, 7, no</column>
+<column name=" + Loop 4.1">14, 14, 2, -, -, 7, no</column>
+<column name="- Loop 5">6324480, 6324480, 49410, -, -, 128, no</column>
+<column name=" + Loop 5.1">49408, 49408, 386, -, -, 128, no</column>
+<column name="  ++ Loop 5.1.1">384, 384, 3, -, -, 128, no</column>
 </table>
 </item>
 </section>

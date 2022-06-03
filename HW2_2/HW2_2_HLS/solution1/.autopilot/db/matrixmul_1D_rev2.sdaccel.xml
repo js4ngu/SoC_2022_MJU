@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'matrixmul_1D_rev2'" level="0">
-<item name = "Date">Fri Jun  3 14:46:41 2022
+<item name = "Date">Fri Jun  3 14:51:24 2022
 </item>
 <item name = "Version">2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)</item>
 <item name = "Project">HW2_2_HLS</item>
@@ -22,7 +22,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">34499, 34499, 34499, 34499, none</column>
+<column name="">6357475, 6357475, 6357475, 6357475, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,13 +35,13 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- memset_A">16383, 16383, 1, -, -, 16384, no</column>
 <column name="- memset_B">16383, 16383, 1, -, -, 16384, no</column>
-<column name="- Loop 3">24, 24, 8, -, -, 3, no</column>
-<column name=" + Loop 3.1">6, 6, 2, -, -, 3, no</column>
-<column name="- Loop 4">24, 24, 8, -, -, 3, no</column>
-<column name=" + Loop 4.1">6, 6, 2, -, -, 3, no</column>
-<column name="- Loop 5">1680, 1680, 210, -, -, 8, no</column>
-<column name=" + Loop 5.1">208, 208, 26, -, -, 8, no</column>
-<column name="  ++ Loop 5.1.1">24, 24, 3, -, -, 8, no</column>
+<column name="- Loop 3">112, 112, 16, -, -, 7, no</column>
+<column name=" + Loop 3.1">14, 14, 2, -, -, 7, no</column>
+<column name="- Loop 4">112, 112, 16, -, -, 7, no</column>
+<column name=" + Loop 4.1">14, 14, 2, -, -, 7, no</column>
+<column name="- Loop 5">6324480, 6324480, 49410, -, -, 128, no</column>
+<column name=" + Loop 5.1">49408, 49408, 386, -, -, 128, no</column>
+<column name="  ++ Loop 5.1.1">384, 384, 3, -, -, 128, no</column>
 </table>
 </item>
 </section>
@@ -54,14 +54,14 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="DSP">-, 1, -, -</column>
-<column name="Expression">-, -, 0, 223</column>
+<column name="Expression">-, -, 0, 303</column>
 <column name="FIFO">-, -, -, -</column>
 <column name="Instance">-, -, -, -</column>
 <column name="Memory">16, -, 0, 0</column>
 <column name="Multiplexer">-, -, -, 239</column>
-<column name="Register">-, -, 123, -</column>
+<column name="Register">-, -, 177, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
-<specialColumn name="Utilization (%)">5, ~0, ~0, ~0</specialColumn>
+<specialColumn name="Utilization (%)">5, ~0, ~0, 1</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -72,7 +72,7 @@
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="matrixmul_1D_rev2bkb_U1">matrixmul_1D_rev2bkb, i0 * i1 + i2</column>
+<column name="matrixmul_1D_rev2bkb_U1">matrixmul_1D_rev2bkb, i0 + i1 * i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
@@ -87,25 +87,28 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="i_1_fu_320_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_2_fu_359_p2">+, 0, 0, 10, 2, 1</column>
-<column name="i_3_fu_428_p2">+, 0, 0, 13, 4, 1</column>
-<column name="indvarinc1_fu_297_p2">+, 0, 0, 19, 14, 1</column>
-<column name="indvarinc_fu_280_p2">+, 0, 0, 19, 14, 1</column>
-<column name="j_1_fu_332_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_2_fu_379_p2">+, 0, 0, 10, 2, 1</column>
-<column name="j_3_fu_440_p2">+, 0, 0, 13, 4, 1</column>
-<column name="k_1_fu_452_p2">+, 0, 0, 13, 4, 1</column>
-<column name="tmp_9_fu_397_p2">+, 0, 0, 15, 9, 9</column>
-<column name="exitcond3_fu_373_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="exitcond4_fu_353_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="exitcond5_fu_326_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="exitcond6_fu_314_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="exitcond7_fu_446_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="exitcond9_fu_434_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="exitcond_fu_422_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="tmp_1_fu_291_p2">icmp, 0, 0, 13, 14, 2</column>
-<column name="tmp_3_fu_308_p2">icmp, 0, 0, 13, 14, 2</column>
+<column name="i_1_fu_314_p2">+, 0, 0, 12, 3, 1</column>
+<column name="i_2_fu_353_p2">+, 0, 0, 12, 3, 1</column>
+<column name="i_3_fu_422_p2">+, 0, 0, 15, 8, 1</column>
+<column name="indvarinc1_fu_291_p2">+, 0, 0, 19, 14, 1</column>
+<column name="indvarinc_fu_274_p2">+, 0, 0, 19, 14, 1</column>
+<column name="j_1_fu_326_p2">+, 0, 0, 12, 3, 1</column>
+<column name="j_2_fu_373_p2">+, 0, 0, 12, 3, 1</column>
+<column name="j_3_fu_450_p2">+, 0, 0, 15, 8, 1</column>
+<column name="k_1_fu_466_p2">+, 0, 0, 15, 8, 1</column>
+<column name="tmp_11_fu_509_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_13_fu_472_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_16_fu_494_p2">+, 0, 0, 19, 14, 14</column>
+<column name="tmp_9_fu_391_p2">+, 0, 0, 14, 10, 10</column>
+<column name="exitcond3_fu_367_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="exitcond4_fu_347_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="exitcond5_fu_320_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="exitcond6_fu_308_p2">icmp, 0, 0, 9, 3, 2</column>
+<column name="exitcond7_fu_460_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="exitcond9_fu_444_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="exitcond_fu_416_p2">icmp, 0, 0, 13, 8, 9</column>
+<column name="tmp_1_fu_285_p2">icmp, 0, 0, 13, 14, 2</column>
+<column name="tmp_3_fu_302_p2">icmp, 0, 0, 13, 14, 2</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -116,42 +119,44 @@
 <column name="B_d0">15, 3, 8, 24</column>
 <column name="Input_r_address0">15, 3, 15, 45</column>
 <column name="ap_NS_fsm">62, 15, 1, 15</column>
-<column name="i1_reg_209">9, 2, 2, 4</column>
-<column name="i6_reg_233">9, 2, 4, 8</column>
-<column name="i_reg_186">9, 2, 2, 4</column>
-<column name="invdar1_reg_175">9, 2, 14, 28</column>
-<column name="invdar_reg_164">9, 2, 14, 28</column>
-<column name="j2_reg_221">9, 2, 2, 4</column>
-<column name="j7_reg_245">9, 2, 4, 8</column>
-<column name="j_reg_198">9, 2, 2, 4</column>
-<column name="k_reg_269">9, 2, 4, 8</column>
-<column name="sum_reg_257">9, 2, 19, 38</column>
+<column name="i1_reg_205">9, 2, 3, 6</column>
+<column name="i6_reg_229">9, 2, 8, 16</column>
+<column name="i_reg_182">9, 2, 3, 6</column>
+<column name="invdar1_reg_171">9, 2, 14, 28</column>
+<column name="invdar_reg_160">9, 2, 14, 28</column>
+<column name="j2_reg_217">9, 2, 3, 6</column>
+<column name="j7_reg_240">9, 2, 8, 16</column>
+<column name="j_reg_194">9, 2, 3, 6</column>
+<column name="k_reg_263">9, 2, 8, 16</column>
+<column name="sum_reg_251">9, 2, 23, 46</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="A_load_reg_636">8, 0, 8, 0</column>
-<column name="B_load_reg_641">8, 0, 8, 0</column>
+<column name="A_load_reg_646">8, 0, 8, 0</column>
+<column name="B_load_reg_651">8, 0, 8, 0</column>
 <column name="ap_CS_fsm">14, 0, 14, 0</column>
-<column name="i1_reg_209">2, 0, 2, 0</column>
-<column name="i6_reg_233">4, 0, 4, 0</column>
-<column name="i_1_reg_553">2, 0, 2, 0</column>
-<column name="i_2_reg_579">2, 0, 2, 0</column>
-<column name="i_3_reg_605">4, 0, 4, 0</column>
-<column name="i_reg_186">2, 0, 2, 0</column>
-<column name="invdar1_reg_175">14, 0, 14, 0</column>
-<column name="invdar_reg_164">14, 0, 14, 0</column>
-<column name="j2_reg_221">2, 0, 2, 0</column>
-<column name="j7_reg_245">4, 0, 4, 0</column>
-<column name="j_1_reg_561">2, 0, 2, 0</column>
-<column name="j_2_reg_592">2, 0, 2, 0</column>
-<column name="j_3_reg_613">4, 0, 4, 0</column>
-<column name="j_reg_198">2, 0, 2, 0</column>
-<column name="k_1_reg_621">4, 0, 4, 0</column>
-<column name="k_reg_269">4, 0, 4, 0</column>
-<column name="sum_reg_257">19, 0, 19, 0</column>
-<column name="tmp_5_reg_584">2, 0, 9, 7</column>
-<column name="tmp_8_reg_566">4, 0, 64, 60</column>
+<column name="i1_reg_205">3, 0, 3, 0</column>
+<column name="i6_reg_229">8, 0, 8, 0</column>
+<column name="i_1_reg_551">3, 0, 3, 0</column>
+<column name="i_2_reg_577">3, 0, 3, 0</column>
+<column name="i_3_reg_603">8, 0, 8, 0</column>
+<column name="i_reg_182">3, 0, 3, 0</column>
+<column name="invdar1_reg_171">14, 0, 14, 0</column>
+<column name="invdar_reg_160">14, 0, 14, 0</column>
+<column name="j2_reg_217">3, 0, 3, 0</column>
+<column name="j7_cast3_reg_614">8, 0, 14, 6</column>
+<column name="j7_reg_240">8, 0, 8, 0</column>
+<column name="j_1_reg_559">3, 0, 3, 0</column>
+<column name="j_2_reg_590">3, 0, 3, 0</column>
+<column name="j_3_reg_623">8, 0, 8, 0</column>
+<column name="j_reg_194">3, 0, 3, 0</column>
+<column name="k_1_reg_631">8, 0, 8, 0</column>
+<column name="k_reg_263">8, 0, 8, 0</column>
+<column name="sum_reg_251">23, 0, 23, 0</column>
+<column name="tmp_5_reg_582">3, 0, 10, 7</column>
+<column name="tmp_8_reg_564">6, 0, 64, 58</column>
+<column name="tmp_s_reg_608">7, 0, 14, 7</column>
 </table>
 </item>
 </section>

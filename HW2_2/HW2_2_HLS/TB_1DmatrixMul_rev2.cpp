@@ -1,7 +1,9 @@
 #include <stdio.h>
-#define lm 3
-#define ln 3
-#define lp 3
+#include <time.h>
+
+#define lm 7
+#define ln 7
+#define lp 7
 
 void matrixmul_1D_rev2(/*int lm, int ln, int lp,*/unsigned char Input[256*128], unsigned int AB[128*128]);
 
@@ -14,6 +16,10 @@ int main(){
     unsigned int AB[128*128];
     unsigned int AB_EX[128*128];
 
+    printf("HLS Flow with Adder example\n");
+    double start, end; // For runtime CHK!
+    start = (double)clock() / CLOCKS_PER_SEC;
+
     for(int i=0; i<lm; i++){
        m *= 2;
     }
@@ -23,8 +29,6 @@ int main(){
     for(int i=0; i<lp; i++){
        p *= 2;
     }
-
-    printf("HLS Flow with Adder example\n");
 
     //Init Input Data
     for (int i = 0; i < lm; i++) {
@@ -51,9 +55,6 @@ int main(){
       }
    }
 
-    //Call the hardware function
-    matrixmul_1D_rev2(/*lm,ln,lp,*/Input, AB);
-
     //Run a software version of the hardware function to validate results
     for (int i = 0; i < m; i++) { //a*b
         for (int j = 0; j < p; j++) {
@@ -63,6 +64,10 @@ int main(){
             }
         }
     }
+    end = (((double)clock()) / CLOCKS_PER_SEC);
+
+    //Call the hardware function
+    matrixmul_1D_rev2(/*lm,ln,lp,*/Input, AB);
 
     //Compare results
     for(i=0; i < m; i++){
@@ -76,5 +81,7 @@ int main(){
             }
         }
     }
+    printf("SW Run time :%lf\n", (end-start));
+
     return 0;
 }
