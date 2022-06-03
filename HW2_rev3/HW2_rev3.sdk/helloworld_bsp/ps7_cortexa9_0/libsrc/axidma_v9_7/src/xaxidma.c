@@ -926,7 +926,7 @@ u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
 			(Length >
 			InstancePtr->RxBdRing[RingIndex].MaxTransferLen)) {
 			return XST_INVALID_PARAM;
-		}
+		} // This case 
 
 
 		if (!InstancePtr->HasS2Mm) {
@@ -961,7 +961,7 @@ u32 XAxiDma_SimpleTransfer(XAxiDma *InstancePtr, UINTPTR BuffAddr, u32 Length,
 				" DRE %x\r\n", (unsigned int)BuffAddr);
 
 				return XST_INVALID_PARAM;
-			}
+			}// This case 
 		}
 
 

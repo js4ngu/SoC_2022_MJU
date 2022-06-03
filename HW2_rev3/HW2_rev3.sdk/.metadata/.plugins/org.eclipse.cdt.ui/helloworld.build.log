@@ -1,8 +1,8 @@
-01:58:16 **** Incremental Build of configuration Debug for project helloworld ****
+02:35:45 **** Incremental Build of configuration Debug for project helloworld ****
 make pre-build main-build 
 a9-linaro-pre-build-step
 ' '
 make: `main-build'를 위해 할 일이 없습니다
 
-01:58:16 Build Finished (took 158ms)
+02:35:45 Build Finished (took 162ms)
 

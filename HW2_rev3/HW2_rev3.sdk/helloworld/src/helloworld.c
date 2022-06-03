@@ -47,7 +47,8 @@ XTmrCtr TimerCounter; /* The instance of the Tmrctr Device */
 #define LP 3
 
 /* Array length and the number of bytes to transfer */
-#define ARRAY_LENGTH      32768
+//#define ARRAY_LENGTH      32768
+#define ARRAY_LENGTH      128 //Test
 #define BYTES_TO_TRANSFER   4*ARRAY_LENGTH
 
 /************************** Function Prototypes ******************************/
